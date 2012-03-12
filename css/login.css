@@ -1,0 +1,33 @@
+#welcome_slogan{
+	margin-top: 5em;
+	text-align: center;
+}
+
+#welcome_slogan p{
+	font-size: 30px;
+}
+
+#login_section{
+	width: 300px;
+	margin: 3em auto 0 auto;
+}
+
+#register_link{
+	text-align: center;
+	margin-top: 5px;
+}
+
+#login_hint{
+	text-align: center;
+}
+
+.clearfix{
+	display: block;
+	clear: both;
+}
+
+input{
+	height: 30px;
+	font-weight: 200;
+	font-size: 20px;
+}

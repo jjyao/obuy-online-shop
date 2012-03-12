@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  * LoginForm class.
@@ -7,7 +7,7 @@
  */
 class LoginForm extends CFormModel
 {
-	public $username;
+	public $email;
 	public $password;
 	public $rememberMe;
 
@@ -15,14 +15,16 @@ class LoginForm extends CFormModel
 
 	/**
 	 * Declares the validation rules.
-	 * The rules state that username and password are required,
+	 * The rules state that email and password are required,
 	 * and password needs to be authenticated.
 	 */
 	public function rules()
 	{
 		return array(
 			// username and password are required
-			array('username, password', 'required'),
+			array('email, password', 'required'),
+			// email need the email validation
+			array('email', 'email'),
 			// rememberMe needs to be a boolean
 			array('rememberMe', 'boolean'),
 			// password needs to be authenticated
@@ -36,7 +38,9 @@ class LoginForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-			'rememberMe'=>'Remember me next time',
+			'email'=>'邮箱',
+			'password'=>'密码',
+			'rememberMe'=>'记住我',
 		);
 	}
 
@@ -48,9 +52,19 @@ class LoginForm extends CFormModel
 	{
 		if(!$this->hasErrors())
 		{
-			$this->_identity=new UserIdentity($this->username,$this->password);
+			$this->_identity=new UserIdentity($this->email,$this->password);
 			if(!$this->_identity->authenticate())
-				$this->addError('password','Incorrect username or password.');
+			{
+				if($this->_identity->errorCode == UserIdentity::ERROR_USERNAME_INVALID)
+				{
+					$this->addError('email', '该邮箱不存在');
+				}
+				else
+				{
+					$this->addError('password', '密码不正确');
+				}
+				
+			}			
 		}
 	}
 
@@ -62,7 +76,7 @@ class LoginForm extends CFormModel
 	{
 		if($this->_identity===null)
 		{
-			$this->_identity=new UserIdentity($this->username,$this->password);
+			$this->_identity=new UserIdentity($this->email,$this->password);
 			$this->_identity->authenticate();
 		}
 		if($this->_identity->errorCode===UserIdentity::ERROR_NONE)

@@ -74,7 +74,7 @@ class SiteController extends Controller
 		$model=new LoginForm;
 
 		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='login_form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
@@ -88,6 +88,7 @@ class SiteController extends Controller
 			if($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
+
 		// display the login form
 		$this->render('login',array('model'=>$model));
 	}
@@ -99,5 +100,55 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+
+	/**
+	 * Display the register page
+	 */
+	public function actionRegister()
+	{
+		$model = new RegisterForm;
+
+		// if it is ajax validation request
+		if(isset($_POST['ajax']) && $_POST['ajax']==='register_form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+
+		// collect user input data
+		if(isset($_POST['RegisterForm']))
+		{
+			$model->attributes=$_POST['RegisterForm'];
+			// validate user input and redirect to the previous page if valid
+			if($model->validate())
+			{
+				//create a new user in the database and the related delivery address
+				$client = new Client;
+				$deliveryAddress = new DeliveryAddress;
+
+				$client->name = $model->username;
+				$client->email = $model->email;
+				$client->password = $client->encrypt($model->password);
+				$client->isActive = Client::ACTIVE;
+				$client->save(false);
+
+				$deliveryAddress->clientId = $client->id;
+				$deliveryAddress->cityId = $model->city->id;
+				$deliveryAddress->address = $model->address;
+				$deliveryAddress->save(false);
+				
+				// auto login
+				$userIdentity = new UserIdentity($model->email, $model->password);
+				$userIdentity->authenticate();
+				Yii::app()->user->login($userIdentity, 0);
+
+				// TODO go to the success page
+				$this->redirect(Yii::app()->createUrl('site/index'));
+			}
+		}
+
+		// display the login form
+		$this->render('register',array('model'=>$model));
 	}
 }

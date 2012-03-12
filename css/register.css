@@ -1,0 +1,52 @@
+article
+{
+	margin: 0 auto;
+	width: 700px;
+}
+
+input
+{
+	height: 20px;
+	font-weight: 200;
+	font-size: 15px;
+}
+
+#welcome_slogan
+{
+	text-align: center;
+	margin-top: 5em;
+	margin-bottom: 20px;
+}
+
+#welcome_slogan p
+{
+	font-size: 20px;
+}
+
+#register_section
+{
+	width: 400px;
+	margin-left: 20px;
+}
+
+#address_section input, #city_part, #city_part input
+{
+	display: inline-block;
+}
+
+button[type='submit']
+{
+	margin-right: 10px;
+}
+
+.errorMessage
+{
+	box-sizing: border-box;
+	width: 270px;
+}
+
+.clearfix
+{
+	display: block;
+	clear: both;
+}
