@@ -1073,3 +1073,26 @@ Stack trace:
 REQUEST_URI=/index.php/site/register
 HTTP_REFERER=http://obuy.localhost/index.php/site/register
 ---
+2012/03/12 13:05:22 [error] [exception.CException] exception 'CException' with message '属性 "LoginForm.confirmPassword" 未被定义.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CComponent.php:131
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\helpers\CHtml.php(2044): CComponent->__get('confirmPassword')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(LoginForm), 'confirmPassword')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\helpers\CHtml.php(1238): CHtml::activeInputField('password', Object(LoginForm), 'confirmPassword', Array)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\widgets\CActiveForm.php(598): CHtml::activePasswordField(Object(LoginForm), 'confirmPassword', Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\site\register.php(40): CActiveForm->passwordField(Object(LoginForm), 'confirmPassword', Array)
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('register', Array, true)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(93): CController->render('register', Array)
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('login')
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/site/login
+---

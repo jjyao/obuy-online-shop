@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -13,10 +13,7 @@
 	<!-- css and less files -->
 	<link rel="stylesheet/less" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.less" />
 	
-	<!-- jquery  -->
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery/jquery-1.7.1.min.js"></script>
-	
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<title><?php //echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
@@ -24,11 +21,18 @@
 		<div id="my_nav" class="container">
 			<p id="login_info" class="pull-left">
 				亲，买么事啦！
+				<?php if (Yii::app()->user->isGuest): ?>
 				<span>
-					<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/login") ?>" class="login_link">[请登录]</a>
+					<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/login") ?>">[请登录]</a>
 					, 新用户？
-					<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/register") ?>" class="register_link">[免费注册]</a>
+					<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/register") ?>">[免费注册]</a>
 				</span>
+				<?php else: ?>
+				<span>
+					<a href="#"><?php echo Yii::app()->user->name; ?></a>
+					<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/logout") ?>">[退出]</a>
+				</span>
+				<?php endif; ?>
 			</p>
 			<ul id="my_menu" class="pull-right">
 				<li class="last dropdown">

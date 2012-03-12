@@ -21,11 +21,6 @@
 	text-align: center;
 }
 
-.clearfix{
-	display: block;
-	clear: both;
-}
-
 input{
 	height: 30px;
 	font-weight: 200;

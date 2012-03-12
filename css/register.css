@@ -6,9 +6,9 @@ article
 
 input
 {
-	height: 20px;
+	height: 30px;
 	font-weight: 200;
-	font-size: 15px;
+	font-size: 17px;
 }
 
 #welcome_slogan
@@ -43,10 +43,4 @@ button[type='submit']
 {
 	box-sizing: border-box;
 	width: 270px;
-}
-
-.clearfix
-{
-	display: block;
-	clear: both;
 }

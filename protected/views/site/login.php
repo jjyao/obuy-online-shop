@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $this->pageTitle=Yii::app()->name . ' - 登录';
 Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/login.css');
 ?>
@@ -22,10 +22,6 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/login.css');
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login_form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
 	'focus'=>array($model, $focus_control),
 )); ?>
 
