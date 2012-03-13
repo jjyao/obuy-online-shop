@@ -1569,3 +1569,26 @@ Stack trace:
 REQUEST_URI=/index.php/site/img/shopping_cart.png
 HTTP_REFERER=http://obuy.localhost/index.php/site/index
 ---
+2012/03/13 11:01:02 [error] [exception.CException] exception 'CException' with message '别名 "models.*" 是无效的. 请确定它指向一个已存在的目录或文件.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\YiiBase.php:343
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CModule.php(227): YiiBase::import('models.*')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\AdminModule.php(14): CModule->setImport(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CModule.php(91): AdminModule->init()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(331): CModule->getModule('admin')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(270): CWebApplication->createController('admin/site/inde...')
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/site/inde...')
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/admin/site/index
+---
+2012/03/13 11:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "admin/site/index"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/site/inde...')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/site/index
+---

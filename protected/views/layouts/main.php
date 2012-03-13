@@ -88,6 +88,28 @@
 			</a>
 		</div>
 	</footer>
+	<div id="back_to_top" onclick="window.scrollTo(0, 0); return false;">
+	</div>
+	<script>
+		/**
+		 * control the appearence and disappearance of #back_to_top
+		 */
+		var $win = $(window)
+		var $back_to_top = $('#back_to_top')
+		var isShow = 0
+
+		$win.on('scroll', function(e){
+			var scrollTop = $win.scrollTop()
+			if(scrollTop > 40 && !isShow){
+				isShow = 1
+				$back_to_top.show()
+			}else if(scrollTop <= 40 && isShow){
+				isShow = 0
+				$back_to_top.hide()
+			}
+
+		})
+	</script>
 	<!-- less js -->
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/less/less-1.2.2.min.js"></script>
 	<!-- bootstrap js-->
