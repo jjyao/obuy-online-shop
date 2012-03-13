@@ -9,7 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'买么事 网上商店',
 	'language'=>'zh_CN',
-	
+
 	// preloading 'log' component
 	'preload'=>array(
 		'log',

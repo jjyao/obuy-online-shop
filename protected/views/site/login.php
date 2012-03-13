@@ -2,7 +2,7 @@
 $this->pageTitle=Yii::app()->name . ' - 登录';
 Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/login.css');
 ?>
-
+<article>
 <section id="welcome_slogan">
 	<p>欢迎回到<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>" >买么事</a>，祝您购物愉快</p>
 </section><!--weclome section -->
@@ -51,3 +51,4 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/login.css');
 
 </section><!-- login section -->
 <p id="register_link">没有账号？赶快<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/register") ?>" >注册</a>吧</p>
+</article>
