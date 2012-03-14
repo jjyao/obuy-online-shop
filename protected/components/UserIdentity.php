@@ -43,6 +43,17 @@ class UserIdentity extends CUserIdentity
 
 				// store email
 				$this->setState('email', $this->email);
+
+				// check if current user is admin
+				$adminId = Yii::app()->db->createCommand()->select('id')->from('admin')->where('clientId=:clientId', array(':clientId'=>$client->id))->queryRow();
+				if($adminId === false)
+				{
+					$this->setState('isAdmin', false);
+				}
+				else
+				{
+					$this->setState('isAdmin', true);
+				}
 			}
 		}
 		return !$this->errorCode;

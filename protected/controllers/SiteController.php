@@ -27,7 +27,7 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
+		$path = Yii::getPathOfAlias('application.data.auth').'.php';
 		$this->layout = '//layouts/main_with_header';
 		$this->render('index');
 	}

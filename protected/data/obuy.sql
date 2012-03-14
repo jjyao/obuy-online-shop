@@ -23,6 +23,13 @@ create table if not exists client(
 	unique(email)
 );
 
+drop table if exists admin;
+create table if not exists admin(
+	id integer(10) primary key auto_increment,
+	clientId bigint(10),
+	foreign key (clientId) references client(id)
+);
+
 drop table if exists delivery_address;
 create table if not exists delivery_address(
 	id bigint(10) primary key auto_increment,
@@ -47,3 +54,4 @@ insert city (name, provinceName) values ('温州', '浙江');
 
 -- fake data
 insert into client (name, email, password) values ('obuyer', 'obuyer@gmail.com', 'f357205e9e74045c029e0f211bd06943');
+insert into admin (clientId) values (1);	

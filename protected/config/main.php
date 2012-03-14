@@ -58,6 +58,11 @@ return array(
 			'charset' => 'utf8',
 		),
 
+        'authManager'=>array(
+            'class'=>'CPhpAuthManager',
+            'defaultRoles'=>array('authenticated', 'admin'),
+        ),
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
