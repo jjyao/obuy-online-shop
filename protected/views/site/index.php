@@ -25,24 +25,21 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	<section class="product_section">
 		<div class="product_section_title">
 			<h2>全场热销</h2>
-			<div class="more_product">
-				<a href="#">更多>></a>
+			<div class="product_section_title_end">
 			</div>
 		</div>			
 	</section>
 	<section class="product_section">
 		<div class="product_section_title">
 			<h2>新品上架</h2>
-			<div class="more_product">
-				<a href="#">更多>></a>
+			<div class="product_section_title_end">
 			</div>
 		</div>			
 	</section>
 	<section class="product_section">
 		<div class="product_section_title">
 			<h2>推荐商品</h2>
-			<div class="more_product">
-				<a href="#">更多>></a>
+			<div class="product_section_title_end">
 			</div>
 		</div>			
 	</section>

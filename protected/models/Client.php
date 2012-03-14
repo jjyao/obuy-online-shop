@@ -12,6 +12,9 @@
  *
  * The followings are the available model relations:
  * @property DeliveryAddress[] $deliveryAddresses
+ * @property Evaluation[] $evaluations
+ * @property OrderItem[] $orderItems
+ * @property ShopcartItem[] $shopcartItems
  */
 class Client extends CActiveRecord
 {
@@ -62,6 +65,9 @@ class Client extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'deliveryAddresses' => array(self::HAS_MANY, 'DeliveryAddress', 'clientId'),
+			'evaluations' => array(self::HAS_MANY, 'Evaluation', 'clientId'),
+			'orderItems' => array(self::HAS_MANY, 'OrderItem', 'clientId'),
+			'shopcartItems' => array(self::HAS_MANY, 'ShopcartItem', 'clientId'),
 		);
 	}
 
