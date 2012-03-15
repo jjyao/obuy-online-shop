@@ -7,7 +7,7 @@
  * @property string $id
  * @property string $name
  * @property string $price
- * @property string $iconFoldPath
+ * @property string $categoryId
  * @property string $imageFoldPath
  * @property string $description
  * @property string $howToUse
@@ -16,12 +16,18 @@
  * @property integer $isOnSale
  *
  * The followings are the available model relations:
+ * @property Category $category
  * @property Evaluation[] $evaluations
  * @property OrderItem[] $orderItems
  * @property ShopcartItem[] $shopcartItems
  */
 class Product extends CActiveRecord
 {
+	const ON_SALE = 1;
+	const NOT_ON_SALE = 2;
+	
+	public $imagePackageFile; // contain a compressed package with many files
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -48,14 +54,19 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, price, iconFoldPath, imageFoldPath, publishTime, isOnSale', 'required'),
-			array('isOnSale', 'numerical', 'integerOnly'=>true),
-			array('name, iconFoldPath, imageFoldPath', 'length', 'max'=>511),
+			array('name, price', 'required'),
+			array('name', 'unique'),
+			array('name', 'length', 'max'=>511),
 			array('price', 'length', 'max'=>10),
+			array('price', 'type', 'type'=>'float'),
+			array('price', 'match', 'pattern'=>'/[0-9]+(\.[0-9][0-9]?)?/', 'message'=>'价格格式不对，请参见Tips'),
+			array('imagePackageFile', 'unsafe'),
+			array('imagePackageFile', 'file',
+				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => false, 'message'=>'图片包未上传'), // now only support zip package
 			array('description, howToUse, additionalSpec', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, price, iconFoldPath, imageFoldPath, description, howToUse, additionalSpec, publishTime, isOnSale', 'safe', 'on'=>'search'),
+			array('id, name, price, imageFoldPath, description, howToUse, additionalSpec, publishTime, isOnSale', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,9 +78,11 @@ class Product extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'category' => array(self::BELONGS_TO, 'Category', 'categoryId'),
 			'evaluations' => array(self::HAS_MANY, 'Evaluation', 'productId'),
 			'orderItems' => array(self::HAS_MANY, 'OrderItem', 'productId'),
 			'shopcartItems' => array(self::HAS_MANY, 'ShopcartItem', 'productId'),
+
 		);
 	}
 
@@ -80,15 +93,14 @@ class Product extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'price' => 'Price',
-			'iconFoldPath' => 'Icon Fold Path',
-			'imageFoldPath' => 'Image Fold Path',
-			'description' => 'Description',
-			'howToUse' => 'How To Use',
-			'additionalSpec' => 'Additional Spec',
-			'publishTime' => 'Publish Time',
-			'isOnSale' => 'Is On Sale',
+			'name' => '名称',
+			'price' => '价格',
+			'imagePackageFile' => '商品图片',
+			'description' => '描述',
+			'howToUse' => '使用说明',
+			'additionalSpec' => '附加说明',
+			'publishTime' => '发布时间',
+			'isOnSale' => '是否下架',
 		);
 	}
 
@@ -106,7 +118,6 @@ class Product extends CActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('price',$this->price,true);
-		$criteria->compare('iconFoldPath',$this->iconFoldPath,true);
 		$criteria->compare('imageFoldPath',$this->imageFoldPath,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('howToUse',$this->howToUse,true);

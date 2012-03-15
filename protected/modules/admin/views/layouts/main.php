@@ -35,13 +35,13 @@
 						商品管理
 					</li>
 					<li>
-						<a href="#">新建商品</a>
+						<a href="<?php echo Yii::app()->getUrlManager()->createUrl("admin/product/create") ?>">新建商品</a>
 					</li>
 					<li class="nav-header">
 						分类管理
 					</li>
 					<li>
-						<a href="#">修改分类</a>
+						<a href="<?php echo Yii::app()->getUrlManager()->createUrl("admin/category/index") ?>">修改分类</a>
 					</li>
 				</ul>
 			</section>

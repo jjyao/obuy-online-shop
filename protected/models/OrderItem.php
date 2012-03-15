@@ -10,6 +10,7 @@
  * @property integer $count
  * @property string $unitPrice
  * @property string $time
+ * @property string $deliveryAddress
  * @property integer $status
  *
  * The followings are the available model relations:

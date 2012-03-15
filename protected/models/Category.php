@@ -9,6 +9,7 @@
  * @property string $parentCategoryId
  *
  * The followings are the available model relations:
+ * @property Product[] $products
  * @property Category $parentCategory
  * @property Category[] $subCategories
  */
@@ -57,6 +58,7 @@ class Category extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'products' => array(self::HAS_MANY, 'Product', 'categoryId'),
 			'parentCategory' => array(self::BELONGS_TO, 'Category', 'parentCategoryId'),
 			'subCategories' => array(self::HAS_MANY, 'Category', 'parentCategoryId'),
 		);
