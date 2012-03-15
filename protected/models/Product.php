@@ -54,7 +54,7 @@ class Product extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, price', 'required'),
+			array('name, price, categoryId', 'required'),
 			array('name', 'unique'),
 			array('name', 'length', 'max'=>511),
 			array('price', 'length', 'max'=>10),
@@ -95,6 +95,7 @@ class Product extends CActiveRecord
 			'id' => 'ID',
 			'name' => '名称',
 			'price' => '价格',
+			'categoryId' => '分类',
 			'imagePackageFile' => '商品图片',
 			'description' => '描述',
 			'howToUse' => '使用说明',

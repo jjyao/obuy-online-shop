@@ -1,5 +1,7 @@
 <?php
 $this->pageTitle=Yii::app()->name . ' - 新添商品';
+Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/jquery-easyui/themes/default/easyui.css');
+Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/jquery-easyui/themes/icon.css');
 Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::app()->baseUrl.'/css/admin/product.less');
 ?>
 
@@ -7,7 +9,6 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 <div class="row-fluid">
 <?php $form = $this->beginWidget('CActiveForm', array(
 	'id'=>'create_product_form',
-	'focus'=>array($product, 'name'),
 	'htmlOptions'=>array('enctype'=>'multipart/form-data', 'class'=>'span8'),
 ));?>
 	
@@ -45,6 +46,12 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	</label>
 	<?php echo $form->textArea($product, 'additionalSpec'); ?>
 
+	<label>
+		<?php echo $attributesArray['categoryId']; ?>
+	</label>
+	<?php echo $form->textArea($product, 'categoryId', array('id'=>'categoryIdInput', 'style'=>'display: none;')); ?>
+
+	<ul id="category_tree" class="easyui-tree"></ul>
 	<button type="submit" class="btn btn-primary btn-large pull-right">添加</button>
 
 	<span class="clearfix"></span>
@@ -70,6 +77,17 @@ tinyMCE.init({
     theme_advanced_toolbar_align : "center",
     theme_advanced_resizing : true
 });
+</script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery-easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript">
+	$('#category_tree').tree({
+		dnd: false,
+		url: '<?php echo Yii::app()->getUrlManager()->createUrl("admin/category/get")?>',
+		animate: true,
+		onSelect: function(node){
+			$('#categoryIdInput').val(node.id);
+		},
+	});
 </script>
 </article>
 

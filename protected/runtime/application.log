@@ -3316,3 +3316,24 @@ in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
 2012/03/15 21:32:46 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/15 22:28:46 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/15 22:29:19 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/15 22:29:24 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/15 22:29:30 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/15 22:30:57 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/15 22:33:25 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/15 22:35:03 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
