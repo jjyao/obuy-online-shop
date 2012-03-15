@@ -59,7 +59,7 @@ create table if not exists category(
 	id bigint(10) primary key auto_increment,
 	name varchar(511) not null,
 	parentCategoryId bigint(10) default null, -- null stands for top level category
-	foreign key (parentCategoryId) references category(id) on delete set null
+	foreign key (parentCategoryId) references category(id) on delete cascade
 );
 
 drop table if exists evaluation;
@@ -113,3 +113,14 @@ insert city (name, provinceName) values ('温州', '浙江');
 -- fake data
 insert into client (name, email, password) values ('obuyer', 'obuyer@gmail.com', 'f357205e9e74045c029e0f211bd06943');
 insert into admin (clientId) values (1); -- obuyer is admin
+
+-- category fake data
+insert into category (name, parentCategoryId) values ('电子产品', null);
+insert into category (name, parentCategoryId) values ('图书', null);
+insert into category (name, parentCategoryId) values ('家用电器', null);
+insert into category (name, parentCategoryId) values ('电脑', 1);
+insert into category (name, parentCategoryId) values ('手机', 1);
+insert into category (name, parentCategoryId) values ('平板', 1);
+insert into category (name, parentCategoryId) values ('戴尔', 4);
+insert into category (name, parentCategoryId) values ('联想', 4);
+insert into category (name, parentCategoryId) values ('华硕', 4);
