@@ -103,7 +103,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	function modifyCategory(node){
 		if(node.text != ''){
 			$.ajax({
-				url: '<?php echo Yii::app()->getUrlManager()->createUrl("admin/category/modify")?>',
+				url: '<?php echo Yii::app()->getUrlManager()->createUrl("admin/category/update")?>',
 				type: 'post',
 				dataType: 'json',
 				data: {

@@ -3337,3 +3337,224 @@ in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
 2012/03/15 22:35:03 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (19)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/15 23:30:20 [error] [exception.CException] exception 'CException' with message '属性 "CListView.productDataProvider" 未被定义.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CComponent.php:174
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWidgetFactory.php(162): CComponent->__set('productDataProv...', Object(CActiveDataProvider))
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ProductController), 'zii.widgets.CLi...', Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\product\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php(25): CController->render('index', Array)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionIndex()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('index')
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/product/i...')
+#20 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/admin/product/index
+---
+2012/03/16 09:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/product/u...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/product/update/id/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/product/index
+---
+2012/03/16 09:10:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "users/email"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('users/email')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/users/email/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/product/index
+---
+2012/03/16 09:11:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "users/email"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('users/email')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/users/email/2
+HTTP_REFERER=http://obuy.localhost/index.php/admin/product/index
+---
+2012/03/16 09:52:10 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\utils\CFormatter.php(104): CFormatter->formatText()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CDataColumn.php(142): CFormatter->format()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridColumn.php(138): CDataColumn->renderDataCellContent()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(517): CDataColumn->renderDataCell()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(490): CGridView->renderTableRow()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(400): CGridView->renderTableBody()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#7 unknown(0): CGridView->renderSection()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(126): CGridView->renderContent()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(174): CGridView->run()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\product\index.php(25): ProductController->widget()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require()
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): ProductController->renderInternal()
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): ProductController->renderFile()
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): ProductController->renderPartial()
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php(25): ProductController->render()
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionIndex()
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams()
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): ProductController->runAction()
+#20 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#21 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#22 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): ProductController->filterAccessControl()
+#23 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#24 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#25 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): ProductController->runActionWithFilters()
+#26 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): ProductController->run()
+#27 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#28 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#29 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/product/index
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\product\index.php (25)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (25)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:18:17 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:18:26 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:17 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:19 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:20 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:21 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:28 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:29 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:32 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:35 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:38 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:43 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:45 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:54 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:21:58 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:02 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:07 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:17 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:20 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:23 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:29 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:34 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:36 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:22:41 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:40 [warning] [application] Failed to set unsafe attribute "publishTime" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:40 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:44 [warning] [application] Failed to set unsafe attribute "publishTime" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:44 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:45 [warning] [application] Failed to set unsafe attribute "publishTime" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:45 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:48 [warning] [application] Failed to set unsafe attribute "publishTime" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:48 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:50 [warning] [application] Failed to set unsafe attribute "publishTime" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:50 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:53 [warning] [application] Failed to set unsafe attribute "publishTime" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:23:53 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:24:02 [warning] [application] Failed to set unsafe attribute "publishTime" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:24:02 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:24:06 [warning] [application] Failed to set unsafe attribute "publishTime" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:24:06 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:26:22 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:26:56 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 10:27:02 [warning] [application] Failed to set unsafe attribute "category" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)

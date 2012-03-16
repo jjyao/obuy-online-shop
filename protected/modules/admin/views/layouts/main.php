@@ -35,6 +35,9 @@
 						商品管理
 					</li>
 					<li>
+						<a href="<?php echo Yii::app()->getUrlManager()->createUrl("admin/product/index") ?>">商品列表</a>
+					</li>
+					<li>
 						<a href="<?php echo Yii::app()->getUrlManager()->createUrl("admin/product/create") ?>">新建商品</a>
 					</li>
 					<li class="nav-header">

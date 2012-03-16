@@ -64,6 +64,8 @@ class Product extends CActiveRecord
 			array('imagePackageFile', 'file',
 				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => false, 'message'=>'图片包未上传'), // now only support zip package
 			array('description, howToUse, additionalSpec', 'safe'),
+			array('publishTime', 'safe', 'on'=>'search'),
+			array('isOnSale', 'safe', 'on'=>'search'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, price, imageFoldPath, description, howToUse, additionalSpec, publishTime, isOnSale', 'safe', 'on'=>'search'),
@@ -82,7 +84,6 @@ class Product extends CActiveRecord
 			'evaluations' => array(self::HAS_MANY, 'Evaluation', 'productId'),
 			'orderItems' => array(self::HAS_MANY, 'OrderItem', 'productId'),
 			'shopcartItems' => array(self::HAS_MANY, 'ShopcartItem', 'productId'),
-
 		);
 	}
 
@@ -95,12 +96,13 @@ class Product extends CActiveRecord
 			'id' => 'ID',
 			'name' => '名称',
 			'price' => '价格',
+			'category' => '分类',
 			'categoryId' => '分类',
 			'imagePackageFile' => '商品图片',
 			'description' => '描述',
 			'howToUse' => '使用说明',
 			'additionalSpec' => '附加说明',
-			'publishTime' => '发布时间',
+			'publishTime' => '上架时间',
 			'isOnSale' => '是否下架',
 		);
 	}
@@ -116,18 +118,20 @@ class Product extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('price',$this->price,true);
-		$criteria->compare('imageFoldPath',$this->imageFoldPath,true);
-		$criteria->compare('description',$this->description,true);
-		$criteria->compare('howToUse',$this->howToUse,true);
-		$criteria->compare('additionalSpec',$this->additionalSpec,true);
 		$criteria->compare('publishTime',$this->publishTime,true);
+		$criteria->compare('categoryId', $this->categoryId);
 		$criteria->compare('isOnSale',$this->isOnSale);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'sort'=>array(
+				'defaultOrder'=>'publishTime DESC',
+			),
+			'pagination'=>array(
+				'pageSize'=>10,
+			),
 		));
 	}
 }

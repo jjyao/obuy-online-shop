@@ -9,6 +9,16 @@ class ProductController extends AdminController
         );
 	}
 
+	public function actionIndex()
+	{
+		$product = new Product('search');
+		if(isset($_GET['Product']))
+		{
+			$product->attributes = $_GET['Product'];
+		}
+		$this->render('index', array('product'=>$product));
+	}
+
 	public function actionCreate()
 	{
 		$product = new Product;
@@ -113,11 +123,11 @@ class ProductController extends AdminController
 	{
 		return array(
 			array('allow',
-				'actions'=>array('create'),
+				'actions'=>array('index, create'),
 				'roles'=>array('admin'),
 			),
 			array('deny',
-				'actions'=>array('create'),
+				'actions'=>array('index, create'),
 				'users'=>array('*'),
 			),
 		);

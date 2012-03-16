@@ -66,19 +66,26 @@ class CategoryController extends AdminController
 			if($this->is_exist($categoryId))
 			{
 				$category = Category::model()->findByAttributes(array('id'=>$categoryId));
-				if($isCascade == 'true')
-				{					
-					$category->delete(); // default is cascade
+				if(!empty($category->products)) // there are products that depend on this category
+				{
+					header("HTTP/1.0 404 该分类下有商品，无法删除");
 				}
 				else
 				{
-					$parentId = $category->parentCategoryId;
-					foreach($category->subCategories as $subCategory)
-					{
-						$subCategory->parentCategoryId = $parentId;
-						$subCategory->save();
+					if($isCascade == 'true')
+					{					
+						$category->delete(); // default is cascade
 					}
-					$category->delete(); // all childs have changed their parent, so no child will be removed 
+					else
+					{
+						$parentId = $category->parentCategoryId;
+						foreach($category->subCategories as $subCategory)
+						{
+							$subCategory->parentCategoryId = $parentId;
+							$subCategory->save();
+						}
+						$category->delete(); // all childs have changed their parent, so no child will be removed 
+					}
 				}
 			}
 			else
@@ -89,12 +96,12 @@ class CategoryController extends AdminController
 	}
 
 	/**
-	 * Modify the name of category
+	 * Update the name of category
 	 * This function should be called by ajax
 	 * @param $_POST['categoryId'] specify the category
 	 * @param $_POST['name'] specify the new name
 	 */
-	public function actionModify()
+	public function actionUpdate()
 	{
 		if(Yii::app()->request->isAjaxRequest)
 		{
@@ -200,11 +207,11 @@ class CategoryController extends AdminController
 	{
 		return array(
 			array('allow',
-				'actions'=>array('index, create, get, delete, modify, move'),
+				'actions'=>array('index, create, get, delete, update, move'),
 				'roles'=>array('admin'),
 			),
 			array('deny',
-				'actions'=>array('index, create, get, delete, modify, move'),
+				'actions'=>array('index, create, get, delete, update, move'),
 				'users'=>array('*'),
 			),
 		);
