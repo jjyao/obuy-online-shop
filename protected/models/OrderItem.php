@@ -19,6 +19,11 @@
  */
 class OrderItem extends CActiveRecord
 {
+	const SUBMIT = 1;
+	const DELIVERY = 2;
+	const PAYMENT = 3;
+	const EVALUATION = 4;
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -73,14 +78,34 @@ class OrderItem extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'clientId' => 'Client',
-			'productId' => 'Product',
-			'count' => 'Count',
-			'unitPrice' => 'Unit Price',
-			'time' => 'Time',
-			'status' => 'Status',
+			'id' => '订单号',
+			'clientId' => '顾客',
+			'productId' => '产品',
+			'count' => '数量',
+			'unitPrice' => '单价',
+			'time' => '下单时间',
+			'status' => '状态',
 		);
+	}
+
+	public function statusLabels()
+	{
+		return array(
+			OrderItem::SUBMIT => '已提交',
+			OrderItem::DELIVERY => '已发货',
+			OrderItem::PAYMENT => '已付款',
+			OrderItem::EVALUATION => '已评价',
+		);
+	}
+
+	/**
+	 * Since PHP 5.4, it is possible to array dereference the result of a function or method call directly. 
+	 * Before it was only possible using a temporary variable, so.. you know why I write this function
+	 */
+	public function getStatusLabel($index)
+	{
+		$temp = $this->statusLabels();
+		return $temp[$index];
 	}
 
 	/**
@@ -94,7 +119,7 @@ class OrderItem extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
+		$criteria->compare('id',$this->id,false);
 		$criteria->compare('clientId',$this->clientId,true);
 		$criteria->compare('productId',$this->productId,true);
 		$criteria->compare('count',$this->count);

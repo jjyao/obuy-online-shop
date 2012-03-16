@@ -64,8 +64,7 @@ class Product extends CActiveRecord
 			array('imagePackageFile', 'file',
 				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => false, 'message'=>'图片包未上传'), // now only support zip package
 			array('description, howToUse, additionalSpec', 'safe'),
-			array('publishTime', 'safe', 'on'=>'search'),
-			array('isOnSale', 'safe', 'on'=>'search'),
+			array('publishTime, id, isOnSale', 'safe', 'on'=>'search'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, price, imageFoldPath, description, howToUse, additionalSpec, publishTime, isOnSale', 'safe', 'on'=>'search'),
@@ -118,6 +117,7 @@ class Product extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('id',$this->id,false);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('price',$this->price,true);
 		$criteria->compare('publishTime',$this->publishTime,true);

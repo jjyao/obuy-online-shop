@@ -5,26 +5,28 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/jquery-ea
 Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::app()->baseUrl.'/css/admin/category.less');
 ?>
 <article>
-	<section id="action_panel">
-		<button id='create' class="btn btn-primary">新建分类</button>
-		<button id='delete_no_cascade' class="btn btn-primary">删除分类</button>
-		<button id='delete_cascade' class="btn btn-primary">删除分类及子分类</button>
-		<button id='cancel_selection' class="btn btn-primary">取消选中</button>
-	</section>
-	<div class="row-fluid">
-		<ul id="category_tree" class="easyui-tree span7"></ul>
-		<section id="tips" class="span4 well">
-			<h3>Tips</h3>
-			<ul>
-				<li>新建分类：如果当前有选中的分类，则新建的分类会成为其子类。否则成为顶级分类</li>
-				<li>删除分类：仅仅删除选中分类，其子分类自动依附于其父类</li>
-				<li>删除分类及子分类：除了选中分类，其所有子类都将被删除</li>
-				<li>取消选中：不选中任何分类，这在创建顶级分类时有用</li>
-				<li>双击修改：双击某个分类，就可以修改分类名称</li>
-				<li>拖动调整：拖动分类来调整父子关系</li>
-			</ul>
-		</section> 
+<div class="row-fluid">
+	<div class="span8">
+		<section id="action_panel">
+			<button id='create' class="btn btn-primary">新建分类</button>
+			<button id='delete_no_cascade' class="btn btn-primary">删除分类</button>
+			<button id='delete_cascade' class="btn btn-primary">删除分类及子分类</button>
+			<button id='cancel_selection' class="btn btn-primary">取消选中</button>
+		</section>
+		<ul id="category_tree" class="easyui-tree"></ul>
 	</div>
+	<section id="tips" class="span3 well">
+		<h3>Tips</h3>
+		<ul>
+			<li>新建分类：如果当前有选中的分类，则新建的分类会成为其子类。否则成为顶级分类</li>
+			<li>删除分类：仅仅删除选中分类，其子分类自动依附于其父类</li>
+			<li>删除分类及子分类：除了选中分类，其所有子类都将被删除</li>
+			<li>取消选中：不选中任何分类，这在创建顶级分类时有用</li>
+			<li>双击修改：双击某个分类，就可以修改分类名称</li>
+			<li>拖动调整：拖动分类来调整父子关系</li>
+		</ul>
+	</section>
+</div>
 </article>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery-easyui/jquery.easyui.min.js"></script>
 <script type="text/javascript">

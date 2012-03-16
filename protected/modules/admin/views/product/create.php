@@ -56,6 +56,19 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 
 	<span class="clearfix"></span>
 <?php $this->endWidget(); ?>
+
+<section id="create_product_tips" class="span3 well">
+	<h3>Tips</h3>
+	<ul>
+		<li>名称：需要是唯一的</li>
+		<li>价格：最多小数点后两位。例子：35.90; 45.9; 34</li>
+		<li>图片：只支持zip包，里面仅能放jpg, png图片文件。图片命名规则：商品名_宽_高.后缀</li>
+		<li>描述：可选，但最好提供，以給用户更好的说明</li>
+		<li>使用说明：可选，但推荐填写</li>
+		<li>附加说明：可选</li>
+		<li>分类：选择分类树中的一条</li>
+	</ul>
+<section>
 </div>
 <!-- load tinymce rich text editor and init text area -->
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>

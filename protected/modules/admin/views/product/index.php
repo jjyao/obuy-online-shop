@@ -9,6 +9,10 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		'filter'=>$product,
 		'columns'=>array(
 			array(
+				'name'=>'id',
+				'sortable'=>false,
+			),
+			array(
 				'name'=>'name',
 				'sortable'=>false,
 			),

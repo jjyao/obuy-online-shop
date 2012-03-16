@@ -80,11 +80,11 @@ create table if not exists order_item(
 	id bigint(10) primary key auto_increment,
 	clientId bigint(10) not null,
 	productId bigint(10) not null,
-	count integer(10) default 1, -- default client buy one product
+	count integer(10) not null,
 	unitPrice decimal(10, 2) not null, -- product unit price when the client placed the order
 	time timestamp default current_timestamp, -- order time
 	deliveryAddress varchar(511) not null, 
-	status integer(5) not null, -- the order's status like wait, delivery, payment, evaluation 
+	status integer(5) not null, -- the order's status like submit, delivery, payment, evaluation 
 	foreign key (clientId) references client(id) on delete cascade,
 	foreign key (productId) references product(id) on delete cascade
 );
@@ -126,3 +126,11 @@ insert into category (name, parentCategoryId) values ('平板', 1);
 insert into category (name, parentCategoryId) values ('戴尔', 4);
 insert into category (name, parentCategoryId) values ('联想', 4);
 insert into category (name, parentCategoryId) values ('华硕', 4);
+
+-- product fake data
+insert into product (name, price, imageFoldPath, categoryId, description, howToUse, additionalSpec, isOnSale) values('格力空调', '149.0', 'L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\1', 3, 'good', 'good', 'good', 1);
+insert into product (name, price, imageFoldPath, categoryId, description, howToUse, additionalSpec, isOnSale) values('Gree空调', '159.0', 'L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\2', 3, 'good', 'good', 'good', 1);
+
+-- order fake data
+insert into order_item (clientId, productId, count, unitPrice, deliveryAddress, status) values (1, 1, 2, '149.0', 'Suzhou', 1);
+insert into order_item (clientId, productId, count, unitPrice, deliveryAddress, status) values (1, 2, 1, '149.0', 'Suzhou', 1);
