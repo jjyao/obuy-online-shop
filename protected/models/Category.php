@@ -77,6 +77,42 @@ class Category extends CActiveRecord
 	}
 
 	/**
+	 * This function get all sub categories id
+	 * @param $categoryId the root category
+	 * @return an array of category id
+	 */
+	public static function getSubCategories($categoryId)
+	{
+		$result = array();
+		if(Category::isExist($categoryId))
+		{
+			$category = Category::model()->findByAttributes(array('id'=>$categoryId));
+			foreach($category->subCategories as $subCategory)
+			{
+				$result[] = $subCategory->id;
+				$result = array_merge($result, Category::getSubCategories($subCategory->id));
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Determine whether a given category exists
+	 */
+	public static function isExist($id)
+	{
+		$category = Category::model()->findByAttributes(array('id'=>$id));
+		if(is_null($category))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
 	 */

@@ -121,8 +121,15 @@ class Product extends CActiveRecord
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('price',$this->price,true);
 		$criteria->compare('publishTime',$this->publishTime,true);
-		$criteria->compare('categoryId', $this->categoryId);
 		$criteria->compare('isOnSale',$this->isOnSale);
+
+		$categories = array();
+		if(Category::isExist($this->categoryId))
+		{		
+			$categories = Category::getSubCategories($this->categoryId);
+			$categories[] = $this->categoryId;
+			$criteria->addInCondition('categoryId', $categories);
+		}
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
