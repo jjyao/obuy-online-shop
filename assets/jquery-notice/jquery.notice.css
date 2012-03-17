@@ -1,0 +1,35 @@
+.notice-item {
+	background: #333;
+	opacity: 0.8;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-left-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+	top: 0;
+	left: 50%;
+	z-index: 9999;
+	padding:0 12px 0 12px;
+	margin-left: -125px;
+	font-size: 13px;
+	height: 35px;
+	width: 250px;
+	line-height: 35px;
+	position: fixed;
+	text-align: center;
+	font-weight: bold;
+}
+
+.notice-item.success {
+	background: #DFF0D8;
+	color: #468847;
+}
+
+.notice-item-close {
+	position: absolute;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	right: 6px;
+	top: 6px;
+	cursor: pointer;
+}

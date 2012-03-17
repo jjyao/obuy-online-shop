@@ -3920,3 +3920,169 @@ in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
 2012/03/17 20:35:29 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:04:38 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:04:38 [error] [php] rmdir(L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\3\) [<a href='function.rmdir'>function.rmdir</a>]: Directory not empty (L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php:71)
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionCreate()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): ProductController->runAction()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): ProductController->filterAccessControl()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): ProductController->runActionWithFilters()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): ProductController->run()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/product/create
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (71)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (43)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:08:48 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:08:57 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:08:58 [error] [php] unlink(L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\4\\.) [<a href='function.unlink'>function.unlink</a>]: Permission denied (L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php:74)
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionCreate()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): ProductController->runAction()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): ProductController->filterAccessControl()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): ProductController->runActionWithFilters()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): ProductController->run()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/product/create
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (74)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (43)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:13:40 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:13:51 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:13:51 [error] [php] unlink(L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\5\.) [<a href='function.unlink'>function.unlink</a>]: Permission denied (L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php:74)
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionCreate()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): ProductController->runAction()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): ProductController->filterAccessControl()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): ProductController->runActionWithFilters()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): ProductController->run()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/product/create
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (74)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (43)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:14:56 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:14:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "admin/admin/product/create"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/admin/pro...')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/admin/product/create
+HTTP_REFERER=http://obuy.localhost/index.php/admin/product/create
+---
+2012/03/17 21:16:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "admin/admin/product/create"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/admin/pro...')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/admin/product/create
+---
+2012/03/17 21:17:30 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:19:51 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:20:00 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:20:07 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:21:10 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:21:10 [error] [php] unlink(L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\3\.) [<a href='function.unlink'>function.unlink</a>]: Permission denied (L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php:74)
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionCreate()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): ProductController->runAction()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): ProductController->filterAccessControl()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): ProductController->runActionWithFilters()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): ProductController->run()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/product/create
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (74)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (43)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:23:17 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:23:18 [error] [php] closedir() expects parameter 1 to be resource, string given (L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php:80)
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionCreate()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): ProductController->runAction()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): ProductController->filterAccessControl()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): ProductController->runActionWithFilters()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): ProductController->run()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/admin/product/create
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (80)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (43)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:23:57 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:29:03 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:38:23 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 21:38:59 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 22:32:57 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 22:33:22 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)

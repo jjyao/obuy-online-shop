@@ -102,5 +102,16 @@ tinyMCE.init({
 		},
 	});
 </script>
+<?php if(Yii::app()->user->hasFlash('product_create_success')): ?>
+<?php Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/assets/jquery-notice/jquery.notice.css'); ?>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery-notice/jquery.notice.js"></script>
+<script type="text/javascript">
+	jQuery.noticeAdd({
+		text: '<?php echo Yii::app()->user->getFlash("product_create_success"); ?>',
+		stay: false,
+		type: 'success',
+	});
+</script>
+<?php endif; ?>
 </article>
 

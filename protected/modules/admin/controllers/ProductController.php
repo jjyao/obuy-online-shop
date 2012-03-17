@@ -39,14 +39,13 @@ class ProductController extends AdminController
 					$product->imageFoldPath = "";
 					$product->save(false);
 
-					$product->imageFoldPath = Yii::app()->basePath . DIRECTORY_SEPARATOR. 'data' . DIRECTORY_SEPARATOR . 'product_image' . DIRECTORY_SEPARATOR . $product->id . DIRECTORY_SEPARATOR;
+					$product->imageFoldPath = Yii::app()->basePath . DIRECTORY_SEPARATOR. 'data' . DIRECTORY_SEPARATOR . 'product_image' . DIRECTORY_SEPARATOR . $product->id;
 					$this->extractPackageTo($product->imagePackageFile, $product->imageFoldPath);
 					$product->save(false);
 
-					// TODO 
-					echo "Create product successfully";
-					Yii::app()->end();
-
+					// TODO
+					Yii::app()->user->setFlash('product_create_success', '商品创建成功');
+					$this->redirect(array('product/create'));
 				}
 				else
 				{
@@ -69,7 +68,16 @@ class ProductController extends AdminController
 		// remove target fold if exists and create an empty one
 		if(is_dir($targetFold))
 		{
+			$handle = opendir($targetFold);
+			while($file = readdir($handle))
+			{
+				if($file != '.' && $file != '..')
+				{
+					unlink($targetFold . DIRECTORY_SEPARATOR . $file);
+				}
+			}
 			rmdir($targetFold);
+			closedir($handle);
 		}	
 		mkdir($targetFold, 0777, true);
 
@@ -79,7 +87,7 @@ class ProductController extends AdminController
 			while($zip_entry = zip_read($zipFile))
 			{
 				$zip_entry_name = zip_entry_name($zip_entry);
-				$targetFile = $targetFold . basename($zip_entry_name);
+				$targetFile = $targetFold . DIRECTORY_SEPARATOR . basename($zip_entry_name);
 				touch($targetFile);
 				$openFile = fopen($targetFile, 'w+');
 				fwrite($openFile, zip_entry_read($zip_entry, zip_entry_filesize($zip_entry)));
