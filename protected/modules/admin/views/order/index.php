@@ -74,9 +74,10 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	));?>
 	<section class="modal-body">
 		<?php $attributesArray = $order->attributeLabels(); ?>
-
-		<?php echo $form->errorSummary(array($order), NULL, NULL, array('class'=>'alert alert-error')); ?>
-		
+		<div id = "update_order_error_alert" class="alert alert-error">
+			<p>请更正下列输入错误:</p>
+			<ul></ul>		
+		</div>
 		<div class="row-fluid">
 			<div class="span6">
 				<label>
@@ -124,7 +125,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	</section><!-- modal-body -->
 	<section class="modal-footer">
 		<a href="#" id="modal_close" class="btn">关闭</a>
-		<button type="submit" class="btn btn-primary">保存并关闭</button>
+		<a href="#" id="sumbit_order_update" class="btn btn-primary">保存并关闭</a>
 	</section><!-- modal-footer -->
 	<?php $this->endWidget(); ?><!-- form -->
 </section><!-- modal -->
@@ -133,7 +134,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/bootstrap/js/bootstrap-modal.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/bootstrap/js/bootstrap-transition.js"></script>
 <script type="text/javascript">
-	$('button#update').on('click', function(e){
+	$('#update').on('click', function(e){
 		if($('#order_grid_view tr.selected').length == 0){
 			alert("未选中任何订单");
 		}
@@ -198,5 +199,63 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	
 	$('#modal_close').on('click', function(e){
 		$('#order_modal').modal('hide');
+	});
+
+	$('#sumbit_order_update').on('click', function(e){
+		$.ajax({
+			url: '<?php echo Yii::app()->getUrlManager()->createUrl("admin/order/update")?>',
+			type: 'post',
+			dataType: 'json',
+			data: {
+				'<?php echo get_class($order) . '[id]' ?>' : $('#orderId_dispaly').text(),
+				'<?php echo get_class($order) . '[count]' ?>' : $('#count_input').val(),
+				'<?php echo get_class($order) . '[unitPrice]' ?>' : $('#unitPrice_input').val(),
+				'<?php echo get_class($order) . '[deliveryAddress]' ?>' : $('#deliveryAddress_input').val(),
+				'<?php echo get_class($order) . '[status]' ?>' : $('#status_input').val(),
+			},
+			success: function(data){
+				if(data.result == 'success'){
+					$('#order_modal').modal('hide');
+					$('#update_order_error_alert').hide();
+					$('#order_grid_view').yiiGridView.update('order_grid_view');
+				}
+				else{
+					$('#update_order_error_alert ul').children().remove();
+					var i;
+					var j;
+					for(i in data.errors){
+						for(j in data.errors[i]){
+							$('#update_order_error_alert ul').append('<li>' + (data.errors[i])[j] + '</li>');
+						}
+					}
+					$('#update_order_error_alert').show();
+				}
+			},
+			error: function(request, status, error){
+				alert(status + ": " + error);
+			}
+		});
+	});
+
+	$('#delete').on('click', function(e){
+		if($('#order_grid_view tr.selected').length == 0){
+			alert("未选中任何订单");
+		}
+		else{		
+			$.ajax({
+				url: '<?php echo Yii::app()->getUrlManager()->createUrl("admin/order/delete")?>',
+				type: 'post',
+				dataType: 'json',
+				data: {
+					id: $('#order_grid_view tr.selected td::nth-child(1)').text(),
+				},
+				success: function(data){
+					$('#order_grid_view').yiiGridView.update('order_grid_view');
+				},
+				error: function(request, status, error){
+					alert(status + ": " + error);
+				}
+			});
+		}
 	});
 </script>

@@ -3760,3 +3760,163 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/index.php/admin/order/update/1
 ---
+2012/03/17 17:00:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "admin/client"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/client')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin/client/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/03/17 17:05:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/upd...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/order/update
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/03/17 19:33:43 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:33:45 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:33:46 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:33:46 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:34:26 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:34:54 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:35:26 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:36:14 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:37:00 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:38:45 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:42:09 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:56:07 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:56:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '209.00asdf' for column 'unitPrice' at row 1. The SQL statement executed was: UPDATE `order_item` SET `id`=:yp0, `clientId`=:yp1, `productId`=:yp2, `count`=:yp3, `unitPrice`=:yp4, `time`=:yp5, `deliveryAddress`=:yp6, `status`=:yp7 WHERE `order_item`.`id`='1'.
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (39)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:56:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '209.00asdf' for column 'unitPrice' at row 1. The SQL statement executed was: UPDATE `order_item` SET `id`=:yp0, `clientId`=:yp1, `productId`=:yp2, `count`=:yp3, `unitPrice`=:yp4, `time`=:yp5, `deliveryAddress`=:yp6, `status`=:yp7 WHERE `order_item`.`id`='1'' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php:354
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(1681): CDbCommand->execute()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(1061): CActiveRecord->updateByPk('1', Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(787): CActiveRecord->update(NULL)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php(39): CActiveRecord->save()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): OrderController->actionUpdate()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/upd...')
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/admin/order/update
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/03/17 19:58:01 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:58:11 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 19:59:46 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:01:01 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:01:35 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:02:09 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:03:20 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:03:27 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:06:44 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:06:56 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:01 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:04 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:08 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:11 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:15 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:17 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:19 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:34 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:36 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:07:41 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:19:23 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:19:35 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:19:40 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:19:45 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:35:22 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/17 20:35:29 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)

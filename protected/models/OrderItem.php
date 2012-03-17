@@ -50,9 +50,11 @@ class OrderItem extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('clientId, productId, unitPrice, time, status', 'required'),
+			array('count, status, unitPrice, deliveryAddress', 'required', 'on'=>'update'),
 			array('count, status', 'numerical', 'integerOnly'=>true),
-			array('clientId, productId, unitPrice', 'length', 'max'=>10),
+			array('unitPrice', 'length', 'max'=>10),
+			array('unitPrice', 'match', 'pattern'=>'/^[0-9]+(\.[0-9][0-9]?)?$/', 'message'=>'价格格式不对'),
+			array('status', 'in', 'allowEmpty'=>false, 'range'=>array_keys($this->statusLabels())),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, clientId, productId, count, unitPrice, time, status, deliveryAddress', 'safe', 'on'=>'search'),

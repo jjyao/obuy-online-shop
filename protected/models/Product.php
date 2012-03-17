@@ -59,7 +59,7 @@ class Product extends CActiveRecord
 			array('name', 'length', 'max'=>511),
 			array('price', 'length', 'max'=>10),
 			array('price', 'type', 'type'=>'float'),
-			array('price', 'match', 'pattern'=>'/[0-9]+(\.[0-9][0-9]?)?/', 'message'=>'价格格式不对，请参见Tips'),
+			array('price', 'match', 'pattern'=>'/^[0-9]+(\.[0-9][0-9]?)?$/', 'message'=>'价格格式不对，请参见Tips'),
 			array('imagePackageFile', 'unsafe'),
 			array('imagePackageFile', 'file',
 				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => false, 'message'=>'图片包未上传'), // now only support zip package
