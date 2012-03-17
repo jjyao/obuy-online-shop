@@ -3652,3 +3652,111 @@ REQUEST_URI=/index.php/admin/order/index
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\order\index.php (48)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (19)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:26:56 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:26:59 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:27:05 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:27:08 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:27:14 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:27:43 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:27:46 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:27:50 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:28:08 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:28:15 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 19:28:18 [warning] [application] Failed to set unsafe attribute "deliveryAddress" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/16 22:25:16 [error] [exception.CException] exception 'CException' with message 'OrderController 在它的 view "L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\order\index.php" 中含有未被适当巢状套叠的 widget 标签. CActiveForm widget 中没有呼叫 endWidget().' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php:102
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php(19): CController->render('index', Array)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): OrderController->actionIndex()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('index')
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/ind...')
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/admin/order/index
+---
+2012/03/17 16:08:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/upd...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/order/update/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/03/17 16:18:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/upd...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/order/update/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/03/17 16:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/upd...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/order/update/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/03/17 16:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/upd...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/order/update/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/03/17 16:20:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/upd...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/order/update/1
+---

@@ -55,7 +55,7 @@ class OrderItem extends CActiveRecord
 			array('clientId, productId, unitPrice', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, clientId, productId, count, unitPrice, time, status', 'safe', 'on'=>'search'),
+			array('id, clientId, productId, count, unitPrice, time, status, deliveryAddress', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -84,6 +84,7 @@ class OrderItem extends CActiveRecord
 			'count' => '数量',
 			'unitPrice' => '单价',
 			'time' => '下单时间',
+			'deliveryAddress' => '送货地址',
 			'status' => '状态',
 		);
 	}
@@ -120,15 +121,22 @@ class OrderItem extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,false);
-		$criteria->compare('clientId',$this->clientId,true);
-		$criteria->compare('productId',$this->productId,true);
-		$criteria->compare('count',$this->count);
-		$criteria->compare('unitPrice',$this->unitPrice,true);
+		$criteria->compare('clientId',$this->clientId,false);
+		$criteria->compare('productId',$this->productId,false);
+		$criteria->compare('count',$this->count, false);
+		$criteria->compare('deliveryAddress',$this->deliveryAddress, true);
+		$criteria->compare('unitPrice',$this->unitPrice,false);
 		$criteria->compare('time',$this->time,true);
 		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'sort'=>array(
+				'defaultOrder'=>'time DESC',
+			),
+			'pagination'=>array(
+				'pageSize'=>10,
+			),
 		));
 	}
 }

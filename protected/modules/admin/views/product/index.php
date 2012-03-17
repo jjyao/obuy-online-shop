@@ -2,7 +2,7 @@
 $this->pageTitle=Yii::app()->name . ' - 商品列表';
 Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::app()->baseUrl.'/css/admin/product.less');
 ?>
-
+<article>
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 		'id'=>'product_grid_view',
 		'dataProvider'=>$product->search(),
@@ -48,3 +48,4 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		),
 	));
 ?>
+<article>
