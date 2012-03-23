@@ -4086,3 +4086,485 @@ in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
 2012/03/17 22:33:22 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/03/20 11:03:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:05:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:06:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+---
+2012/03/20 11:06:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+---
+2012/03/20 11:09:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:10:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:13:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:13:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:13:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:14:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:15:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:17:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:23:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/20 11:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:16:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:19:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:23:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:38:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/22 10:38:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:30:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:31:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:31:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:33:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:37:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:38:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:39:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:42:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:43:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:44:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
+2012/03/23 22:45:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view
+---
