@@ -4,6 +4,19 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/cloud-zoo
 Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::app()->baseUrl.'/css/product.less');
 ?>
 <article class="container">
+<nav class="breadcrumbs">
+<ul>
+	<li class="first">
+	<a href="" style="z-index: 9;">
+		<span class="left_yarn" style="z-index: 11;"></span>
+		首页
+	</a>
+	</li>
+	<li>
+	<a href="" style="z-index: 8;">首页</a>
+	</li>
+</ul>
+</nav>
 <section>
 	<section id="image_section">
 		<?php
