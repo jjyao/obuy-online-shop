@@ -114,7 +114,7 @@ class Product extends CActiveRecord
 		// Warning: Please modify the following code to remove attributes that
 		// should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
 		$criteria->compare('id',$this->id,false);
 		$criteria->compare('name',$this->name,true);
@@ -139,5 +139,76 @@ class Product extends CActiveRecord
 				'pageSize'=>10,
 			),
 		));
+	}
+
+	public static function is_exist($productId, $isOnSale = Product::ON_SALE)
+	{
+		$product = Product::model()->findByAttributes(array('id'=>$productId, 'isOnSale'=>$isOnSale));
+		if(is_null($product))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+	/**
+	 * @return an array of image file name
+	 */
+	public function getImages()
+	{
+		$images = array();
+		$dir = opendir($this->imageFoldPath);
+		while(($file = readdir($dir)) !== false)
+		{
+			if($file != '.' && $file != '..' && !in_array($file, $images))
+			{
+				$images[] = $file;
+			}
+		}
+
+		return $images;
+	}
+
+	/**
+	 * image triples is an array of images for preview, contains ['tiny'], ['small'], ['large']
+	 * @return an array of image triples
+	 */
+	public function getImageTriples()
+	{
+		$result = array();
+		$images = $this->getImages();
+		foreach($images as $image)
+		{
+			$base = pathinfo($image, PATHINFO_FILENAME);
+			$extension = pathinfo($image, PATHINFO_EXTENSION);
+			if(preg_match('/(.*)_tiny$/', $base, $matches))
+			{
+				if(in_array($matches[1] . '_small.' . $extension, $images) && 
+				   in_array($matches[1] . '_large.' . $extension, $images))
+				{
+					$triple = array();
+					$triple['tiny'] = $matches[1] . '_tiny.' . $extension;
+					$triple['small'] = $matches[1] . '_small.' . $extension;
+					$triple['large'] = $matches[1] . '_large.' . $extension;
+
+					$result[] = $triple;
+				}
+			}
+		}
+
+		return $result;
+	}
+
+
+	/**
+     *	@return base url for product image fold
+     */
+	public function getImageBaseUrl()
+	{
+		$baseUrl = Yii::app()->request->baseUrl . '/protected/data/product_image/' . $this->id;
+		return $baseUrl;
 	}
 }
