@@ -5,16 +5,29 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 ?>
 <article class="container">
 <nav class="breadcrumbs">
+<?php
+	// get all ancestor categories
+	$categories = array();
+	$category = $product->category;
+	$categories[] = $category;
+	if($category->parentCategory != null)
+	{
+		$category = $category->parentCategory;
+		array_unshift($categories, $category);
+	}
+?>
 <ul>
 	<li class="first">
-	<a href="" style="z-index: 9;">
-		<span class="left_yarn" style="z-index: 11;"></span>
+	<a href="<?php echo Yii::app()->createUrl("site/index") ?>" style="z-index: <?php echo (count($categories) + 1) ?>;">
+		<span class="left_yarn" style="z-index: <?php echo (count($categories) + 2) ?>;"></span>
 		首页
 	</a>
 	</li>
+	<?php for($i = 0; $i < count($categories); $i++): ?>
 	<li>
-	<a href="" style="z-index: 8;">首页</a>
+	<a href="<?php echo Yii::app()->createUrl("category/view", array("id"=>$categories[$i]->id)) ?>" style="z-index: <?php echo (count($categories) - $i) ?>;"><?php echo $categories[$i]->name ?></a>
 	</li>
+	<?php endfor; ?>
 </ul>
 </nav>
 <section>

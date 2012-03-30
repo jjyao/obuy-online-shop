@@ -126,7 +126,7 @@ insert into category (name, parentCategoryId) values ('平板', 1);
 insert into category (name, parentCategoryId) values ('戴尔', 4);
 insert into category (name, parentCategoryId) values ('联想', 4);
 insert into category (name, parentCategoryId) values ('华硕', 4);
-
+insert into category (name, parentCategoryId) values ('洗衣机', 3);
 -- product fake data
 insert into product (name, price, imageFoldPath, categoryId, description, howToUse, additionalSpec, isOnSale) values('格力空调', '149.0', 'L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\1', 3, 'good', 'good', 'good', 1);
 insert into product (name, price, imageFoldPath, categoryId, description, howToUse, additionalSpec, isOnSale) values('Gree空调', '159.0', 'L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\2', 3, 'good', 'good', 'good', 1);

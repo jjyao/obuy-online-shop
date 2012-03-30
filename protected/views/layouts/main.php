@@ -76,17 +76,6 @@
 			<p>南京市公安局鼓楼分局备案编号：000000000000 宁ICP证101010号</p>
 			<p>Copyright &copy;2012 买么事 版权所有</p>
 		</div>
-		<div id="ilinks">
-			<a href="#" target="_blank">
-				<img src="<?php echo Yii::app()->baseUrl . '/images/gov_1.gif' ?>" width="108" height="40">
-			</a>
-			<a href="#" target="_blank">
-				<img src="<?php echo Yii::app()->baseUrl . '/images/gov_2.jpg' ?>" width="112" height="40">
-			</a>
-			<a href="#" target="_blank">
-				<img src="<?php echo Yii::app()->baseUrl . '/images/gov_3.jpg' ?>" width="108" height="40">
-			</a>
-		</div>
 	</footer>
 	<div id="back_to_top" onclick="window.scrollTo(0, 0); return false;">
 	</div>
