@@ -29,7 +29,22 @@ class SiteController extends Controller
 	{
 		$path = Yii::getPathOfAlias('application.data.auth').'.php';
 		$this->layout = '//layouts/main_with_header';
-		$this->render('index');
+
+		// get newest products, hotest products and recommended products
+		// TODO fake data
+		$newestProducts = array();
+		$hotestProducts = array();
+		$recommendedProducts = array();
+		$product = Product::model()->findByAttributes(array('id'=>12));	
+		for($i = 0; $i < 8; $i++)
+		{
+			$newestProducts[] = $product;
+		}
+		$hotestProducts = $newestProducts;
+		$recommendedProducts = $newestProducts;
+		$this->render('index', array('newestProducts'=>$newestProducts, 
+									 'hotestProducts'=>$hotestProducts,
+									 'recommendedProducts'=>$recommendedProducts));
 	}
 
 	/**
@@ -156,5 +171,36 @@ class SiteController extends Controller
 		// display the login form
 		$this->layout = '//layouts/main';
 		$this->render('register',array('model'=>$model));
+	}
+
+	public function actionSearch()
+	{
+		$condition = array();
+		$params = array();
+
+		$condition[] = 'isOnSale = :isOnSale';
+		$condition[] = '(name LIKE :query OR price LIKE :query OR description LIKE :query OR
+						 howToUse LIKE :query OR additionalSpec LIKE :query)';
+
+		$params[':query'] = $_GET['query'];
+		// escape % and _ 
+		str_replace('%', '\%', $params[':query']);
+		str_replace('_', '\_', $params[':query']);
+		// not exact match
+		$params[':query'] = "%" . $params[':query'] . "%";
+		$params['isOnSale'] = Product::ON_SALE;
+
+		$criteria = new CDbCriteria;
+		$criteria->condition = implode(' AND ', $condition);
+		$criteria->params = $params;
+
+		$dataProvider = new CActiveDataProvider('Product', array(
+			'criteria'=>$criteria,
+			'pagination'=>array(
+				'pageSize'=>10,
+			),
+		));
+
+		$this->render('search', array('dataProvider'=>$dataProvider));
 	}
 }

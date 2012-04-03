@@ -7509,3 +7509,1597 @@ Stack trace:
 REQUEST_URI=/index.php/product/view/
 HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
 ---
+2012/03/31 11:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view
+---
+2012/03/31 11:33:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/03/31 11:35:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view
+---
+2012/03/31 11:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/03/31 11:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/03/31 11:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/03/31 11:40:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/03/31 11:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 11:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:11:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 12:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_3.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_4.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_2.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_1.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_5.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "img" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('img')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('img')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/img/produc...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/product_6.jpg
+HTTP_REFERER=http://obuy.localhost/index.php/site/index
+---
+2012/03/31 13:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/12
+---
+2012/03/31 22:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/12
+---
+2012/03/31 23:12:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/12
+---
+2012/04/02 10:09:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view
+---
+2012/04/02 10:09:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:38:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+---
+2012/04/02 10:39:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:39:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:39:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 10:45:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 11:25:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/02 14:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/03 09:41:10 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `product` `t` WHERE isOnSale = :isOnSale AND (name LIKE :string OR price LIKE :query OR description LIKE :query OR
+						 howToUse LIKE :query OR additionalSpec LIKE :query).
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\site\search.php (6)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php (204)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/03 09:41:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT COUNT(*) FROM `product` `t` WHERE isOnSale = :isOnSale AND (name LIKE :string OR price LIKE :query OR description LIKE :query OR
+						 howToUse LIKE :query OR additionalSpec LIKE :query)' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php:528
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(1536): CDbCommand->queryScalar()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CDataProvider.php(181): CDataProvider->getData(false)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CComponent.php(112): CDataProvider->getItemCount()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\site\search.php(6): CComponent->__get('itemCount')
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('search', Array, true)
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(204): CController->render('search', Array)
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionSearch()
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('search')
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/search')
+#20 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/site/search
+---
+2012/04/03 09:55:35 [error] [exception.CException] exception 'CException' with message 'SiteController 无法找到请求的视图 "_product_item".' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:879
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CListView.php(242): CController->renderPartial('_product_item', Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(158): CListView->renderItems()
+#2 [internal function]: CBaseListView->renderSection(Array)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{items}?{pager}')
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(174): CBaseListView->run()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\site\search.php(12): CBaseController->widget('zii.widgets.CLi...', Array)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('search', Array, true)
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(205): CController->render('search', Array)
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionSearch()
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('search')
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/search/que...')
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/site/search/query/%E6%B4%97%E8%A1%A3%E6%9C%BA
+---
+2012/04/03 09:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/03 09:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/03 09:59:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/03 10:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/03 10:18:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/03 10:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/03 10:18:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/03 10:53:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/13
+---
+2012/04/03 10:54:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/13
+---

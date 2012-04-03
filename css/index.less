@@ -4,7 +4,7 @@
 #category_nav
 {
 	padding: 3px 3px 3px 0;
-	background: #FCF4EA;
+	background: #FFF8ED;
 	border-left: solid #D00000;
 	border-right: solid #D00000;
 	border-bottom: solid #D00000;
@@ -47,4 +47,33 @@
 	padding: 0 10px 0 0;
 	background: url("../images/sprite/css_sprite_4.jpg") no-repeat 0 -237px;
 	line-height: @product_section_title_height;
+}
+
+.product_list{
+	border: 1px solid #E6E6E6;
+	border-top-width: 0;
+	text-align: center;
+	list-style: none;
+	margin: 0;
+}
+
+.product_list li{
+	width: 222px;
+	height: 179px;
+	float: left;
+	padding: 0 10px 5px 10px;
+	background: url("../images/sprite/css_sprite_4.jpg") repeat-x 0 -420px;
+}
+
+.product_list li.first{
+	background: none;
+}
+
+.product_list li .product_img{
+	margin: 10px 0 10px 0;
+	text-align: center;
+}
+
+.product_list li.first .product_img{
+	margin: 20px 0 0 0;
 }

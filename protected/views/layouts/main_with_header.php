@@ -5,9 +5,9 @@
 	</figure>
 	<section id="search_section">
 		<div class="search_bar">
-			<form target="_top" name="search" action="#" id="search_form">
+			<form target="_top" name="search" action="<?php echo Yii::app()->getUrlManager()->createUrl("site/search") ?>" method="get" id="search_form">
 				<div class="search_text_wrapper">
-					<input type="text" id="search_text" x-webkit-speech x-webkit-grammar="builtin: translate">
+					<input type="text" id="search_text" name="query" x-webkit-speech x-webkit-grammar="builtin: translate">
 				</div>
 				<button type="submit" id="search_submit">
 				</button>

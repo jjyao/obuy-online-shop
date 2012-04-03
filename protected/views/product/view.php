@@ -72,7 +72,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			<li>
 				<div id="product_price">
 					商品价格: 
-					<span><?php echo $product->price ?></span>
+					<span>￥<?php echo $product->price ?></span>
 				</div>
 			</li>
 			<li class="last">
@@ -92,7 +92,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 					?>
 					<span class="pull-left">商品评分: </span>
 					<div class="star star<?php echo $score ?> pull-left"></div>
-					<a href="#comments">(已有<?php echo count($product->evaluations) ?>人评价)</a>
+					<a href="#product_evaluation_section">(已有<?php echo count($product->evaluations) ?>人评价)</a>
 				</div>
 			</li>
 		</ul>
@@ -120,17 +120,17 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		<ul class="nav nav-tabs">
 			<?php if ($showDesc): ?>
 			<li class="active">
-				<a href="#product_description" data-toggle="tab">产品描述</a>
+				<a href="#product_description" data-toggle="tab"><span class="label label-info">产品描述</span></a>
 			</li>
 			<?php endif; ?>
 			<?php if ($showHowToUse) : ?>
 			<li>
-				<a href="#product_how_to_use" data-toggle="tab">使用说明</a>
+				<a href="#product_how_to_use" data-toggle="tab"><span class="label label-info">使用说明</span></a>
 			</li>
 			<?php endif; ?>
 			<?php if ($showAdditionalSpec): ?>
 			<li>
-				<a href="#product_additional_spec" data-toggle="tab">附加说明</a>
+				<a href="#product_additional_spec" data-toggle="tab"><span class="label label-info">附加说明</span></a>
 			</li>
 			<?php endif; ?>
 		</ul>
@@ -157,7 +157,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	<div class="tabbable">
 		<ul class="nav nav-tabs">
 			<li class="active">
-				<a href="#product_comments" data-toggle="tab">全部评论(<?php echo count($product->evaluations) ?>)</a>
+				<a href="#product_comments" data-toggle="tab"><span class="label label-info">全部评论(<?php echo count($product->evaluations) ?>)</span></a>
 			</li>
 			<li>
 				<?php
@@ -167,7 +167,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 															  	'productId' => $product->id,
 															  	));
 				?>
-				<a href="#product_good_comments" data-toggle="tab">好评(<?php echo $good_comment_num ?>)</a>
+				<a href="#product_good_comments" data-toggle="tab"><span class="label label-info">好评(<?php echo $good_comment_num ?>)</span></a>
 			</li>
 			<li>
 				<?php
@@ -177,7 +177,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 																	'productId' => $product->id,
 																));
 				?>
-				<a href="#product_medium_comments" data-toggle="tab">中评(<?php echo $medium_comment_num ?>)</a>
+				<a href="#product_medium_comments" data-toggle="tab"><span class="label label-info">中评(<?php echo $medium_comment_num ?>)</span></a>
 			</li>
 			<li>
 				<?php
@@ -187,7 +187,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 																	'productId' => $product->id,
 																));
 				?>
-				<a href="#product_bad_comments" data-toggle="tab">差评(<?php echo $bad_comment_num ?>)</a>
+				<a href="#product_bad_comments" data-toggle="tab"><span class="label label-info">差评(<?php echo $bad_comment_num ?>)</span></a>
 			</li>
 		</ul>
 		<div class="tab-content">
