@@ -41,8 +41,8 @@
 			</div>
 		</div>
 		<ul id="navitems" class="span7 pull-left">
-			<li>
-				<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>">首页</a>
+			<li class="<?php echo (((Yii::app()->controller->getId().'/'.Yii::app()->controller->getAction()->getId()) == 'site/index')? 'active' : '' )?>">
+				<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>" >首页</a>
 			</li>
 			<li>
 				<a href="#">团购</a>
