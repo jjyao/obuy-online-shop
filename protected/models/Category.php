@@ -113,6 +113,27 @@ class Category extends CActiveRecord
 	}
 
 	/**
+	 * Get the menu representation of this category
+	 * Example: <li><a href="#">XXX</a></li>
+	 */
+	public function getMenuRepresent()
+	{
+		$result = '<li><a href="' . Yii::app()->createUrl("category/view", array('id'=>$this->id)) . '">' . $this->name .'</a>';
+		if(count($this->subCategories) > 0)
+		{
+			$result = $result . '<ul>';
+			foreach($this->subCategories as $category)
+			{
+				$result = $result . $category->getMenuRepresent();
+			}
+			$result = $result . '</ul>';
+		}
+		$result = $result . '</li>';
+
+		return $result;
+	}
+
+	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
 	 */

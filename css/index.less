@@ -1,23 +1,132 @@
 /* less variable */
 @product_section_title_height: 28px;
 
+article
+{
+	margin-top: 10px;
+}
+
 #category_nav
 {
-	padding: 3px 3px 3px 0;
-	background: #FFF8ED;
-	border-left: solid #D00000;
-	border-right: solid #D00000;
-	border-bottom: solid #D00000;
+	margin: 0;
+	padding: 0;
+	border: solid #E69623;
+	float: left;
 }
 
-#category_nav .category_item
+#category_nav_header
 {
+	font-size: 16px;
+	background: #F89406;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	color: white;
 	text-align: center;
+	padding: 5px 0;
 }
 
-.category_item
+#product_slide
 {
+	float: left;
+	margin: 0 65px;
+	z-index: 1;
+}
+
+#category_nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-weight: bold;
+	width: 170px;
+}
+
+#category_menu li
+{
+	position: relative;
+	background-color: #F6C739;
+	opacity: 0.9;
+	z-index: 1000;
+}
+
+#category_menu li a
+{
+	display: block;
+	overflow: auto; /*force hasLayout in IE7 */
+	color: white;
+	text-decoration: none;
+	padding: 6px;
+	border-bottom: 1px solid #F89406;
+}
+
+#category_menu li a:hover
+{
+	background-color: #F27A04;
+}
+
+#category_menu li ul
+{
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 170px;
+}
+
+#category_menu a.subfolderstyle
+{
+	background: url('../images/arrow_right.gif') no-repeat 97% 50%;
+}
+
+#shop_announcement
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	border: solid #E69623;
+}
+
+#shop_announcement_header
+{
+	font-size: 16px;
+	background: #F89406;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	color: white;
+	text-align: center;
 	padding: 5px 0;
+	width: 170px;
+}
+
+#shop_announcement_header i
+{
+	line-height: 18px;
+	vertical-align: baseline;
+	margin-left: 5px;
+}
+
+#shop_announcement .autoScroller-container
+{
+	height: 206px;
+}
+
+#shop_announcement ul
+{
+	width: 170px;
+	margin: 0;
+	padding: 0;
+}
+
+#shop_announcement ul li
+{
+	text-align: center;	
+	background-color: #F6C739;
+	opacity: 0.9;
+	padding: 5px;
+	border-bottom: 1px solid #F89406;
+}
+
+#shop_announcement ul li a
+{
+	color: white;
+	text-decoration: none;
 }
 
 .product_section{
@@ -61,7 +170,7 @@
 	width: 222px;
 	height: 179px;
 	float: left;
-	padding: 0 10px 5px 10px;
+	padding: 0 35px 5px 35px;
 	background: url("../images/sprite/css_sprite_4.jpg") repeat-x 0 -420px;
 }
 

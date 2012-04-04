@@ -9103,3 +9103,90 @@ Stack trace:
 REQUEST_URI=/index.php/product/
 HTTP_REFERER=http://obuy.localhost/index.php/product/13
 ---
+2012/04/03 12:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/12
+---
+2012/04/03 12:33:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "category/view"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('category/view')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/category/3
+HTTP_REFERER=http://obuy.localhost/index.php/product/12
+---
+2012/04/03 22:33:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "category/view"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('category/view')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/category/7
+HTTP_REFERER=http://obuy.localhost/index.php
+---
+2012/04/03 22:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "category/view"。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php:280
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('category/view')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/category/5
+HTTP_REFERER=http://obuy.localhost/index.php
+---
+2012/04/04 09:59:58 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.isActive" 未被定义.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CComponent.php:174
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\schema\CDbCriteria.php(153): CComponent->__set('isActive', 1)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\schema\CDbCriteria.php(462): CDbCriteria->__construct(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(222): CDbCriteria->mergeWith(Array)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\site\index.php(38): CActiveRecord->__call('published', Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\site\index.php(38): Announcement->published()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(47): CController->render('index', Array)
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php
+---
+2012/04/04 10:03:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::ACTIVE} ORDER BY time DESC' at line 1. The SQL statement executed was: SELECT * FROM `announcement` `t` WHERE isActive = {Announcement::ACTIVE} ORDER BY time DESC.
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\site\index.php (38)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php (47)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/04 10:03:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::ACTIVE} ORDER BY time DESC' at line 1. The SQL statement executed was: SELECT * FROM `announcement` `t` WHERE isActive = {Announcement::ACTIVE} ORDER BY time DESC' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php:528
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\site\index.php(38): CActiveRecord->findAll(Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(47): CController->render('index', Array)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php
+---

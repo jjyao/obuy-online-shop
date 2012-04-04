@@ -100,6 +100,15 @@ create table if not exists shopcart_item(
 	foreign key (productId) references product(id) on delete cascade
 );
 
+drop table if exists announcement;
+create table if not exists announcement(
+	id bigint(10) primary key auto_increment,
+	title varchar(100) not null,
+	content text not null,
+	time timestamp default current_timestamp, -- the time that the announcement is published
+	isActive integer(2) not null
+);
+
 grant all on obuy_mall.* to 'obuyer'@'localhost' identified by 'obuyer';
 
 -- init data
@@ -134,3 +143,16 @@ insert into product (name, price, imageFoldPath, categoryId, description, howToU
 -- order fake data
 insert into order_item (clientId, productId, count, unitPrice, deliveryAddress, status) values (1, 1, 2, '149.0', 'Suzhou', 1);
 insert into order_item (clientId, productId, count, unitPrice, deliveryAddress, status) values (1, 2, 1, '149.0', 'Suzhou', 1);
+
+-- announcement fake data
+insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
+insert into announcement (title, content, isActive) values ('化妆品促销季', '化妆品促销季', 1);
+insert into announcement (title, content, isActive) values ('商场三折酬宾', '商场三折酬宾', 1);
+insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
+insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
+insert into announcement (title, content, isActive) values ('化妆品促销季', '化妆品促销季', 1);
+insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
+insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
+insert into announcement (title, content, isActive) values ('商场三折酬宾', '商场三折酬宾', 1);
+insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
+insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);	
