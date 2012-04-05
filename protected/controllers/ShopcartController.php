@@ -22,6 +22,24 @@ class ShopcartController extends Controller
 		$this->render('view', array('dataProvider'=>$dataProvider));
 	}
 
+	public function actionAdd()
+	{
+		if(isset($_GET['product']) && Product::is_exist($_GET['product']))
+		{
+			$shopcartItem = new ShopcartItem();
+			$shopcartItem->clientId = Yii::app()->user->id;
+			$shopcartItem->productId = $_GET['product'];
+			$shopcartItem->count = 1;
+			$shopcartItem->save(false);
+
+			$this->redirect(Yii::app()->createUrl('shopcart/view'));
+		}
+		else
+		{
+			throw new CHttpException(404, '商品不存在');
+		}
+	}
+
 	public function actionDelete()
 	{
 		if(isset($_GET['id']) && ShopcartItem::isExist($_GET['id']))
@@ -158,11 +176,11 @@ class ShopcartController extends Controller
 	{
 		return array(
 			array('allow',
-				'actions'=>array('view, delete, empty, modify, order, purchase'),
+				'actions'=>array('view, delete, empty, modify, order, purchase, add'),
 				'users'=>array('@'),
 			),
 			array('deny',
-				'actions'=>array('view, delete, empty, modify, order, purchase'),
+				'actions'=>array('view, delete, empty, modify, order, purchase, add'),
 				'users'=>array('*'),
 			),
 		);

@@ -98,7 +98,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		</ul>
 	</section><!-- product_brief_section -->
 	<section id="product_action_section">
-		<a id="add_cart" class="btn btn-primary btn-large" href="#">
+		<a id="add_cart" class="btn btn-primary btn-large" href="<?php echo Yii::app()->createUrl('shopcart/add', array('product'=>$product->id)) ?>">
 			<i></i>
 			加入购物车
 		</a>

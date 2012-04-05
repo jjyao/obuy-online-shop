@@ -46,17 +46,17 @@
 						</a>	
 						<ul id="client_service_dropdown" class="dropdown-menu">
 							<li><a href="#">个人信息修改</a></li>
-							<li><a href="#">注销</a></li>
-							<li><a href="#">登录</a></li>
-							<li><a href="#">注册</a></li>
-							<li><a href="#">退出</a></li>								
+							<li><a href="<?php echo '#' ?>">注销</a></li>
+							<li><a href="<?php echo Yii::app()->createUrl('site/login') ?>">登录</a></li>
+							<li><a href="<?php echo Yii::app()->createUrl('site/register') ?>">注册</a></li>
+							<li><a href="<?php echo Yii::app()->createUrl('site/logout') ?>">退出</a></li>								
 						</ul>				
 					</li>					
 					<li>
-						<a href="#">我的订单</a>
+						<a href="<?php echo Yii::app()->createUrl('order/view') ?>">我的订单</a>
 					</li>
 					<li>
-						<a href="#">我的购物车</a>
+						<a href="<?php echo Yii::app()->createUrl('shopcart/view') ?>">我的购物车</a>
 					</li>					
 				</ul>
 				<span class="clearfix"></span>			
