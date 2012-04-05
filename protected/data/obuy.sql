@@ -95,7 +95,7 @@ create table if not exists shopcart_item(
 	clientId bigint(10) not null,
 	productId bigint(10) not null,
 	count integer(10) default 1, -- default client add one product to shopcart
-	tiem timestamp default current_timestamp, -- the time that client add product to shopcart
+	time timestamp default current_timestamp, -- the time that client add product to shopcart
 	foreign key (clientId) references client(id) on delete cascade,
 	foreign key (productId) references product(id) on delete cascade
 );

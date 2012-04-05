@@ -57,7 +57,7 @@
 		<ul id="shopcart" class="pull-right">
 			<a class="btn btn-primary" href="#">
 				<i class="icon-shopping-cart icon-white"></i>
-				去结算
+				去购物车
 			</a>
 		</ul>
 		<span class="clearfix"></span>

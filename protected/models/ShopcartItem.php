@@ -8,7 +8,7 @@
  * @property string $clientId
  * @property string $productId
  * @property integer $count
- * @property string $tiem
+ * @property string $time
  *
  * The followings are the available model relations:
  * @property Client $client
@@ -42,12 +42,12 @@ class ShopcartItem extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('clientId, productId, tiem', 'required'),
+			array('clientId, productId, time', 'required'),
 			array('count', 'numerical', 'integerOnly'=>true),
 			array('clientId, productId', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, clientId, productId, count, tiem', 'safe', 'on'=>'search'),
+			array('id, clientId, productId, count, time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -74,7 +74,7 @@ class ShopcartItem extends CActiveRecord
 			'clientId' => 'Client',
 			'productId' => 'Product',
 			'count' => 'Count',
-			'tiem' => 'Tiem',
+			'time' => 'time',
 		);
 	}
 
@@ -93,10 +93,23 @@ class ShopcartItem extends CActiveRecord
 		$criteria->compare('clientId',$this->clientId,true);
 		$criteria->compare('productId',$this->productId,true);
 		$criteria->compare('count',$this->count);
-		$criteria->compare('tiem',$this->tiem,true);
+		$criteria->compare('time',$this->time,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+
+	public static function isExist($shopcartItemId)
+	{
+		$shopcartItem = ShopcartItem::model()->findByPk($shopcartItemId);
+		if(is_null($shopcartItem))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
 	}
 }
