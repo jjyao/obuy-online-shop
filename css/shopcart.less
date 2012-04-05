@@ -1,4 +1,5 @@
 @shopcart_item_height: 100px;
+@shopcart_order_item_height: 50px;
 
 article
 {
@@ -6,13 +7,22 @@ article
 }
 
 .order_process
-{
-	background: url(../images/buy_process_1.jpg) no-repeat;
+{	
 	list-style: none;
 	width: 438px;
 	height: 29px;
 	padding-top: 23px;
 	margin: 0 auto;
+}
+
+.order_process.step1
+{
+	background: url(../images/buy_process_1.jpg) no-repeat;
+}
+
+.order_process.step2
+{
+	background: url(../images/buy_process_2.jpg) no-repeat;
 }
 
 .order_process li
@@ -39,12 +49,12 @@ article
 	color: white;
 }
 
-#my_shopcart
+#my_shopcart, #my_shopcart_order
 {
 	margin-top: 20px;
 }
 
-#my_shopcart_header
+#my_shopcart_header, #my_shopcart_order_header
 {
 	background: #AACDED;
 	height: 30px;
@@ -56,18 +66,19 @@ article
 	-khtml-border-top-right-radius: 10px;
 }
 
-#my_shopcart_header span
+#my_shopcart_header span, #my_shopcart_order_header span
 {
 	margin-left: 20px;
 	line-height: 30px;
 	font-weight: bold;
 }
 
-#my_shopcart_content
+#my_shopcart_content, #my_shopcart_order_content
 {
 	border-left: solid #AACDED;
 	border-right: solid #AACDED;
 	border-bottom: solid #AACDED;
+	overflow: auto;
 }
 
 #shopcart_item_list
@@ -160,4 +171,97 @@ article
 {
 	line-height: 50px;
 	text-align: center;
+}
+
+#my_shopcart_order_content .wrapper
+{
+	margin: 10px 30px 10px 30px;
+	border: 1px solid #AACDED;
+}
+
+#my_shopcart_order_summary
+{
+	float: left;
+	height: 100px;
+}
+
+#my_shopcart_order_summary_header, #my_shopcart_product_summary_header
+{
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#delivery_address, #payment_way, #order_money
+{
+	margin-left: 40px;
+	margin-bottom: 5px;
+}
+
+#my_shopcart_order_action
+{
+	float: right;	
+	width: 200px;
+	line-height: 100px;
+	text-align: right;
+}
+
+#confirm_order
+{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#shopcart_order_item_list
+{
+	padding: 10px 10px 0 40px;
+}
+
+.shopcart_order_item
+{
+	border: solid 1px;
+	margin-bottom: 10px;
+}
+
+.shopcart_order_item .product_image
+{
+	float: left;
+	margin-left: 20px;
+}
+
+.shopcart_order_item .product_name
+{
+	float: left;
+	line-height: @shopcart_order_item_height;
+	margin-left: 10px;
+}
+
+.shopcart_order_item .product_unitPrice
+{
+	float: right;
+	line-height: @shopcart_order_item_height;
+	text-align:right
+}
+
+.shopcart_order_item .multiply
+{
+	float: right;
+	line-height: @shopcart_order_item_height;
+	margin: 0 10px;
+}
+
+.shopcart_order_item .product_number
+{
+	float: right;
+	line-height: @shopcart_order_item_height;
+}
+
+.shopcart_order_item .product_sumPrice
+{
+	float: right;
+	line-height: @shopcart_order_item_height;
+	width: 100px;
+	text-align:right;
+	margin-right: 10px;
 }

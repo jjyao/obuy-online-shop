@@ -91,15 +91,28 @@ class ShopcartController extends Controller
 		}
 	}
 
+	public function actionOrder()
+	{
+		$criteria = new CDbCriteria;
+		$criteria->compare('clientId', Yii::app()->user->id, false);
+		$dataProvider = new CActiveDataProvider('ShopcartItem', array(
+			'criteria'=>$criteria,
+			'sort'=>array(
+				'defaultOrder'=>'time DESC',
+			),
+		));
+		$this->render('order', array('dataProvider'=>$dataProvider));
+	}
+
 	public function accessRules()
 	{
 		return array(
 			array('allow',
-				'actions'=>array('view, delete, empty, modify'),
+				'actions'=>array('view, delete, empty, modify, order'),
 				'users'=>array('@'),
 			),
 			array('deny',
-				'actions'=>array('view, delete, empty, modify'),
+				'actions'=>array('view, delete, empty, modify, order'),
 				'users'=>array('*'),
 			),
 		);

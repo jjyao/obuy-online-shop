@@ -55,7 +55,7 @@
 			</li>
 		</ul>
 		<ul id="shopcart" class="pull-right">
-			<a class="btn btn-primary" href="#">
+			<a class="btn btn-primary" href="<?php echo Yii::app()->createUrl('shopcart/view') ?>">
 				<i class="icon-shopping-cart icon-white"></i>
 				去购物车
 			</a>

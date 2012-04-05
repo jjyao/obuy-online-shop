@@ -4,7 +4,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 ?>
 <article class="container">
 <section id="shopcart_header">
-	<ul class="order_process">
+	<ul class="order_process step1">
 		<li id="step1" class="active">1. 我的购物车</li>
 		<li id="step2">2. 结算中心确认订单</li>
 		<li id="step3">3. 成功提交订单</li>
@@ -45,7 +45,10 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			</div>
 			<span class="clearfix"></span>
 			<div id="shopcart_action">
-				<a id="go_next" class="btn btn-primary btn-middle"><i class="icon-share-alt icon-white"></i>去结算</a>
+				<a id="go_next" class="btn btn-primary btn-middle" href="<?php echo Yii::app()->createUrl('shopcart/order') ?>">
+					<i class="icon-share-alt icon-white"></i>
+					去结算
+				</a>
 			</div>
 			<span class="clearfix"></span>
 
