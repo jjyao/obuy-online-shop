@@ -20,50 +20,53 @@
 </head>
 
 <body>
-	<nav id="my_nav_wrapper">
-		<div id="my_nav" class="container">
-			<p id="login_info" class="pull-left">
-				亲，买么事啦！
-				<?php if (Yii::app()->user->isGuest): ?>
-				<span>
-					<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/login") ?>">[请登录]</a>
-					, 新用户？
-					<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/register") ?>">[免费注册]</a>
-				</span>
-				<?php else: ?>
-				<span>
-					<a href="#"><?php echo Yii::app()->user->name; ?></a>
-					<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/logout") ?>">[退出]</a>
-				</span>
-				<?php endif; ?>
-			</p>
-			<ul id="my_menu" class="pull-right">
-				<li class="last dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						会员服务
-						<b class="caret"></b>
-					</a>	
-					<ul id="client_service_dropdown" class="dropdown-menu">
-						<li><a href="#">个人信息修改</a></li>
-						<li><a href="#">注销</a></li>
-						<li><a href="#">登录</a></li>
-						<li><a href="#">注册</a></li>
-						<li><a href="#">退出</a></li>								
-					</ul>				
-				</li>					
-				<li>
-					<a href="#">我的订单</a>
-				</li>
-				<li>
-					<a href="#">我的购物车</a>
-				</li>					
-			</ul>
-			<span class="clearfix"></span>			
-		</div><!-- my_nav -->
-	</nav>
+	<div id="container_without_footer">
+		<nav id="my_nav_wrapper">
+			<div id="my_nav" class="container">
+				<p id="login_info" class="pull-left">
+					亲，买么事啦！
+					<?php if (Yii::app()->user->isGuest): ?>
+					<span>
+						<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/login") ?>">[请登录]</a>
+						, 新用户？
+						<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/register") ?>">[免费注册]</a>
+					</span>
+					<?php else: ?>
+					<span>
+						<a href="#"><?php echo Yii::app()->user->name; ?></a>
+						<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/logout") ?>">[退出]</a>
+					</span>
+					<?php endif; ?>
+				</p>
+				<ul id="my_menu" class="pull-right">
+					<li class="last dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							会员服务
+							<b class="caret"></b>
+						</a>	
+						<ul id="client_service_dropdown" class="dropdown-menu">
+							<li><a href="#">个人信息修改</a></li>
+							<li><a href="#">注销</a></li>
+							<li><a href="#">登录</a></li>
+							<li><a href="#">注册</a></li>
+							<li><a href="#">退出</a></li>								
+						</ul>				
+					</li>					
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">我的购物车</a>
+					</li>					
+				</ul>
+				<span class="clearfix"></span>			
+			</div><!-- my_nav -->
+		</nav>
 
-	<?php echo $content; ?>
-
+		<?php echo $content; ?>
+		<div class="clearfooter"></div>
+	</div>
+	
 	<footer>
 		<div id="flinks">
 			<a href="#">关于我们</a>
@@ -77,6 +80,7 @@
 			<p>Copyright &copy;2012 买么事 版权所有</p>
 		</div>
 	</footer>
+
 	<div id="back_to_top" onclick="window.scrollTo(0, 0); return false;">
 	</div>
 	<script>

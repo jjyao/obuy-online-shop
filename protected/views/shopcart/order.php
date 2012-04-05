@@ -21,8 +21,13 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 					<span>订单信息</span>
 				</div>
 				<div id="delivery_address">
+					<?php
+						// get the default delivery address
+						$client = Client::model()->findByPk(Yii::app()->user->id);
+						$address = $client->deliveryAddresses[0]; // first address is default
+					?>
 					<span>送货地址：</span>
-					南京市鼓楼区南京大学汉口路22号
+					<?php echo $address->city->name ?>市 <?php echo $address->address ?>
 				</div>
 				<div id="payment_way">
 					<span>付款方式：</span>
@@ -45,7 +50,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 				<a id="modify_shopcart" class="btn btn-middle btn-warning" href="<?php echo Yii::app()->createUrl('shopcart/view') ?>">
 					<i class="icon-arrow-left icon-white"></i>回购物车修改
 				</a>
-				<a id="confirm_order" class="btn btn-middle btn-primary">
+				<a id="confirm_order" class="btn btn-middle btn-primary" href="<?php echo Yii::app()->createUrl('shopcart/purchase', array('address'=>$address->id)) ?>">
 					下单<i class="icon-arrow-right icon-white"></i>
 				</a>
 				<span class="clearfix"></span>

@@ -95,4 +95,17 @@ class DeliveryAddress extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	public static function isExist($addressId)
+	{
+		$address = DeliveryAddress::model()->findByPk($addressId);
+		if(is_null($address))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
 }

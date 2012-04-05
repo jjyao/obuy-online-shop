@@ -9328,3 +9328,64 @@ Stack trace:
 REQUEST_URI=/index.php/shopcart/clean
 HTTP_REFERER=http://obuy.localhost/index.php/shopcart/view
 ---
+2012/04/05 15:59:10 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "creaetUrl".' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CComponent.php:266
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\shopcart\order.php(53): CComponent->__call('creaetUrl', Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\shopcart\order.php(53): CWebApplication->creaetUrl('shopcart/purcha...', Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('order', Array, true)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ShopcartController.php(110): CController->render('order', Array)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ShopcartController->actionOrder()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('order')
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('shopcart/order')
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/shopcart/order
+---
+2012/04/05 16:59:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message '没有提供足够的数据' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ShopcartController.php:149
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ShopcartController->actionPurchase()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('purchase')
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('shopcart/purcha...')
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/shopcart/purchase
+---
+2012/04/05 17:02:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message '没有提供足够的信息' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ShopcartController.php:153
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ShopcartController->actionPurchase()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('purchase')
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('shopcart/purcha...')
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/shopcart/purchase
+---

@@ -81,7 +81,7 @@ class ShopcartController extends Controller
 				}
 				else
 				{
-					header("HTTP/1.0 403 Product Number Invalid");
+					header("HTTP/1.0 400 Product Number Invalid");
 				}
 			}
 			else
@@ -101,18 +101,68 @@ class ShopcartController extends Controller
 				'defaultOrder'=>'time DESC',
 			),
 		));
-		$this->render('order', array('dataProvider'=>$dataProvider));
+		if($dataProvider->totalItemCount = 0)
+		{
+			$this->redirect(Yii::app()->createUrl('shopcart/view'));
+		}
+		else
+		{
+			$this->render('order', array('dataProvider'=>$dataProvider));
+		}
+	}
+
+	public function actionPurchase()
+	{
+		if(isset($_GET['address']) && DeliveryAddress::isExist($_GET['address']))
+		{
+			$address = DeliveryAddress::model()->findByPk($_GET['address']);
+			if($address->clientId == Yii::app()->user->id)
+			{
+				$shopcartItems = ShopcartItem::model()->findAllByAttributes(array('clientId'=>Yii::app()->user->id));
+				if(empty($shopcartItems))
+				{
+					$this->redirect(Yii::app()->createUrl('shopcart/view'));
+				}
+				else
+				{
+					foreach($shopcartItems as $shopcartItem)
+					{
+						$orderItem = new OrderItem();
+						// populate order item
+						$orderItem->clientId = Yii::app()->user->id;
+						$orderItem->productId = $shopcartItem->productId;
+						$orderItem->count = $shopcartItem->count;
+						$orderItem->unitPrice = $shopcartItem->product->price;
+						$orderItem->deliveryAddress = $address->city->name . '市 ' . $address->address;
+						$orderItem->status = OrderItem::SUBMIT;
+
+						$orderItem->save(false);
+						$shopcartItem->delete();
+					}
+
+					$this->render('purchase');
+				}
+			}
+			else
+			{
+				throw new CHttpException(403, '操作被拒绝');
+			}
+		}
+		else
+		{
+			throw new CHttpException(400, '没有提供足够的信息');
+		}
 	}
 
 	public function accessRules()
 	{
 		return array(
 			array('allow',
-				'actions'=>array('view, delete, empty, modify, order'),
+				'actions'=>array('view, delete, empty, modify, order, purchase'),
 				'users'=>array('@'),
 			),
 			array('deny',
-				'actions'=>array('view, delete, empty, modify, order'),
+				'actions'=>array('view, delete, empty, modify, order, purchase'),
 				'users'=>array('*'),
 			),
 		);

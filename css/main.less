@@ -2,11 +2,31 @@
 @my_nav_height: 30px;
 @my_nav_fontsize: 14px;
 @link_hover_color: #005580;
+@footer_height: 103px;
+
+html
+{
+	height: 100%;
+}
 
 body
 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
+	height: 100%;
+}
+
+#container_without_footer
+{
+	min-height: 100%;
+	margin-bottom: -@footer_height;
+	position: relative;
+}
+
+.clearfooter
+{
+	height: @footer_height;
+	clear: both;
 }
 
 ul
@@ -121,8 +141,13 @@ ul
 
 footer
 {
+	position: relative;
 	font-size: 12px;
-	margin-top: 20px;
+	box-sizing: border-box;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	height: @footer_height;
+	width: 100%;
 }
 
 #flinks
