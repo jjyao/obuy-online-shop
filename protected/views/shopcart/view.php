@@ -26,7 +26,6 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 				));
 			?>
 
-			
 			<div id="clean_shopcart">
 				<a href="<?php echo Yii::app()->createUrl('shopcart/empty'); ?>">清空购物车</a>
 			</div>

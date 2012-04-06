@@ -1,0 +1,129 @@
+@order_item_height: 50px;
+
+article
+{
+	margin-top: 10px;
+}
+
+#my_order
+{
+	margin-top: 10px;
+}
+
+#my_order_header
+{
+	background: #AACDED;
+	height: 30px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-khtml-border-top-left-radius: 10px;
+	-khtml-border-top-right-radius: 10px;
+}
+
+#my_order_header span
+{
+	margin-left: 20px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+#my_order_content
+{
+	border-left: solid #AACDED;
+	border-right: solid #AACDED;
+	border-bottom: solid #AACDED;
+	overflow: auto;
+}
+
+#my_order_list_view
+{
+	padding: 10px 30px 10px 30px;
+}
+
+.order_item
+{
+	border: solid 1px;
+	margin-bottom: 10px;
+}
+
+.order_item .product_image
+{
+	float: left;
+	margin-left: 20px;
+}
+
+.order_item .product_name
+{
+	float: left;
+	line-height: @order_item_height;
+	margin-left: 10px;
+}
+
+.order_item .order_time
+{
+	float: right;
+	line-height: @order_item_height;
+	text-align:right
+}
+
+.order_item .product_unitPrice
+{
+	float: right;
+	line-height: @order_item_height;
+	text-align:right;
+	width: 100px;
+}
+
+.order_item .multiply
+{
+	float: right;
+	line-height: @order_item_height;
+	margin: 0 10px;
+}
+
+.order_item .product_number
+{
+	float: right;
+	line-height: @order_item_height;
+}
+
+.order_item .product_sumPrice
+{
+	float: right;
+	line-height: @order_item_height;
+	width: 100px;
+	text-align:right
+}
+
+.order_item .order_status
+{
+	float: right;
+	line-height: @order_item_height;
+	margin-left: 20px;
+}
+
+.order_item .order_evaluation
+{
+	float: right;
+	line-height: @order_item_height;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#order_evaluation_modal .label_name
+{
+	float: left;
+}
+
+#order_evaluation_modal .modal-body div
+{
+	margin-bottom: 10px;
+}
+
+#evaluation_product_comment textarea
+{
+	width: 400px;
+	height: 56px;
+}

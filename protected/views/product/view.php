@@ -210,6 +210,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 							'dataProvider'=>$dataProvider,
 							'itemView'=>'_comment_item',
 							'template'=>"{items}\n{pager}",
+							'pager'=>array(
+								'header'=>'',
+							),
 						));
 					?>
 				<?php else: ?>
@@ -237,6 +240,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 							'dataProvider'=>$dataProvider,
 							'itemView'=>'_comment_item',
 							'template'=>"{items}\n{pager}",
+							'pager'=>array(
+								'header'=>'',
+							),
 						));
 					?>
 				<?php else: ?>
@@ -263,6 +269,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 							'dataProvider'=>$dataProvider,
 							'itemView'=>'_comment_item',
 							'template'=>"{items}\n{pager}",
+							'pager'=>array(
+								'header'=>'',
+							),
 						));
 					?>
 				<?php else: ?>
@@ -289,6 +298,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 							'dataProvider'=>$dataProvider,
 							'itemView'=>'_comment_item',
 							'template'=>"{items}\n{pager}",
+							'pager'=>array(
+								'header'=>'',
+							),
 						));
 					?>
 				<?php else: ?>

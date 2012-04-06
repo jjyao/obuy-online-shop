@@ -9464,3 +9464,62 @@ Stack trace:
 REQUEST_URI=/index.php/product/
 HTTP_REFERER=http://obuy.localhost/index.php/product/13
 ---
+2012/04/05 22:39:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/12
+---
+2012/04/05 23:29:12 [error] [exception.CException] exception 'CException' with message '别名 "zii.widget.grid.CListView" 无效。请确认它指向一个存在的PHP文件。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\YiiBase.php:318
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWidgetFactory.php(147): YiiBase::import('zii.widget.grid...', true)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(OrderController), 'zii.widget.grid...', Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widget.grid...', Array)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\views\order\view.php(16): CBaseController->widget('zii.widget.grid...', Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\OrderController.php(26): CController->render('view', Array)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): OrderController->actionView()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('order/view')
+#20 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/order/view
+---
+2012/04/06 14:39:47 [error] [exception.CException] exception 'CException' with message '属性 "OrderItem.orderId" 未被定义.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CComponent.php:131
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(144): CComponent->__get('orderId')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\OrderController.php(65): CActiveRecord->__get('orderId')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): OrderController->actionEvaluate()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('evaluate')
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('order/evaluate')
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/order/evaluate
+HTTP_REFERER=http://obuy.localhost/index.php/order/view
+---

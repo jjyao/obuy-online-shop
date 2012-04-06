@@ -10,10 +10,12 @@
  * @property string $time
  * @property string $clientId
  * @property string $productId
+ * @property string $orderId
  *
  * The followings are the available model relations:
  * @property Client $client
  * @property Product $product
+ * @property OrderItem $order
  */
 class Evaluation extends CActiveRecord
 {
@@ -62,6 +64,7 @@ class Evaluation extends CActiveRecord
 		return array(
 			'client' => array(self::BELONGS_TO, 'Client', 'clientId'),
 			'product' => array(self::BELONGS_TO, 'Product', 'productId'),
+			'order' => array(self::BELONGS_TO, 'OrderItem', 'orderId'),
 		);
 	}
 

@@ -141,4 +141,17 @@ class OrderItem extends CActiveRecord
 			),
 		));
 	}
+
+	public function isExist($orderItemId)
+	{
+		$orderItem = OrderItem::model()->findByPk($orderItemId);
+		if(is_null($orderItem))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
 }

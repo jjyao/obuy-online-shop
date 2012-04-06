@@ -71,8 +71,10 @@ create table if not exists evaluation(
 	time timestamp default current_timestamp,
 	clientId bigint(10) not null,
 	productId bigint(10) not null,
+	orderId bigint(10),
 	foreign key (clientId) references client(id) on delete cascade,
-	foreign key (productId) references product(id) on delete cascade
+	foreign key (productId) references product(id) on delete cascade,
+	foreign key (orderId) references order_item(id) on delete set null
 );
 
 drop table if exists order_item;

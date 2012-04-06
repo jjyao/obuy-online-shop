@@ -46,6 +46,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 				'header'=>'可选操作',
 			),
 		),
+		'pager'=>array(
+			'header'=>'',
+		),
 	));
 ?>
 <article>

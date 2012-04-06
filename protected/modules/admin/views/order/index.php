@@ -60,6 +60,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			'id'=>'status_title',
 		),
 	),
+	'pager'=>array(
+		'header'=>'',
+	),
 	));
 ?>
 

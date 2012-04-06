@@ -24,6 +24,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		'dataProvider'=>$dataProvider,
 		'itemView'=>'_product_item',
 		'template'=>"{items}\n{pager}",
+		'pager'=>array(
+			'header'=>'',
+		),
 	));
 ?>
 <span class="clearfix"></span>
