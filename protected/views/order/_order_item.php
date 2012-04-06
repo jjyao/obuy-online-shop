@@ -12,11 +12,15 @@
 </div>
 
 <div class="order_evaluation">
-<?php if($data->status == OrderItem::EVALUATION): ?>
+<?php if($data->status == OrderItem::SUBMIT): ?>
+	<a class="btn btn-small btn-primary cancel" order_item_id="<?php echo $data->id ?>">
+		<i class="icon-remove icon-white"></i>&nbsp;&nbsp;取消&nbsp;&nbsp;
+	</a>
+<?php elseif($data->status == OrderItem::EVALUATION): ?>
 	<a class="btn disabled btn-small btn-primary"><i class="icon-ok icon-white"></i>已评价</a>
 <?php elseif($data->status == OrderItem::PAYMENT): ?>
-	<a class="btn btn-small btn-primary clickable" order_item_id="<?php echo $data->id ?>">
-		<i class="icon-comment icon-white"></i>未评价
+	<a class="btn btn-small btn-primary evaluation" order_item_id="<?php echo $data->id ?>">
+		<i class="icon-comment icon-white"></i>&nbsp;&nbsp;评价&nbsp;&nbsp;
 	</a>
 <?php else: ?>
 	<a class="btn disabled btn-small btn-primary"><i class="icon-lock icon-white"></i>未付款</a>

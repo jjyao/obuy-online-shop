@@ -27,6 +27,36 @@ class OrderController extends Controller
 		$this->render('view', array('dataProvider'=>$dataProvider));
 	}
 
+	public function actionCancel()
+	{
+		// only respond to ajax request
+		if(Yii::app()->request->isAjaxRequest)
+		{
+			$orderItemId = $_POST['orderItemId'];
+			if(isset($orderItemId) && OrderItem::isExist($orderItemId))
+			{
+				$orderItem = OrderItem::model()->findByPk($_POST['orderItemId']);
+				if($orderItem->status != OrderItem::SUBMIT)
+				{
+					header("HTTP/1.0 403 Forbidden");
+					Yii::app()->end();
+				}
+				if($orderItem->clientId != Yii::app()->user->id)
+				{
+					header("HTTP/1.0 403 Permission denied");
+					Yii::app()->end();
+				}
+
+				// everything is valid
+				$orderItem->delete();
+			}
+			else
+			{
+				header("HTTP/1.0 404 Order Item Not Found");
+			}
+		}
+	}
+
 	public function actionEvaluate()
 	{
 		// only respond to ajax request
@@ -85,11 +115,11 @@ class OrderController extends Controller
 	{
 		return array(
 			array('allow',
-				'actions'=>array('view', 'evaluate'),
+				'actions'=>array('view', 'evaluate', 'cancel'),
 				'users'=>array('@'),
 			),
 			array('deny',
-				'actions'=>array('view', 'evaluate'),
+				'actions'=>array('view', 'evaluate', 'cancel'),
 				'users'=>array('*'),
 			),
 		);

@@ -65,7 +65,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/star-rati
 <script type="text/javascript">
 	var orderItemId;
 	var selectButton;
-	$('.order_evaluation a.clickable').on('click', function(e){
+	$('.order_evaluation a.evaluation').on('click', function(e){
 		orderItemId = $(this).attr('order_item_id');
 		selectButton = $(this);
 		var productName = $(this).parent().siblings('.product_name').children().text();
@@ -97,7 +97,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/star-rati
 					productComment: productComment,
 				},
 				success: function(result){
-					 $.fn.yiiListView.update('my_order_list_view');
+					$.fn.yiiListView.update('my_order_list_view');
 					/*selectButton.removeClass('clickable');
 					selectButton.addClass('disabled');
 					selectButton.text('');
@@ -111,5 +111,25 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/star-rati
 				},
 			});
 		}
+	});
+</script>
+
+<script type="text/javascript">
+	$('.order_evaluation a.cancel').on('click', function(e){
+		orderItemId = $(this).attr('order_item_id');
+		$.ajax({
+			url: '<?php echo Yii::app()->createUrl("order/cancel") ?>',
+			type: 'post',
+			dataType: 'json',
+			data: {
+				orderItemId: orderItemId,
+			},
+			success: function(result){
+				$.fn.yiiListView.update('my_order_list_view');
+			},
+			error: function(request, status, error){
+				alert(status + ": " + error);
+			},
+		});
 	});
 </script>
