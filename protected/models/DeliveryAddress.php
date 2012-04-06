@@ -108,4 +108,13 @@ class DeliveryAddress extends CActiveRecord
 			return true;
 		}
 	}
+
+	/**
+	 * Get the string representation of the delivery address
+	 *
+	 */
+	public function toString()
+	{
+		return ($this->city->name . '市 ' . $this->address);
+	}
 }

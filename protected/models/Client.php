@@ -105,13 +105,13 @@ class Client extends CActiveRecord
 		));
 	}
 
-	/*
+	/**
 	 * Return the encrypted password
 	 * This function encapsulate the encryption method
 	 * @param string $password
 	 * @return encrypted password
 	 */
-	public function encrypt($password)
+	public static function encrypt($password)
 	{
 		return md5($password);
 	}

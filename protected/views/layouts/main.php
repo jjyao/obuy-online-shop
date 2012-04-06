@@ -45,8 +45,8 @@
 							<b class="caret"></b>
 						</a>	
 						<ul id="client_service_dropdown" class="dropdown-menu">
-							<li><a href="#">个人信息修改</a></li>
-							<li><a href="<?php echo '#' ?>">注销</a></li>
+							<li><a href="<?php echo Yii::app()->createUrl('client/view') ?>">个人信息修改</a></li>
+							<li><a href="<?php echo Yii::app()->createUrl('client/logoff') ?>">注销</a></li>
 							<li><a href="<?php echo Yii::app()->createUrl('site/login') ?>">登录</a></li>
 							<li><a href="<?php echo Yii::app()->createUrl('site/register') ?>">注册</a></li>
 							<li><a href="<?php echo Yii::app()->createUrl('site/logout') ?>">退出</a></li>								
