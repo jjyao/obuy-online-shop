@@ -59,7 +59,14 @@ class SiteController extends Controller
 	    	else
 	    	{
 	    		$this->layout = '//layouts/main';
-	        	$this->render('error', $error);
+	    		if($error['code'] == 404)
+	    		{
+	    			$this->render('404', $error);
+	    		}
+	    		else
+	    		{
+	        		$this->render('error', $error);
+	        	}
 	        }
 	    }
 	}
