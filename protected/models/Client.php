@@ -19,7 +19,7 @@
 class Client extends CActiveRecord
 {
 	const ACTIVE = 0;
-	const IN_ACTION = 1;
+	const IN_ACTIVE = 1;
 
 	/**
 	 * Returns the static model of the specified AR class.

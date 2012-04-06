@@ -9779,3 +9779,14 @@ Stack trace:
 REQUEST_URI=/index.php/client/modify
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ClientController.php (42)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/06 23:07:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "logoff" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('logoff')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('logoff')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('site/logoff')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/logoff
+HTTP_REFERER=http://obuy.localhost/index.php/client/view
+---

@@ -9,7 +9,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/assets/jquery-
 		<ul id="my_account_action">
 			<li><a href="#" id="modify_client_account">修改</a></li>
 			<li><a href="<?php echo Yii::app()->createUrl('site/logout') ?>">退出</a></li>
-			<li class="last"><a href="<?php echo Yii::app()->createUrl('site/logoff') ?>">注销</a></li>
+			<li class="last"><a href="<?php echo Yii::app()->createUrl('client/logoff') ?>">注销</a></li>
 		</ul>
 		<span class="clearfix"></span>
 	</section><!--my_account_header-->

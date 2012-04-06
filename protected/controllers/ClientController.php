@@ -17,7 +17,12 @@ class ClientController extends Controller
 
 	public function actionLogoff()
 	{
+		// lazy delete
+		$client = Client::model()->findByPk(Yii::app()->user->id);
+		$client->isActive = Client::IN_ACTIVE;
+		$client->save(false);
 
+		$this->redirect(Yii::app()->createUrl('site/logout'));
 	}
 
 	public function actionModify()
