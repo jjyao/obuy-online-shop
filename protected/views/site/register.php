@@ -87,7 +87,7 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/register.css
 			return pattern.test(item);
 		}
         jQuery(document).ready(function() {
-            var alCities = ["<?php echo implode ('","', $cityArray); ?>"].sort();
-            $('#cityname_typeahead').typeahead({source: alCities, items:50, matcher: cityMatcher});
+            var allCities = ["<?php echo implode ('","', $cityArray); ?>"].sort();
+            $('#cityname_typeahead').typeahead({source: allCities, items:50, matcher: cityMatcher});
         });
 </script>
