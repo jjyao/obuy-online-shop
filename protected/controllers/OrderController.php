@@ -85,11 +85,11 @@ class OrderController extends Controller
 	{
 		return array(
 			array('allow',
-				'actions'=>array('view, evaluate'),
-				'users'=>array('@'),
+				'actions'=>array('view', 'evaluate'),
+				'roles'=>array('@'),
 			),
 			array('deny',
-				'actions'=>array('view, evaluate'),
+				'actions'=>array('view', 'evaluate'),
 				'users'=>array('*'),
 			),
 		);

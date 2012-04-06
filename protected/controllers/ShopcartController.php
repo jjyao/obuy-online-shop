@@ -176,11 +176,11 @@ class ShopcartController extends Controller
 	{
 		return array(
 			array('allow',
-				'actions'=>array('view, delete, empty, modify, order, purchase, add'),
+				'actions'=>array('view', 'delete', 'empty', 'modify', 'order', 'purchase', 'add'),
 				'users'=>array('@'),
 			),
 			array('deny',
-				'actions'=>array('view, delete, empty, modify, order, purchase, add'),
+				'actions'=>array('view', 'delete', 'empty', 'modify', 'order', 'purchase', 'add'),
 				'users'=>array('*'),
 			),
 		);
