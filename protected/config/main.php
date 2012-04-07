@@ -5,9 +5,25 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+
+// config database connection params
+$host = 'localhost';
+$dbname = 'obuy_mall';
+$username = 'obuyer';
+$password = 'obuyer';
+$charset = 'utf8';
+
+// Load website name from database
+$connect = mysql_connect($host, $username, $password);
+mysql_query("SET NAMES '{$charset}'",$connect); 
+mysql_select_db($dbname, $connect);
+$result = mysql_query('SELECT name FROM website');
+$row = mysql_fetch_array($result);
+$websiteName = $row['name'];
+
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'买么事 网上商店',
+	'name'=> $websiteName, //'买么事 网上商店',
 	'language'=>'zh_CN',
 
 	// preloading 'log' component
@@ -53,11 +69,11 @@ return array(
 		),
 
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=obuy_mall',
+			'connectionString' => "mysql:host={$host};dbname={$dbname}",
 			'emulatePrepare' => true,
-			'username' => 'obuyer',
-			'password' => 'obuyer',
-			'charset' => 'utf8',
+			'username' => $username,
+			'password' => $password,
+			'charset' => $charset,
 		),
 
         'authManager'=>array(

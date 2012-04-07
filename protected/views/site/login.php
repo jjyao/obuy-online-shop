@@ -4,7 +4,12 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/login.css');
 ?>
 <article>
 <section id="welcome_slogan">
-	<p>欢迎回到<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>" >买么事</a>，祝您购物愉快</p>
+	<p>
+		欢迎回到
+		<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>" >
+			<?php echo Yii::app()->name ?>
+		</a>，祝您购物愉快
+	</p>
 </section><!--weclome section -->
 
 <section id="login_section" class="well">

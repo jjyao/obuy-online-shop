@@ -8,7 +8,12 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/register.css
 <section id="register_section">
 
 <section id="welcome_slogan">
-	<p>欢迎注册<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>" >买么事</a>，享受快乐网购生活</p>
+	<p>
+		欢迎注册
+		<a href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>" >
+			<?php echo Yii::app()->name ?>
+		</a>，享受快乐网购生活
+	</p>
 </section><!--weclome section -->
 
 <?php $form=$this->beginWidget('CActiveForm', array(

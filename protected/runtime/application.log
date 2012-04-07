@@ -141,3 +141,120 @@ Stack trace:
 #8 {main}
 REQUEST_URI=/index.php/product/view/1
 ---
+2012/04/07 08:46:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---
+2012/04/07 08:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---
+2012/04/07 08:48:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---
+2012/04/07 08:48:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---
+2012/04/07 08:48:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---
+2012/04/07 08:48:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---
+2012/04/07 08:48:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---
+2012/04/07 08:48:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---
+2012/04/07 08:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/1
+---

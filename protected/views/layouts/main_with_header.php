@@ -1,7 +1,9 @@
 <?php $this->beginContent('//layouts/main'); ?>
 <header class="container">
 	<figure id="logo">
-		<a id="logo_link" href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>">买么事</a>
+		<a id="logo_link" href="<?php echo Yii::app()->getUrlManager()->createUrl("site/index") ?>">
+			<?php echo Yii::app()->name ?>
+		</a>
 	</figure>
 	<section id="search_section">
 		<div class="search_bar">

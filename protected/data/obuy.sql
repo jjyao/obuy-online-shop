@@ -5,6 +5,12 @@ create database if not exists obuy_mall CHARACTER SET utf8 COLLATE utf8_general_
 
 use obuy_mall;
 
+drop table if exists website;
+create table if not exists website(  -- store website's basic info
+	id integer(1) primary key auto_increment,
+	name varchar(255) not null -- website name
+);
+
 drop table if exists city;
 create table if not exists city(
 	id integer(10) primary key auto_increment,
@@ -114,6 +120,8 @@ create table if not exists announcement(
 grant all on obuy_mall.* to 'obuyer'@'localhost' identified by 'obuyer';
 
 -- init data
+insert website (name) values('买么事');
+
 insert city (name, provinceName) values ('苏州' ,'江苏');
 insert city (name, provinceName) values ('常州' ,'江苏');
 insert city (name, provinceName) values ('扬州' ,'江苏');
