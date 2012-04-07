@@ -52,6 +52,12 @@
 					<li>
 						<a href="<?php echo Yii::app()->getUrlManager()->createUrl("admin/order/index") ?>">订单列表</a>
 					</li>
+					<li class="nav-header">
+						商店管理
+					</li>
+					<li>
+						<a href="<?php echo Yii::app()->createUrl('admin/site/modify') ?>">基本信息</a>
+					</li>
 				</ul>
 			</section>
 		</div>
