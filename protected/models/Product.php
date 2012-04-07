@@ -65,7 +65,7 @@ class Product extends CActiveRecord
 				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => false, 'message'=>'图片包未上传', 'on'=>'create'), // now only support zip package
 			array('imagePackageFile', 'file',
 				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => true, 'on'=>'update'), // now only support zip package
-			array('imagePackageFile', 'fileValidationCheck'),
+			array('imagePackageFile', 'fileValidationCheck', 'skipOnError'=> true),
 			array('description, howToUse, additionalSpec', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -147,7 +147,7 @@ class Product extends CActiveRecord
 	public function fileValidationCheck($attribute, $params)
 	{
 		if($this->scenario == 'create' || 
-			($this->scenario == 'update' && isset($this->imagePackageFile) && $this->imagePackageFile != null))
+			($this->scenario == 'update' && isset($this->imagePackageFile) && $this->imagePackageFile->tempName != ''))
 		{
 			if(!$this->isValidImagePackage($this->imagePackageFile))
 			{
@@ -160,7 +160,7 @@ class Product extends CActiveRecord
 	{
 		// set image
 		if($this->scenario == 'create' || 
-			($this->scenario == 'update' && isset($this->imagePackageFile) && $this->imagePackageFile != null))
+			($this->scenario == 'update' && isset($this->imagePackageFile) && $this->imagePackageFile->tempName != ''))
 		{
 			$this->imageFoldPath = Yii::app()->basePath . DIRECTORY_SEPARATOR. 'data' . DIRECTORY_SEPARATOR . 'product_image' . DIRECTORY_SEPARATOR . $this->id;
 			$this->extractPackageTo($this->imagePackageFile, $this->imageFoldPath);

@@ -52,14 +52,14 @@ class ProductController extends AdminController
 		if(isset($productId) && (Product::is_exist($productId, Product::ON_SALE) ||
 			Product::is_exist($productId, Product::NOT_ON_SALE)))
 		{
+			$product = Product::model()->findByPk($productId);
+			$product->scenario = 'update';
+
 			if(isset($_POST['Product']))
 			{
-
+				
 			}
-			else
-			{
-
-			}
+			$this->render('update', array('product'=>$product));
 		}
 		else
 		{
