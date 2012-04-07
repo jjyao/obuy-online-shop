@@ -258,3 +258,259 @@ Stack trace:
 #8 {main}
 REQUEST_URI=/index.php/product/view/1
 ---
+2012/04/07 10:28:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/12
+---
+2012/04/07 10:51:18 [error] [exception.CException] exception 'CException' with message '别名 "zii.widget.grid.CGridView" 无效。请确认它指向一个存在的PHP文件。' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\YiiBase.php:318
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWidgetFactory.php(147): YiiBase::import('zii.widget.grid...', true)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ClientController), 'zii.widget.grid...', Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widget.grid...', Array)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\client\index.php(36): CBaseController->widget('zii.widget.grid...', Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php(19): CController->render('index', Array)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ClientController->actionIndex()
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('index')
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/client/in...')
+#20 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php/admin/client/index
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/04/07 10:51:34 [error] [exception.CException] exception 'CException' with message '属性 "Client.status" 未被定义.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CComponent.php:131
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(144): CComponent->__get('status')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('status')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\helpers\CHtml.php(1402): CHtml::resolveValue(Object(Client), 'status')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CDataColumn.php(103): CHtml::activeDropDownList(Object(Client), 'status', Array, Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(450): CGridColumn->renderFilterCell()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(428): CGridView->renderFilter()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(398): CGridView->renderTableHeader()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(174): CBaseListView->run()
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\client\index.php(36): CBaseController->widget('zii.widgets.gri...', Array)
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php(19): CController->render('index', Array)
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ClientController->actionIndex()
+#20 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#21 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#23 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#24 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#25 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#27 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('index')
+#29 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/client/in...')
+#30 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#31 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/index.php/admin/client/index
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/04/07 10:51:36 [error] [exception.CException] exception 'CException' with message '属性 "Client.status" 未被定义.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CComponent.php:131
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\ar\CActiveRecord.php(144): CComponent->__get('status')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('status')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\helpers\CHtml.php(1402): CHtml::resolveValue(Object(Client), 'status')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CDataColumn.php(103): CHtml::activeDropDownList(Object(Client), 'status', Array, Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridColumn.php(106): CDataColumn->renderFilterCellContent()
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(450): CGridColumn->renderFilterCell()
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(428): CGridView->renderFilter()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\grid\CGridView.php(398): CGridView->renderTableHeader()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(174): CBaseListView->run()
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\client\index.php(36): CBaseController->widget('zii.widgets.gri...', Array)
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(127): require('L:\My courses\C...')
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php(96): CBaseController->renderInternal('L:\My courses\C...', Array, true)
+#16 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#17 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#18 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php(19): CController->render('index', Array)
+#19 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ClientController->actionIndex()
+#20 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#21 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#22 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#23 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#24 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#25 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#26 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#27 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('index')
+#29 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/client/in...')
+#30 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#31 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/index.php/admin/client/index
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/04/07 10:55:07 [warning] [application] Failed to set unsafe attribute "isActive" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 10:55:10 [warning] [application] Failed to set unsafe attribute "isActive" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 10:55:16 [warning] [application] Failed to set unsafe attribute "isActive" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (17)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 11:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/product/u...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/product/update/13
+HTTP_REFERER=http://obuy.localhost/index.php/admin/product/index
+---
+2012/04/07 12:55:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "delete" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('delete')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('delete')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/client/de...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/client/delete/2?ajax=client_grid_view
+HTTP_REFERER=http://obuy.localhost/index.php/admin/client/index
+---
+2012/04/07 13:33:05 [error] [exception.CException] exception 'CException' with message 'ClientController 在它的 view "L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\views\client\index.php" 中含有未被适当巢状套叠的 widget 标签. CActiveForm widget 中没有呼叫 endWidget().' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CBaseController.php:102
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(870): CBaseController->renderFile('L:\My courses\C...', Array, true)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php(19): CController->render('index', Array)
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ClientController->actionIndex()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#13 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/client')
+#14 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/admin/client/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/order/index
+---
+2012/04/07 18:29:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/client/up...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/client/update/1
+HTTP_REFERER=http://obuy.localhost/index.php/admin/client/index
+---
+2012/04/07 18:29:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/client/up...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/client/update/2
+HTTP_REFERER=http://obuy.localhost/index.php/admin/client/index
+---
+2012/04/07 19:07:54 [warning] [application] Failed to set unsafe attribute "id" of "OrderItem".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php (34)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:25:38 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:31:56 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:31:56 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:34:13 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:34:13 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:34:51 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:34:51 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:43:22 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:43:22 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:43:34 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:43:34 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:43:54 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:43:54 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:44:05 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:44:05 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:44:08 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:44:08 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:44:14 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:44:14 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:54:07 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 19:54:07 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)

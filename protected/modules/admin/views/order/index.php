@@ -128,7 +128,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	</section><!-- modal-body -->
 	<section class="modal-footer">
 		<a href="#" id="modal_close" class="btn">关闭</a>
-		<a href="#" id="sumbit_order_update" class="btn btn-primary">保存并关闭</a>
+		<a href="#" id="submit_order_update" class="btn btn-primary">保存并关闭</a>
 	</section><!-- modal-footer -->
 	<?php $this->endWidget(); ?><!-- form -->
 </section><!-- modal -->
@@ -204,7 +204,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		$('#order_modal').modal('hide');
 	});
 
-	$('#sumbit_order_update').on('click', function(e){
+	$('#submit_order_update').on('click', function(e){
 		$.ajax({
 			url: '<?php echo Yii::app()->getUrlManager()->createUrl("admin/order/update")?>',
 			type: 'post',

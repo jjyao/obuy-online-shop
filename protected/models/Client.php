@@ -47,13 +47,26 @@ class Client extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, email, password', 'required'),
-			array('name, email', 'length', 'max'=>255),
-			array('password', 'length', 'max'=>512),
+			array('name, email, password', 'required', 'on'=>'update'),
+			array('name, email', 'length', 'max'=>255, 'on'=>'update'),
+			array('password', 'length', 'min' => 6, 'on'=>'update'),
+			array('password', 'length', 'max'=>512, 'on'=>'update'),
+			array('password', 'unsafe', 'on'=>'update'),
+			array('email', 'email', 'checkMX'=>true, 'on'=>'update'),
+			array('email', 'unique', 'message'=>'该邮箱已被使用', 'on'=>'update'),
+			array('isActive', 'statusCheck', 'on'=>'update'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, email, password', 'safe', 'on'=>'search'),
+			array('id, name, email, isActive', 'safe', 'on'=>'search'),
 		);
+	}
+
+	public function statusCheck($attribute, $params)
+	{
+		if($this->isActive != Client::ACTIVE && $this->isActive != Client::IN_ACTIVE)
+		{
+			$this->addError('isActive', '该状态不存在');
+		}
 	}
 
 	/**
@@ -77,11 +90,26 @@ class Client extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'name' => 'Name',
-			'email' => 'Email',
-			'password' => 'Password',
+			'id' => '用户编号',
+			'name' => '用户名',
+			'email' => '邮箱',
+			'password' => '密码',
+			'isActive' => '是否注销',
 		);
+	}
+
+	public function statusLabels()
+	{
+		return array(
+			Client::ACTIVE => '未注销',
+			Client::IN_ACTIVE => '注销',
+		);
+	}
+
+	public function getStatusLabel($index)
+	{
+		$temp = $this->statusLabels();
+		return $temp[$index];
 	}
 
 	/**
@@ -98,8 +126,7 @@ class Client extends CActiveRecord
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('email',$this->email,true);
-		$criteria->compare('password',$this->password,true);
-
+		$criteria->compare('isActive', $this->isActive);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
@@ -114,5 +141,18 @@ class Client extends CActiveRecord
 	public static function encrypt($password)
 	{
 		return md5($password);
+	}
+
+	public static function isExist($clientId)
+	{
+		$client = Client::model()->findByPk($clientId);
+		if(is_null($client))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
 	}
 }

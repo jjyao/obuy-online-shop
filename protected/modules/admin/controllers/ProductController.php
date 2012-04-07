@@ -131,11 +131,11 @@ class ProductController extends AdminController
 	{
 		return array(
 			array('allow',
-				'actions'=>array('index, create'),
+				'actions'=>array('index', 'create'),
 				'roles'=>array('admin'),
 			),
 			array('deny',
-				'actions'=>array('index, create'),
+				'actions'=>array('index', 'create'),
 				'users'=>array('*'),
 			),
 		);
