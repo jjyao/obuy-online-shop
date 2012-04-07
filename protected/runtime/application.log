@@ -514,3 +514,39 @@ in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
 2012/04/07 19:54:07 [warning] [application] Failed to set unsafe attribute "password" of "Client".
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 20:15:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/13
+---
+2012/04/07 20:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/13
+---
+2012/04/07 20:16:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('update')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/product/u...')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/product/update/13
+HTTP_REFERER=http://obuy.localhost/index.php/admin/product/index
+---
+2012/04/07 21:09:23 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)

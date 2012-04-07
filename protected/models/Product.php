@@ -62,7 +62,10 @@ class Product extends CActiveRecord
 			array('price', 'match', 'pattern'=>'/^[0-9]+(\.[0-9][0-9]?)?$/', 'message'=>'价格格式不对，请参见Tips'),
 			array('imagePackageFile', 'unsafe'),
 			array('imagePackageFile', 'file',
-				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => false, 'message'=>'图片包未上传'), // now only support zip package
+				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => false, 'message'=>'图片包未上传', 'on'=>'create'), // now only support zip package
+			array('imagePackageFile', 'file',
+				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => true, 'on'=>'update'), // now only support zip package
+			array('imagePackageFile', 'fileValidationCheck'),
 			array('description, howToUse, additionalSpec', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -139,6 +142,100 @@ class Product extends CActiveRecord
 				'pageSize'=>10,
 			),
 		));
+	}
+
+	public function fileValidationCheck($attribute, $params)
+	{
+		if($this->scenario == 'create' || 
+			($this->scenario == 'update' && isset($this->imagePackageFile) && $this->imagePackageFile != null))
+		{
+			if(!$this->isValidImagePackage($this->imagePackageFile))
+			{
+				$this->addError('imagePackageFile', '图片包中含有非图片文件');
+			}
+		}
+	}
+
+	public function saveImages()
+	{
+		// set image
+		if($this->scenario == 'create' || 
+			($this->scenario == 'update' && isset($this->imagePackageFile) && $this->imagePackageFile != null))
+		{
+			$this->imageFoldPath = Yii::app()->basePath . DIRECTORY_SEPARATOR. 'data' . DIRECTORY_SEPARATOR . 'product_image' . DIRECTORY_SEPARATOR . $this->id;
+			$this->extractPackageTo($this->imagePackageFile, $this->imageFoldPath);
+			$this->save(false);
+		}
+	}
+
+	/**
+	 *	Determine whether the compressed package only contains jpg, png
+	 *  Now only support zip file
+	 *  @param $sourceFile a instance of CUploadFile
+	 */
+	private function isValidImagePackage($sourceFile)
+	{
+		$filePath = $sourceFile->tempName;
+		$zipFile = zip_open($filePath);
+		if(is_resource($zipFile))
+		{
+			while($zip_entry = zip_read($zipFile))
+			{
+				$imageFilePath = zip_entry_name($zip_entry);
+				$extension = pathinfo($imageFilePath, PATHINFO_EXTENSION);
+				if($extension != 'jpeg' && $extension != 'jpg' && $extension != 'png')
+				{
+					zip_close($zipFile);
+					return false;
+				}
+			}
+			zip_close($zipFile);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	/**
+	 * Extract compressed package to the given fold
+	 * Now only support zip file
+	 *  @param $sourceFile a instance of CUploadFile
+	 * @param $targetFold
+	 */
+	private function extractPackageTo($sourceFile, $targetFold)
+	{
+		// remove target fold if exists and create an empty one
+		if(is_dir($targetFold))
+		{
+			$handle = opendir($targetFold);
+			while($file = readdir($handle))
+			{
+				if($file != '.' && $file != '..')
+				{
+					unlink($targetFold . DIRECTORY_SEPARATOR . $file);
+				}
+			}
+			rmdir($targetFold);
+			closedir($handle);
+		}	
+		mkdir($targetFold, 0777, true);
+
+		$zipFile = zip_open($sourceFile->tempName);
+		if(is_resource($zipFile))
+		{
+			while($zip_entry = zip_read($zipFile))
+			{
+				$zip_entry_name = zip_entry_name($zip_entry);
+				$targetFile = $targetFold . DIRECTORY_SEPARATOR . basename($zip_entry_name);
+				touch($targetFile);
+				$openFile = fopen($targetFile, 'w+');
+				fwrite($openFile, zip_entry_read($zip_entry, zip_entry_filesize($zip_entry)));
+				fclose($openFile);
+			}
+			zip_close($zipFile);
+		}
 	}
 
 	public static function is_exist($productId, $isOnSale = Product::ON_SALE)

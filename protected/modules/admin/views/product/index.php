@@ -41,6 +41,14 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 				'buttons'=>array(
 					'view'=>array(
 						'url'=>'Yii::app()->createUrl("product/view", array("id"=>$data->id))',
+						'options'=>array(
+							'target'=>'_blank',
+						),
+					),
+					'update'=>array(
+						'options'=>array(
+							'target'=>'_blank',
+						),
 					),
 				),
 				'header'=>'可选操作',
