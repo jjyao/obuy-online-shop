@@ -161,6 +161,12 @@ class Product extends CActiveRecord
 		);
 	}
 
+	public function getStatusLabel($index)
+	{
+		$temp = $this->statusLabels();
+		return $temp[$index];
+	}
+
 	public function fileValidationCheck($attribute, $params)
 	{
 		if($this->scenario == 'create' || 

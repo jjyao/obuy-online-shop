@@ -151,7 +151,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		$('#modal_client_email_input').val(clientEmail);
 		$('#modal_client_password_input').val('');
 		$('#modal_client_status_input').val(statusArray[clientStatus]);
-
+		
+		$('#update_client_error_alert').hide();
 		$('#client_modal').modal('show');
 	}
 

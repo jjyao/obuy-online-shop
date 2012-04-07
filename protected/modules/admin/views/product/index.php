@@ -31,10 +31,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 				'value'=>'$data->category->name',
 			),
 			array(
-				'header'=>'是否销售',
 				'name'=>'isOnSale',
-				'filter'=>array(Product::ON_SALE=>"是", Product::NOT_ON_SALE=>"否"),
-				'value'=>'($data->isOnSale == Product::ON_SALE)? "是" : "否"',
+				'filter'=>$product->statusLabels(),
+				'value'=>'$data->getStatusLabel($data->isOnSale)',
 			),
 			array(
 				'class'=>'CButtonColumn',
@@ -50,7 +49,11 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 							'target'=>'_blank',
 						),
 					),
+					'delete'=>array(
+						'label'=>'下架',
+					),
 				),
+				'deleteConfirmation'=>'确定要将该商品下架吗',
 				'header'=>'可选操作',
 			),
 		),

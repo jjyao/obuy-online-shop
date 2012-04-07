@@ -36,7 +36,7 @@ class RegisterForm extends CFormModel
 			array('email, password, confirmPassword, username, cityname', 'length', 'max' => 255),
 			array('password', 'length', 'min' => 6),
 			array('address', 'length', 'max' => 511),
-			array('email', 'email', 'checkMX'=>true),
+			array('email', 'email', 'checkMX'=>false),
 			array('confirmPassword', 'compare', 'compareAttribute'=>'password'),
 			array('cityname', 'cityExistCheck'),
 			array('email', 'unique', 'className'=>'Client', 'message'=>'该邮箱已被使用'),

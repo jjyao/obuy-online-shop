@@ -52,13 +52,25 @@ class Client extends CActiveRecord
 			array('password', 'length', 'min' => 6, 'on'=>'update'),
 			array('password', 'length', 'max'=>512, 'on'=>'update'),
 			array('password', 'unsafe', 'on'=>'update'),
-			array('email', 'email', 'checkMX'=>true, 'on'=>'update'),
-			array('email', 'unique', 'message'=>'该邮箱已被使用', 'on'=>'update'),
+			array('email', 'email', 'checkMX'=>false, 'on'=>'update'),
+			array('email', 'emailUniqueCheck', 'on'=>'update'),
 			array('isActive', 'statusCheck', 'on'=>'update'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, email, isActive', 'safe', 'on'=>'search'),
 		);
+	}
+
+	public function emailUniqueCheck($attribute, $params)
+	{
+		if(Client::model()->exists("email = :email", array(':email'=>$this->email)))
+		{
+			$client = Client::model()->findByAttributes(array('email'=>$this->email));
+			if($client->id != $this->id)
+			{
+				$this->addError('email', '该邮箱已被使用');
+			}
+		}
 	}
 
 	public function statusCheck($attribute, $params)

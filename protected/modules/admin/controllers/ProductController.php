@@ -82,10 +82,15 @@ class ProductController extends AdminController
 
 	public function actionDelete()
 	{
-
+		$productId = $_GET['id'];
+		if(isset($productId) && (Product::is_exist($productId, Product::ON_SALE) ||
+			Product::is_exist($productId, Product::NOT_ON_SALE)))
+		{
+			$product = Product::model()->findByPk($productId);
+			$product->isOnSale = Product::NOT_ON_SALE;
+			$product->save(false);
+		}
 	}
-
-	
 
 	public function accessRules()
 	{

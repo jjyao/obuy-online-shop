@@ -914,3 +914,114 @@ in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
 2012/04/07 22:12:22 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
 in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (29)
 in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:07 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:07 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:16 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:16 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:17 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:17 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:35 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:35 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:36 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:36 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:37 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:52:37 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:01 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (60)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:42 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:42 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:43 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:43 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:44 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:44 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:59 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:55:59 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:56:06 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 22:56:06 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:06:37 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:06:37 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:06:53 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:06:53 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:03 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:03 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:08 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:08 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:26 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:26 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:43 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:43 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:49 [warning] [application] Failed to set unsafe attribute "id" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/07 23:07:49 [warning] [application] Failed to set unsafe attribute "password" of "Client".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ClientController.php (42)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
