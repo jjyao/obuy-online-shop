@@ -1,5 +1,5 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - 新添商品';
+$this->pageTitle=Yii::app()->name . ' - 修改商品';
 Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/jquery-easyui/themes/default/easyui.css');
 Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/jquery-easyui/themes/icon.css');
 Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::app()->baseUrl.'/css/admin/product.less');
@@ -8,7 +8,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 <article>
 <div class="row-fluid">
 <?php $form = $this->beginWidget('CActiveForm', array(
-	'id'=>'create_product_form',
+	'id'=>'update_product_form',
+	'action'=> Yii::app()->createUrl('admin/product/update', array('id'=>$product->id)),
 	'htmlOptions'=>array('enctype'=>'multipart/form-data', 'class'=>'span8'),
 ));?>
 	
@@ -57,7 +58,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	<?php echo $form->textArea($product, 'categoryId', array('id'=>'categoryIdInput', 'style'=>'display: none;')); ?>
 
 	<ul id="category_tree" class="easyui-tree"></ul>
-	<button type="submit" class="btn btn-primary btn-large pull-right">添加</button>
+	<button type="submit" class="btn btn-primary btn-large pull-right">保存修改</button>
 
 	<span class="clearfix"></span>
 <?php $this->endWidget(); ?>
@@ -108,12 +109,12 @@ tinyMCE.init({
 		},
 	});
 </script>
-<?php if(Yii::app()->user->hasFlash('product_create_success')): ?>
+<?php if(Yii::app()->user->hasFlash('product_update_success')): ?>
 <?php Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/assets/jquery-notice/jquery.notice.css'); ?>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery-notice/jquery.notice.js"></script>
 <script type="text/javascript">
 	jQuery.noticeAdd({
-		text: '<?php echo Yii::app()->user->getFlash("product_create_success"); ?>',
+		text: '<?php echo Yii::app()->user->getFlash("product_update_success"); ?>',
 		stay: false,
 		type: 'success',
 	});

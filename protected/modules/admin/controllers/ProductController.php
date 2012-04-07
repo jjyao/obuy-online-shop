@@ -33,7 +33,6 @@ class ProductController extends AdminController
 			$product->imagePackageFile = CUploadedFile::getInstance($product, 'imagePackageFile');
 			if($product->validate())
 			{
-				$product->isOnSale = Product::ON_SALE;
 				$product->imageFoldPath = "";
 				$product->save(false);
 				$product->saveImages();
@@ -57,8 +56,22 @@ class ProductController extends AdminController
 
 			if(isset($_POST['Product']))
 			{
-				
+				// massive assignment
+				$product->attributes = $_POST['Product'];
+
+				// TODO for the rich text editor, should strip some harmful tags with php strip_tags
+
+				$product->imagePackageFile = CUploadedFile::getInstance($product, 'imagePackageFile');
+				if($product->validate())
+				{
+					$product->save(false);
+					$product->saveImages();
+
+					Yii::app()->user->setFlash('product_update_success', '商品修改成功');
+					$this->redirect(Yii::app()->createUrl('admin/product/update', array('id'=>$product->id)));
+				}
 			}
+
 			$this->render('update', array('product'=>$product));
 		}
 		else

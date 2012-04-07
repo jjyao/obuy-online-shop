@@ -60,6 +60,7 @@ class Product extends CActiveRecord
 			array('price', 'length', 'max'=>10),
 			array('price', 'type', 'type'=>'float'),
 			array('price', 'match', 'pattern'=>'/^[0-9]+(\.[0-9][0-9]?)?$/', 'message'=>'价格格式不对，请参见Tips'),
+			array('isOnSale', 'statusCheck'),
 			array('imagePackageFile', 'unsafe'),
 			array('imagePackageFile', 'file',
 				  'types'=>'zip', 'maxSize'=>1024*1024*1, 'allowEmpty' => false, 'message'=>'图片包未上传', 'on'=>'create'), // now only support zip package
@@ -71,6 +72,14 @@ class Product extends CActiveRecord
 			// Please remove those attributes that should not be searched.
 			array('id, name, price, publishTime, isOnSale', 'safe', 'on'=>'search'),
 		);
+	}
+
+	public function statusCheck($attribute, $params)
+	{
+		if($this->isOnSale != Product::ON_SALE && $this->isOnSale != Product::NOT_ON_SALE)
+		{
+			$this->addError('isOnSale', '该状态不存在');
+		}
 	}
 
 	/**
@@ -104,7 +113,7 @@ class Product extends CActiveRecord
 			'howToUse' => '使用说明',
 			'additionalSpec' => '附加说明',
 			'publishTime' => '上架时间',
-			'isOnSale' => '是否下架',
+			'isOnSale' => '是否上架',
 		);
 	}
 
@@ -142,6 +151,14 @@ class Product extends CActiveRecord
 				'pageSize'=>10,
 			),
 		));
+	}
+
+	public function statusLabels()
+	{
+		return array(
+			Product::ON_SALE => '上架',
+			Product::NOT_ON_SALE => '未上架',
+		);
 	}
 
 	public function fileValidationCheck($attribute, $params)
