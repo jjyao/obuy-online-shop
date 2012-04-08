@@ -12,12 +12,39 @@ class OrderController extends Controller
 	public function actionView()
 	{
 		$criteria = new CDbCriteria;
-		$criteria->compare('clientId', Yii::app()->user->id, false);
+		$criteria->with = array('orderRecord');
+		$criteria->compare('orderRecord.clientId', Yii::app()->user->id, false);
 		
 		$dataProvider = new CActiveDataProvider('OrderItem', array(
 			'criteria'=>$criteria,
 			'sort'=>array(
-				'defaultOrder'=>'time DESC',
+				'attributes'=>array(
+					'time'=>array(
+						'asc'=>'orderRecord.time',
+						'desc'=>'orderRecord.time DESC',
+					),
+					'status'=>array(
+						'asc'=>'orderRecord.status',
+						'desc'=>'orderRecord.status DESC',
+					),
+					'unitPrice'=>array(
+						'asc'=>'unitPrice',
+						'desc'=>'unitPrice DESC',
+					),
+					'count'=>array(
+						'asc'=>'count',
+						'desc'=>'count DESC',
+					),
+					'productId'=>array(
+						'asc'=>'productId',
+						'desc'=>'productId DESC',
+					),
+					'orderRecordId'=>array(
+						'asc'=>'orderRecordId',
+						'desc'=>'orderRecordId DESC',
+					),
+				),
+				'defaultOrder'=>'orderRecordId DESC',
 				'multiSort'=>true,
 			),
 			'pagination'=>array(
@@ -36,19 +63,24 @@ class OrderController extends Controller
 			if(isset($orderItemId) && OrderItem::isExist($orderItemId))
 			{
 				$orderItem = OrderItem::model()->findByPk($_POST['orderItemId']);
-				if($orderItem->status != OrderItem::SUBMIT)
+				if($orderItem->orderRecord->status != OrderRecord::SUBMIT)
 				{
 					header("HTTP/1.0 403 Forbidden");
 					Yii::app()->end();
 				}
-				if($orderItem->clientId != Yii::app()->user->id)
+				if($orderItem->orderRecord->clientId != Yii::app()->user->id)
 				{
 					header("HTTP/1.0 403 Permission denied");
 					Yii::app()->end();
 				}
 
 				// everything is valid
+				$orderRecord = $orderItem->orderRecord;
 				$orderItem->delete();
+				if(count($orderRecord->orderItems) == 0)
+				{
+					$orderRecord->delete();
+				}
 			}
 			else
 			{
@@ -75,12 +107,12 @@ class OrderController extends Controller
 					}
 
 					$orderItem = OrderItem::model()->findByPk($_POST['orderItemId']);
-					if($orderItem->status != OrderItem::PAYMENT)
+					if($orderItem->orderRecord->status != OrderRecord::PAYMENT || $orderItem->isEvaluated != OrderItem::NOT_EVALUATED)
 					{
 						header("HTTP/1.0 400 Invalid value");
 						Yii::app()->end();
 					}
-					if($orderItem->clientId != Yii::app()->user->id)
+					if($orderItem->orderRecord->clientId != Yii::app()->user->id)
 					{
 						header("HTTP/1.0 403 Permission denied");
 						Yii::app()->end();
@@ -95,7 +127,7 @@ class OrderController extends Controller
 					$evaluation->orderId = $orderItem->id;
 					$evaluation->save(false);
 
-					$orderItem->status = OrderItem::EVALUATION;
+					$orderItem->isEvaluated = OrderItem::EVALUATED;
 					$orderItem->save(false);
 				}
 				else

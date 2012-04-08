@@ -142,17 +142,23 @@ class ShopcartController extends Controller
 					$this->redirect(Yii::app()->createUrl('shopcart/view'));
 				}
 				else
-				{
+				{	
+					$orderRecord = new OrderRecord();
+					$orderRecord->clientId = Yii::app()->user->id;
+					$orderRecord->deliveryAddress = $address->city->name . '市 ' . $address->address;
+					$orderRecord->status = OrderRecord::SUBMIT;
+
+					$orderRecord->save(false);
+
 					foreach($shopcartItems as $shopcartItem)
 					{
 						$orderItem = new OrderItem();
 						// populate order item
-						$orderItem->clientId = Yii::app()->user->id;
+						$orderItem->orderRecordId = $orderRecord->id;
 						$orderItem->productId = $shopcartItem->productId;
 						$orderItem->count = $shopcartItem->count;
 						$orderItem->unitPrice = $shopcartItem->product->price;
-						$orderItem->deliveryAddress = $address->city->name . '市 ' . $address->address;
-						$orderItem->status = OrderItem::SUBMIT;
+						$orderItem->isEvaluated = OrderItem::NOT_EVALUATED;
 
 						$orderItem->save(false);
 						$shopcartItem->delete();

@@ -70,18 +70,26 @@ create table if not exists product(
 	foreign key (categoryId) references category(id) on delete restrict
 );
 
+drop table if exists order_record;
+create table if not exists order_record(
+	id bigint(10) primary key auto_increment,
+	clientId bigint(10) not null,
+	time timestamp default current_timestamp, -- order time
+	deliveryAddress varchar(511) not null, 
+	status integer(5) not null, -- the order's status like submit, delivery, payment
+	foreign key (clientId) references client(id) on delete cascade
+);
+
 drop table if exists order_item;
 create table if not exists order_item(
 	id bigint(10) primary key auto_increment,
-	clientId bigint(10) not null,
+	orderRecordId bigint(10) not null,
 	productId bigint(10) not null,
 	count integer(10) not null,
 	unitPrice decimal(10, 2) not null, -- product unit price when the client placed the order
-	time timestamp default current_timestamp, -- order time
-	deliveryAddress varchar(511) not null, 
-	status integer(5) not null, -- the order's status like submit, delivery, payment, evaluation 
-	foreign key (clientId) references client(id) on delete cascade,
-	foreign key (productId) references product(id) on delete cascade
+	isEvaluated integer(5) not null, -- evaluate the product or not
+	foreign key (productId) references product(id) on delete cascade,
+	foreign key (orderRecordId) references order_record(id) on delete cascade
 );
 
 drop table if exists shopcart_item;

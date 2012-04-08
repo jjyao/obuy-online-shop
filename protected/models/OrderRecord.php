@@ -1,29 +1,29 @@
 <?php
 
 /**
- * This is the model class for table "order_item".
+ * This is the model class for table "order_record".
  *
- * The followings are the available columns in table 'order_item':
+ * The followings are the available columns in table 'order_record':
  * @property string $id
- * @property string $orderRecordId
- * @property string $productId
- * @property integer $count
- * @property string $unitPrice
- * @property integer $isEvaluated
+ * @property string $clientId
+ * @property string $time
+ * @property string $deliveryAddress
+ * @property integer $status
  *
  * The followings are the available model relations:
- * @property OrderRecord $orderRecord
- * @property Product $product
+ * @property OrderItem[] $orderItems
+ * @property Client $client
  */
-class OrderItem extends CActiveRecord
+class OrderRecord extends CActiveRecord
 {
-	const EVALUATED = 0;
-	const NOT_EVALUATED = 1;
+	const SUBMIT = 1;
+	const DELIVERY = 2;
+	const PAYMENT = 3;
 
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return OrderItem the static model class
+	 * @return OrderRecord the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -35,7 +35,7 @@ class OrderItem extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'order_item';
+		return 'order_record';
 	}
 
 	/**
@@ -46,14 +46,13 @@ class OrderItem extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('count, isEvaluated, unitPrice', 'required', 'on'=>'update'),
-			array('count, isEvaluated', 'numerical', 'integerOnly'=>true),
-			array('unitPrice', 'length', 'max'=>10),
-			array('unitPrice', 'match', 'pattern'=>'/^[0-9]+(\.[0-9][0-9]?)?$/', 'message'=>'价格格式不对'),
-			array('isEvaluated', 'in', 'allowEmpty'=>false, 'range'=>array_keys($this->statusLabels())),
+			array('deliveryAddress, status', 'required', 'on'=>'update'),
+			array('status', 'numerical', 'integerOnly'=>true),
+			array('clientId', 'length', 'max'=>10),
+			array('deliveryAddress', 'length', 'max'=>511),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, productId, count, unitPrice, time, isEvaluated', 'safe', 'on'=>'search'),
+			array('id, clientId, time, deliveryAddress, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,8 +64,8 @@ class OrderItem extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'product' => array(self::BELONGS_TO, 'Product', 'productId'),
-			'orderRecord' => array(self::BELONGS_TO, 'OrderRecord', 'orderRecordId'),
+			'orderItems' => array(self::HAS_MANY, 'OrderItem', 'orderRecordId'),
+			'client' => array(self::BELONGS_TO, 'Client', 'clientId'),
 		);
 	}
 
@@ -76,20 +75,20 @@ class OrderItem extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => '订单号',
-			'productId' => '商品',
-			'orderRecordId' => '订单号',
-			'count' => '数量',
-			'unitPrice' => '单价',
-			'isEvaluated' => '是否评论',
+			'id' => 'ID',
+			'clientId' => '顾客',
+			'time' => '下单时间',
+			'deliveryAddress' => '送货地址',
+			'status' => '订单状态',
 		);
 	}
 
 	public function statusLabels()
 	{
 		return array(
-			OrderItem::NOT_EVALUATED => '未评价',
-			OrderItem::EVALUATED => '已评价',
+			OrderRecord::SUBMIT => '已提交',
+			OrderRecord::DELIVERY => '已发送',
+			OrderRecord::PAYMENT => '已付款',
 		);
 	}
 
@@ -115,24 +114,20 @@ class OrderItem extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,false);
-		$criteria->compare('orderRecordId',$this->orderRecordId,false);
-		$criteria->compare('productId',$this->productId,false);
-		$criteria->compare('count',$this->count, false);
-		$criteria->compare('unitPrice',$this->unitPrice,false);
-		$criteria->compare('isEvaluated',$this->isEvaluated);
+		$criteria->compare('clientId',$this->clientId,false);
+		$criteria->compare('time',$this->time,true);
+		$criteria->compare('deliveryAddress',$this->deliveryAddress,true);
+		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
-			'pagination'=>array(
-				'pageSize'=>10,
-			),
 		));
 	}
 
-	public function isExist($orderItemId)
+	public function isExist($orderRecordId)
 	{
-		$orderItem = OrderItem::model()->findByPk($orderItemId);
-		if(is_null($orderItem))
+		$orderRecord = OrderRecord::model()->findByPk($orderRecordId);
+		if(is_null($orderRecord))
 		{
 			return false;
 		}

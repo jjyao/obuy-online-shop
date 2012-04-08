@@ -12,16 +12,18 @@
 </div>
 
 <div class="order_evaluation">
-<?php if($data->status == OrderItem::SUBMIT): ?>
+<?php if($data->orderRecord->status == OrderRecord::SUBMIT): ?>
 	<a class="btn btn-small btn-primary cancel" order_item_id="<?php echo $data->id ?>">
 		<i class="icon-remove icon-white"></i>&nbsp;&nbsp;取消&nbsp;&nbsp;
 	</a>
-<?php elseif($data->status == OrderItem::EVALUATION): ?>
-	<a class="btn disabled btn-small btn-primary"><i class="icon-ok icon-white"></i>已评价</a>
-<?php elseif($data->status == OrderItem::PAYMENT): ?>
-	<a class="btn btn-small btn-primary evaluation" order_item_id="<?php echo $data->id ?>">
-		<i class="icon-comment icon-white"></i>&nbsp;&nbsp;评价&nbsp;&nbsp;
-	</a>
+<?php elseif($data->orderRecord->status == OrderRecord::PAYMENT): ?>
+		<?php if($data->isEvaluated == OrderItem::EVALUATED): ?>
+		<a class="btn disabled btn-small btn-primary"><i class="icon-ok icon-white"></i>已评价</a>
+		<?php else: ?>
+		<a class="btn btn-small btn-primary evaluation" order_item_id="<?php echo $data->id ?>">
+			<i class="icon-comment icon-white"></i>&nbsp;&nbsp;评价&nbsp;&nbsp;
+		</a>
+		<?php endif; ?>
 <?php else: ?>
 	<a class="btn disabled btn-small btn-primary"><i class="icon-lock icon-white"></i>未付款</a>
 <?php endif; ?>
@@ -29,9 +31,9 @@
 
 <div class="order_status">
 <?php
-	$statusLabels = $data->statusLabels();
+	$statusLabels = $data->orderRecord->statusLabels();
 ?>
-<span class="label label-info"><?php echo $statusLabels[$data->status] ?></span>
+<span class="label label-info"><?php echo $statusLabels[$data->orderRecord->status] ?></span>
 </div>
 
 <div class="product_sumPrice">
@@ -49,7 +51,11 @@
 </div>
 
 <div class="order_time">
-<span class="label"><?php echo $data->time ?>下单</span>
+<span class="label"><?php echo $data->orderRecord->time ?>下单</span>
+</div>
+
+<div class="order_record">
+<span class="label"><?php echo $data->orderRecord->id ?>号订单</label>
 </div>
 
 <span class="clearfix"></span>

@@ -14,10 +14,12 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/star-rati
 			'dataProvider'=>$dataProvider,
 			'itemView'=>'_order_item',
 			'sortableAttributes'=>array(
-				'status',
-				'time',
+				'status' => '订单状态',
+				'time' => '下单时间',
+				'orderRecordId' => '订单',
 				'unitPrice',
 				'count',
+				'productId',
 			),
 			'pager'=>array(
 				'header'=>'',
