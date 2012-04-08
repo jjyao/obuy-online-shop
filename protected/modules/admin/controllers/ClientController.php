@@ -16,6 +16,10 @@ class ClientController extends AdminController
 		{
 			$client->attributes = $_GET['Client'];
 		}
+		if(isset($_GET['id']))
+		{
+			$client->id = $_GET['id'];
+		}
 		$this->render('index', array('client'=>$client));
 	}
 

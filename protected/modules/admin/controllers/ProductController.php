@@ -16,6 +16,10 @@ class ProductController extends AdminController
 		{
 			$product->attributes = $_GET['Product'];
 		}
+		if(isset($_GET['id']))
+		{
+			$product->id = $_GET['id'];
+		}
 		$this->render('index', array('product'=>$product));
 	}
 

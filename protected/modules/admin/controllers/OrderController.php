@@ -16,6 +16,10 @@ class OrderController extends AdminController
 		{
 			$order->attributes = $_GET['OrderItem'];
 		}
+		if(isset($_GET['id']))
+		{
+			$order->id = $_GET['id'];
+		}
 		$this->render('index', array('order'=>$order));
 	}
 

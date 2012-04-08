@@ -7,6 +7,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		'id'=>'product_grid_view',
 		'dataProvider'=>$product->search(),
 		'filter'=>$product,
+		'ajaxUrl'=>Yii::app()->createUrl('admin/product/index'),
 		'columns'=>array(
 			array(
 				'name'=>'id',

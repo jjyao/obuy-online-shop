@@ -11,6 +11,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	'id'=>'order_grid_view',
 	'dataProvider'=>$order->search(),
 	'filter'=>$order,
+	'ajaxUrl'=>Yii::app()->createUrl('admin/order/index'),
 	'columns'=>array(
 		array(
 			'name'=>'id',
@@ -22,7 +23,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			'name'=>'clientId',
 			'type'=>'raw',
 			'sortable'=>false,
-			'value'=>'CHtml::link($data->clientId . "  " . $data->client->email ,Yii::app()->createUrl("/admin/client/view", array("id"=>$data->clientId)))',
+			'value'=>'CHtml::link($data->clientId . "  " . $data->client->email ,
+				Yii::app()->createUrl("/admin/client/view", array("id"=>$data->clientId)),
+				array("target"=>"_blank"))',
 			'id'=>'client_title',
 		),
 		array(
@@ -30,7 +33,9 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			'name'=>'productId',
 			'type'=>'raw',
 			'sortable'=>false,
-			'value'=>'CHtml::link($data->productId . "  " . $data->product->name ,Yii::app()->createUrl("/admin/product/view", array("id"=>$data->productId)))',
+			'value'=>'CHtml::link($data->productId . "  " . $data->product->name ,
+				Yii::app()->createUrl("/admin/product/view", array("id"=>$data->productId)),
+				array("target"=>"_blank"))',
 			'id'=>'product_title',
 		),
 		array(
