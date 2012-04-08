@@ -41,7 +41,7 @@ class Announcement extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content, time, isActive', 'required'),
+			array('title, content, isActive', 'required'),
 			array('isActive', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
 			// The following rule is used by search().
@@ -77,10 +77,10 @@ class Announcement extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'content' => 'Content',
-			'time' => 'Time',
-			'isActive' => 'Is Active',
+			'title' => '标题',
+			'content' => '内容',
+			'time' => '公布时间',
+			'isActive' => '是否公开',
 		);
 	}
 
