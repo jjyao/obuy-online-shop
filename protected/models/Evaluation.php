@@ -45,7 +45,7 @@ class Evaluation extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('comment, time, clientId, productId', 'required'),
+			array('score, comment, clientId, productId', 'required'),
 			array('score', 'numerical', 'integerOnly'=>true),
 			array('clientId, productId', 'length', 'max'=>10),
 			// The following rule is used by search().
@@ -75,11 +75,11 @@ class Evaluation extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'score' => 'Score',
-			'comment' => 'Comment',
-			'time' => 'Time',
-			'clientId' => 'Client',
-			'productId' => 'Product',
+			'score' => '评分',
+			'comment' => '评论',
+			'time' => '时间',
+			'clientId' => '用户',
+			'productId' => '商品',
 		);
 	}
 
@@ -94,15 +94,31 @@ class Evaluation extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
+		$criteria->compare('id',$this->id,false);
 		$criteria->compare('score',$this->score);
 		$criteria->compare('comment',$this->comment,true);
 		$criteria->compare('time',$this->time,true);
-		$criteria->compare('clientId',$this->clientId,true);
-		$criteria->compare('productId',$this->productId,true);
+		$criteria->compare('clientId',$this->clientId,false);
+		$criteria->compare('productId',$this->productId,false);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'pagination'=>array(
+				'pageSize'=>10,
+			),
 		));
+	}
+
+	public static function isExist($evaluationId)
+	{
+		$evaluation = Evaluation::model()->findByPk($evaluationId);
+		if(is_null($evaluation))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
 	}
 }

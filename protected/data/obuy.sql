@@ -72,7 +72,7 @@ create table if not exists product(
 drop table if exists evaluation;
 create table if not exists evaluation(
 	id bigint(10) primary key auto_increment,
-	score integer(2) default 1, -- score can be 1, 2, 3, 4, 5
+	score integer(2) not null, -- score can be 1, 2, 3, 4, 5
 	comment text not null,
 	time timestamp default current_timestamp,
 	clientId bigint(10) not null,

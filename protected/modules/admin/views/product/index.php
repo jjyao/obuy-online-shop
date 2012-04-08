@@ -11,24 +11,29 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			array(
 				'name'=>'id',
 				'sortable'=>false,
+				'id'=>'id_title',
 			),
 			array(
 				'name'=>'name',
 				'sortable'=>false,
+				'id'=>'name_title',
 			),
 			array(
 				'name'=>'price',
 				'sortable'=>false,
+				'id'=>'price_title',
 			),
 			array(
 				'name'=>'publishTime',
 				'sortable'=>true,
+				'id'=>'publishTime_title',
 			),
 			array(
 				'name'=>'categoryId',
 				'header'=>'分类',
 				'filter'=>CHtml::listData(Category::model()->findAll(array('order'=>'name')), 'id', 'name'),
 				'value'=>'$data->category->name',
+				'id'=>'category_title',
 			),
 			array(
 				'name'=>'isOnSale',

@@ -1,0 +1,52 @@
+<?php
+$this->pageTitle=Yii::app()->name . ' - 商品评论';
+Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::app()->baseUrl.'/css/admin/evaluation.less');
+?>
+</article>
+<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'evaluation_grid_view',
+	'dataProvider'=>$evaluation->search(),
+	'filter'=>$evaluation,
+	'ajaxUrl'=>Yii::app()->createUrl('admin/evaluation/index'),
+	'columns'=>array(
+		array(
+			'name'=>'id',
+			'sortable'=>false,
+			'id'=>'id_title',
+		),
+		array(
+			'name'=>'clientId',
+			'sortable'=>true,
+			'id'=>'client_title',
+		),
+		array(
+			'name'=>'productId',
+			'sortable'=>true,
+			'id'=>'product_title',
+		),
+		array(
+			'name'=>'score',
+			'sortable'=>true,
+			'id'=>'score_title',
+		),
+		array(
+			'name'=>'comment',
+			'sortable'=>false,
+		),
+		array(
+			'name'=>'time',
+			'sortable'=>true,
+			'id'=>'time_title',
+		),
+		array(
+			'class'=>'CButtonColumn',
+			'template'=>'{delete}',
+			'header'=>'可选操作',
+		),
+	),
+	'pager'=>array(
+		'header'=>'',
+	),
+));
+?>
+</article>
