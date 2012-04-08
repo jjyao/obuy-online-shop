@@ -32,16 +32,32 @@ class SiteController extends Controller
 
 		// get newest products, hotest products and recommended products
 		// TODO fake data
-		$newestProducts = array();
-		$hotestProducts = array();
 		$recommendedProducts = array();
-		$product = Product::model()->findByAttributes(array('id'=>12));	
-		for($i = 0; $i < 8; $i++)
+		$newestProducts = Product::model()->findAllByAttributes(array('isOnSale'=>Product::ON_SALE),
+			array(
+				'order'=>'publishTime DESC',
+				'limit'=>8,
+			)
+		);
+
+		$hotestProductsId = array();
+		$result = Yii::app()->db->createCommand(
+			"SELECT productId FROM order_item GROUP BY productId ORDER BY count(id) DESC LIMIT 8")->query();
+		$hotestProducts = array();
+		foreach($result as $row)
 		{
-			$newestProducts[] = $product;
+			$hotestProducts[] = Product::model()->findByPk($row['productId']);
 		}
-		$hotestProducts = $newestProducts;
-		$recommendedProducts = $newestProducts;
+
+		$recommendedProductsId = array();
+		$result = Yii::app()->db->createCommand(
+			"SELECT productId FROM evaluation GROUP BY productId ORDER BY avg(score) DESC LIMIT 8")->query();
+		$recommendedProducts = array();
+		foreach($result as $row)
+		{
+			$recommendedProducts[] = Product::model()->findByPk($row['productId']);
+		}
+		
 		$this->render('index', array('newestProducts'=>$newestProducts, 
 									 'hotestProducts'=>$hotestProducts,
 									 'recommendedProducts'=>$recommendedProducts));
