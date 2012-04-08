@@ -5,9 +5,10 @@
 
 // config database connection params
 $host = 'localhost';
-$dbname = 'obuy_mall';
-$username = 'obuyer';
-$password = 'obuyer';
+$dbname = 'obuyer_test';
+$username = 'root';
+$password = 'yaojiajun';
+
 $charset = 'utf8';
 
 // Load website name from database

@@ -105,4 +105,17 @@ class Announcement extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	public static function isExist($announcementId)
+	{
+		$announcement = Announcement::model()->findByPk($announcementId);
+		if(is_null($announcement))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
 }

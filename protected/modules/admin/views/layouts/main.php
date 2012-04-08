@@ -64,6 +64,15 @@
 					<li>
 						<a href="<?php echo Yii::app()->createUrl('admin/site/modify') ?>">基本信息</a>
 					</li>
+					<li class="nav-header">
+						公告管理
+					</li>
+					<li>
+						<a href="<?php echo Yii::app()->createUrl('admin/announcement/index') ?>">公告列表</a>
+					</li>
+					<li>
+						<a href="<?php echo Yii::app()->createUrl('admin/announcement/create') ?>">新建公告</a>
+					</li>
 				</ul>
 			</section>
 		</div>

@@ -1,0 +1,24 @@
+header
+{
+	margin: 20px 0 20px 20px;
+}
+
+article
+{
+	margin-left: 20px;
+}
+
+#start_install
+{
+	display: block;
+}
+
+.success
+{
+	color: green;
+}
+
+.failure
+{
+	color: red;
+}

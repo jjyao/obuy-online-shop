@@ -1,10 +1,6 @@
 set storage_engine = InnoDB;
+
 set names UTF8;
-
-drop database if exists obuy_mall;
-create database if not exists obuy_mall CHARACTER SET utf8 COLLATE utf8_general_ci;
-
-use obuy_mall;
 
 drop table if exists website;
 create table if not exists website(  -- store website's basic info
@@ -118,8 +114,6 @@ create table if not exists announcement(
 	isActive integer(2) not null
 );
 
-grant all on obuy_mall.* to 'obuyer'@'localhost' identified by 'obuyer';
-
 -- init data
 insert website (name) values('买么事');
 
@@ -131,39 +125,3 @@ insert city (name, provinceName) values ('徐州' ,'江苏');
 insert city (name, provinceName) values ('南通' ,'江苏');
 insert city (name, provinceName) values ('湛江', '广东');
 insert city (name, provinceName) values ('温州', '浙江');
-
--- fake data
-insert into client (name, email, password) values ('obuyer', 'obuyer@gmail.com', 'f357205e9e74045c029e0f211bd06943');
-insert into admin (clientId) values (1); -- obuyer is admin
-
--- category fake data
-insert into category (name, parentCategoryId) values ('电子产品', null);
-insert into category (name, parentCategoryId) values ('图书', null);
-insert into category (name, parentCategoryId) values ('家用电器', null);
-insert into category (name, parentCategoryId) values ('电脑', 1);
-insert into category (name, parentCategoryId) values ('手机', 1);
-insert into category (name, parentCategoryId) values ('平板', 1);
-insert into category (name, parentCategoryId) values ('戴尔', 4);
-insert into category (name, parentCategoryId) values ('联想', 4);
-insert into category (name, parentCategoryId) values ('华硕', 4);
-insert into category (name, parentCategoryId) values ('洗衣机', 3);
--- product fake data
-insert into product (name, price, imageFoldPath, categoryId, description, howToUse, additionalSpec, isOnSale) values('格力空调', '149.0', 'L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\1', 3, 'good', 'good', 'good', 1);
-insert into product (name, price, imageFoldPath, categoryId, description, howToUse, additionalSpec, isOnSale) values('Gree空调', '159.0', 'L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\2', 3, 'good', 'good', 'good', 1);
-
--- order fake data
-insert into order_item (clientId, productId, count, unitPrice, deliveryAddress, status) values (1, 1, 2, '149.0', 'Suzhou', 1);
-insert into order_item (clientId, productId, count, unitPrice, deliveryAddress, status) values (1, 2, 1, '149.0', 'Suzhou', 1);
-
--- announcement fake data
-insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
-insert into announcement (title, content, isActive) values ('化妆品促销季', '化妆品促销季', 1);
-insert into announcement (title, content, isActive) values ('商场三折酬宾', '商场三折酬宾', 1);
-insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
-insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
-insert into announcement (title, content, isActive) values ('化妆品促销季', '化妆品促销季', 1);
-insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
-insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
-insert into announcement (title, content, isActive) values ('商场三折酬宾', '商场三折酬宾', 1);
-insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);
-insert into announcement (title, content, isActive) values ('回馈新老顾客', '回馈新老顾客', 1);	

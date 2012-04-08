@@ -37,7 +37,11 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	<ul id="shop_announcement_list">
 		<?php $announcements = Announcement::model()->published()->findAll(array('order'=>'time DESC')); ?>
 		<?php foreach($announcements as $announcement): ?>
-		<li><a href="#"><?php echo $announcement->title ?></a></li>
+		<li>
+			<a href="<?php echo Yii::app()->createUrl('announcement/view', array('id'=>$announcement->id)) ?>" target="_blank">
+			<?php echo $announcement->title ?>
+			</a>
+		</li>
 		<?php endforeach; ?>
 	</ul>
 	</div>
