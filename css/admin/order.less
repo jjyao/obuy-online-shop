@@ -1,3 +1,5 @@
+@order_item_height: 50px;
+
 #order_grid_view
 {
 	padding: 0 0;
@@ -37,7 +39,7 @@ thead input, thead select
 
 #time_title
 {
-	min-width: 120px;
+	width: 120px;
 }
 
 #status_title
@@ -54,20 +56,89 @@ thead input, thead select
 #update_order_form
 {
 	margin: 0 0;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	
 }
 
-#clientId_display, #productId_display
+#update_order_form .form_body
 {
+	margin: 15px;
+}
+
+#update_order_form .modal-footer
+{
+	border-radius:0 0 0 0;
+}
+
+#clientId_display
+{
+	line-height: 28px;
 	margin-bottom: 4px;
 	display: block;
-}
-
-#order_modal
-{
-	display: none;
 }
 
 #update_order_error_alert
 {
 	display: none;
+}
+
+#order_items
+{
+	margin-top: 30px;
+	padding: 10px 0;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	
+}
+
+#order_items .body
+{
+	margin: 15px;
+}
+
+.order_item
+{
+	border: solid 1px;
+	margin-bottom: 10px;
+}
+
+.order_item .product_image
+{
+	float: left;
+	margin-left: 20px;
+}
+
+.order_item .product_name
+{
+	float: left;
+	line-height: @order_item_height;
+	margin-left: 10px;
+}
+
+.order_item .product_unitPrice
+{
+	float: right;
+	line-height: @order_item_height;
+	text-align:right
+}
+
+.order_item .multiply
+{
+	float: right;
+	line-height: @order_item_height;
+	margin: 0 10px;
+}
+
+.order_item .product_number
+{
+	float: right;
+	line-height: @order_item_height;
+}
+
+.order_item .product_sumPrice
+{
+	float: right;
+	line-height: @order_item_height;
+	width: 100px;
+	text-align:right;
+	margin-right: 10px;
 }

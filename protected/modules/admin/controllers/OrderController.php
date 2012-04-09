@@ -11,10 +11,10 @@ class OrderController extends AdminController
 
 	public function actionIndex()
 	{
-		$order = new OrderItem('search');
-		if(isset($_GET['OrderItem']))
+		$order = new OrderRecord('search');
+		if(isset($_GET['OrderRecord']))
 		{
-			$order->attributes = $_GET['OrderItem'];
+			$order->attributes = $_GET['OrderRecord'];
 		}
 		if(isset($_GET['id']))
 		{
@@ -23,71 +23,49 @@ class OrderController extends AdminController
 		$this->render('index', array('order'=>$order));
 	}
 
+	public function actionView()
+	{
+		$this->redirect(Yii::app()->createUrl('admin/order/update', array('id'=>$_GET['id'])));
+	}
+
 	public function actionUpdate()
 	{
-		// only	respond to ajax request
-		if(Yii::app()->request->isAjaxRequest)
+		$orderId = $_GET['id'];
+		if(isset($orderId) && OrderRecord::isExist($orderId))
 		{
-			$orderId = $_POST['OrderItem']['id'];
-			if($this->is_exist($orderId))
-			{
-				$order = OrderItem::model()->findByAttributes(array('id'=>$orderId));
-				$order->scenario = 'update';
-				// TODO use massive assignment is not a good idea because it is not safe. 
-				// But it is clean, so I still choose massive assignment for this homework
-				$order->attributes = $_POST['OrderItem'];
+			$order = OrderRecord::model()->findByAttributes(array('id'=>$orderId));
+			$order->scenario = 'update';
 
-				$result = array();
+			if(isset($_POST['OrderRecord']))
+			{
+				$order->attributes = $_POST['OrderRecord'];
+
 				if($order->validate())
 				{
-					$order->save();
-					$result['result'] = 'success';
+					$order->save(false);
+					Yii::app()->user->setFlash('order_update_success', '订单更新成功');
 				}
-				else
-				{
-					$errors = $order->getErrors();
-					$result['result'] = 'failure';
-					$result['errors'] = $errors;
-				}
-
-				echo json_encode($result);
-				Yii::app()->end();
 			}
-			else
-			{
-				header("HTTP/1.0 404 Order Not Found ");
-			}
+			
+			$this->render('update', array('order'=>$order));
+		}
+		else
+		{
+			throw new CHttpException(404, '订单不存在');
 		}
 	}
 
 	public function actionDelete()
 	{
-		// only	respond to ajax request
-		if(Yii::app()->request->isAjaxRequest)
+		$orderId = $_GET['id'];
+		if(isset($orderId) && OrderRecord::isExist($orderId))
 		{
-			$orderId = $_POST['id'];
-			if($this->is_exist($orderId))
-			{
-				$order = OrderItem::model()->findByAttributes(array('id'=>$orderId));
-				$order->delete();
-			}
-			else
-			{
-				header("HTTP/1.0 404 Order Not Found ");
-			}
-		}
-	}
-
-	private function is_exist($orderId)
-	{
-		$order = OrderItem::model()->findByAttributes(array('id'=>$orderId));
-		if(is_null($order))
-		{
-			return false;
+			$order = OrderRecord::model()->findByAttributes(array('id'=>$orderId));
+			$order->delete();
 		}
 		else
 		{
-			return true;
+			throw new CHttpException(404, '订单不存在');
 		}
 	}
 
@@ -95,11 +73,11 @@ class OrderController extends AdminController
 	{
 		return array(
 			array('allow',
-				'actions'=>array('index', 'update', 'delete'),
+				'actions'=>array('index', 'view', 'update', 'delete'),
 				'roles'=>array('admin'),
 			),
 			array('deny',
-				'actions'=>array('index', 'update', 'delete'),
+				'actions'=>array('index', 'view', 'update', 'delete'),
 				'users'=>array('*'),
 			),
 		);

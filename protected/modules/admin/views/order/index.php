@@ -3,10 +3,6 @@ $this->pageTitle=Yii::app()->name . ' - 订单列表';
 Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::app()->baseUrl.'/css/admin/order.less');
 ?>
 <article>
-<section id="action_panel">
-	<button id="update" class="btn btn-primary">查看更新订单</button>
-	<button id="delete" class="btn btn-primary">删除订单</button>
-</section>
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'order_grid_view',
 	'dataProvider'=>$order->search(),
@@ -28,26 +24,26 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 				array("target"=>"_blank"))',
 			'id'=>'client_title',
 		),
-		array(
-			'class'=>'CDataColumn',
-			'name'=>'productId',
-			'type'=>'raw',
-			'sortable'=>false,
-			'value'=>'CHtml::link($data->productId . "  " . $data->product->name ,
-				Yii::app()->createUrl("/admin/product/view", array("id"=>$data->productId)),
-				array("target"=>"_blank"))',
-			'id'=>'product_title',
-		),
-		array(
-			'name'=>'count',
-			'sortable'=>true,
-			'id'=>'count_title',
-		),
-		array(
-			'name'=>'unitPrice',
-			'sortable'=>true,
-			'id'=>'unitPrice_title',
-		),
+		// array(
+		// 	'class'=>'CDataColumn',
+		// 	'name'=>'productId',
+		// 	'type'=>'raw',
+		// 	'sortable'=>false,
+		// 	'value'=>'CHtml::link($data->productId . "  " . $data->product->name ,
+		// 		Yii::app()->createUrl("/admin/product/view", array("id"=>$data->productId)),
+		// 		array("target"=>"_blank"))',
+		// 	'id'=>'product_title',
+		// ),
+		// array(
+		// 	'name'=>'count',
+		// 	'sortable'=>true,
+		// 	'id'=>'count_title',
+		// ),
+		// array(
+		// 	'name'=>'unitPrice',
+		// 	'sortable'=>true,
+		// 	'id'=>'unitPrice_title',
+		// ),
 		array(
 			'name'=>'deliveryAddress',
 			'sortable'=>false,
@@ -63,6 +59,22 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			'filter'=>$order->statusLabels(),
 			'value'=>'$data->getStatusLabel($data->status)',
 			'id'=>'status_title',
+		),
+		array(
+			'class'=>'CButtonColumn',
+			'buttons'=>array(
+				'view'=>array(
+					'options'=>array(
+						'url'=>'Yii::app()->createUrl("admin/order/view", array("id"=>$data->id))',
+						'target'=>'_blank',
+					),
+				),
+				'update'=>array(
+					'options'=>array(
+						'target'=>'_blank',
+					),
+				),
+			),
 		),
 	),
 	'pager'=>array(
@@ -98,15 +110,15 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 				</label>
 				<a id="clientId_display"></a>
 
-				<label>
-					<?php echo $attributesArray['count']; ?>
+				<!-- <label>
+					<?php // echo $attributesArray['count']; ?>
 				</label>
-				<?php echo $form->textField($order, 'count', array('id'=>'count_input')); ?>
+				<?php // echo $form->textField($order, 'count', array('id'=>'count_input')); ?> -->
 
-				<label>
-					<?php echo $attributesArray['unitPrice']; ?>
+				<!-- <label>
+					<?php // echo $attributesArray['unitPrice']; ?>
 				</label>
-				<?php echo $form->textField($order, 'unitPrice', array('id'=>'unitPrice_input')); ?>
+				<?php // echo $form->textField($order, 'unitPrice', array('id'=>'unitPrice_input')); ?> -->
 			</div>
 			<div class="span6">
 				<label>
@@ -114,10 +126,10 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 				</label>
 				<span id="time_display" class="uneditable-input"></span>
 
-				<label>
-					<?php echo $attributesArray['productId']; ?>
+				<!-- <label>
+					<?php // echo $attributesArray['productId']; ?>
 				</label>
-				<a id="productId_display"></a>
+				<a id="productId_display"></a> -->
 
 				<label>
 					<?php echo $attributesArray['deliveryAddress']; ?>
