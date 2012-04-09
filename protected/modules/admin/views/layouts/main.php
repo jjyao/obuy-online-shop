@@ -29,7 +29,7 @@
 	</section>
 	<div id="main_area_container" class="container row-fluid">
 		<div class="span2">
-			<section id="admin_nav" class="well">
+			<section id="admin_nav" class="">
 				<ul class="nav nav-list">
 					<li class="nav-header">
 						商品管理

@@ -8,19 +8,36 @@ class CategoryController extends Controller
 		{
 			$categoryId = $_GET['id'];
 			$category = Category::model()->findByAttributes(array('id'=>$categoryId));
+			$categories = Category::getSubCategories($categoryId);
+			$categories[] = $categoryId;
+			$onSale = Product::ON_SALE;
 
 			// get newest products, hotest products and recommended products in current category
-			// TODO fake data
-			$newestProducts = array();
+			$criteria = new CDbCriteria();
+			$criteria->compare('isOnSale', Product::ON_SALE);
+			$criteria->addInCondition('categoryId', $categories);
+			$criteria->order = 'publishTime DESC';
+			$criteria->limit = 8;
+			$newestProducts = Product::model()->findAll($criteria);
+
+			$categories = '(' . implode(',', $categories) . ')';
+			$result = Yii::app()->db->createCommand(
+				"SELECT o.productId productId FROM order_item o, product p WHERE o.productId = p.id AND 
+				p.isOnSale = {$onSale} AND p.categoryId IN $categories GROUP BY o.productId ORDER BY count(o.id) DESC LIMIT 8")->query();
 			$hotestProducts = array();
-			$recommendedProducts = array();
-			$product = Product::model()->findByAttributes(array('id'=>12));	
-			for($i = 0; $i < 8; $i++)
+			foreach($result as $row)
 			{
-				$newestProducts[] = $product;
+				$hotestProducts[] = Product::model()->findByPk($row['productId']);
 			}
-			$hotestProducts = $newestProducts;
-			$recommendedProducts = $newestProducts;
+
+			$result = Yii::app()->db->createCommand(
+						"SELECT e.productId productId FROM evaluation e, product p WHERE e.productId = p.id AND
+						p.isOnSale = {$onSale} AND p.categoryId IN $categories GROUP BY e.productId ORDER BY avg(e.score) DESC LIMIT 8")->query();
+			$recommendedProducts = array();
+			foreach($result as $row)
+			{
+				$recommendedProducts[] = Product::model()->findByPk($row['productId']);
+			}
 
 			$this->render('view', array(
 										'category'=>$category,
@@ -34,31 +51,4 @@ class CategoryController extends Controller
 			throw new CHttpException(404, '分类不存在');
 		}
 	}
-
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
 }

@@ -58,7 +58,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	<?php echo $form->textArea($product, 'categoryId', array('id'=>'categoryIdInput', 'style'=>'display: none;')); ?>
 
 	<ul id="category_tree" class="easyui-tree"></ul>
-	<button type="submit" class="btn btn-primary btn-large pull-right">保存修改</button>
+	<button type="submit" class="btn btn-primary pull-right">保存修改</button>
 
 	<span class="clearfix"></span>
 <?php $this->endWidget(); ?>

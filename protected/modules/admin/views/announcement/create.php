@@ -25,7 +25,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	</label>
 	<?php echo $form->textArea($announcement, 'content'); ?>
 
-	<button type="submit" class="btn btn-primary btn-large pull-right">新建</button>
+	<button type="submit" class="btn btn-primary pull-right">新建</button>
 
 <?php $this->endWidget(); ?>
 

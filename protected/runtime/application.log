@@ -1731,3 +1731,533 @@ Stack trace:
 REQUEST_URI=/index.php/admin/product/list/12
 HTTP_REFERER=http://obuy.localhost/index.php/admin/order/update/1
 ---
+2012/04/09 09:45:16 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (64)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 09:47:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '订单不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\OrderController.php:54
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): OrderController->actionUpdate()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(292): CFilterChain->run()
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('update')
+#10 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/order/upd...')
+#11 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/admin/order/update/1
+---
+2012/04/09 10:34:49 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::ON_SALE} GROUP BY productId ORDER BY count(id) DESC LIMIT 8' at line 1. The SQL statement executed was: SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = {Product::ON_SALE} GROUP BY productId ORDER BY count(id) DESC LIMIT 8.
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php (43)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 10:34:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::ON_SALE} GROUP BY productId ORDER BY count(id) DESC LIMIT 8' at line 1. The SQL statement executed was: SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = {Product::ON_SALE} GROUP BY productId ORDER BY count(id) DESC LIMIT 8' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php:528
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php(372): CDbCommand->queryInternal('', 0, Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(43): CDbCommand->query()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/04/09 10:35:21 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::ON_SALE} GROUP BY productId ORDER BY count(id) DESC LIMIT 8' at line 1. The SQL statement executed was: SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = {Product::ON_SALE} GROUP BY productId ORDER BY count(id) DESC LIMIT 8.
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php (43)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 10:35:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::ON_SALE} GROUP BY productId ORDER BY count(id) DESC LIMIT 8' at line 1. The SQL statement executed was: SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = {Product::ON_SALE} GROUP BY productId ORDER BY count(id) DESC LIMIT 8' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php:528
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php(372): CDbCommand->queryInternal('', 0, Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(43): CDbCommand->query()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/04/09 10:38:24 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = 1 GROUP BY productId ORDER BY count(id) DESC LIMIT 8.
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php (44)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 10:38:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = 1 GROUP BY productId ORDER BY count(id) DESC LIMIT 8' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php:528
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php(372): CDbCommand->queryInternal('', 0, Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(44): CDbCommand->query()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/04/09 10:38:25 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = 1 GROUP BY productId ORDER BY count(id) DESC LIMIT 8.
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php (44)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 10:38:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in order clause is ambiguous. The SQL statement executed was: SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = 1 GROUP BY productId ORDER BY count(id) DESC LIMIT 8' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php:528
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php(372): CDbCommand->queryInternal('', 0, Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\SiteController.php(44): CDbCommand->query()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2012/04/09 11:08:38 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND p.categoryId IN (10) GROUP BY o.productId ORDER BY count(o.id) DESC LIMIT 8' at line 2. The SQL statement executed was: SELECT o.productId productId FROM order_item o, product p WHERE o.productId = p.id AND 
+				p.isOnSale =  AND p.categoryId IN (10) GROUP BY o.productId ORDER BY count(o.id) DESC LIMIT 8.
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\CategoryController.php (22)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 11:08:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND p.categoryId IN (10) GROUP BY o.productId ORDER BY count(o.id) DESC LIMIT 8' at line 2. The SQL statement executed was: SELECT o.productId productId FROM order_item o, product p WHERE o.productId = p.id AND 
+				p.isOnSale =  AND p.categoryId IN (10) GROUP BY o.productId ORDER BY count(o.id) DESC LIMIT 8' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php:528
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\db\CDbCommand.php(372): CDbCommand->queryInternal('', 0, Array)
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\CategoryController.php(22): CDbCommand->query()
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): CategoryController->actionView()
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('category/view')
+#8 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/category/10
+HTTP_REFERER=http://obuy.localhost/index.php
+---
+2012/04/09 11:12:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/12
+---
+2012/04/09 11:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/09 11:43:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/09 11:43:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/12
+---
+2012/04/09 11:44:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/09 11:44:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/13
+---
+2012/04/09 11:44:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/14
+---
+2012/04/09 11:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/14
+---
+2012/04/09 11:44:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/15
+---
+2012/04/09 11:44:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/15
+---
+2012/04/09 11:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/16
+---
+2012/04/09 11:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/16
+---
+2012/04/09 11:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/17
+---
+2012/04/09 11:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/17
+---
+2012/04/09 11:45:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/18
+---
+2012/04/09 11:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/18
+---
+2012/04/09 11:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '商品不存在' in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\controllers\ProductController.php:16
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\actions\CInlineAction.php(50): ProductController->actionView()
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('view')
+#5 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product/view')
+#6 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php/product/view/
+HTTP_REFERER=http://obuy.localhost/index.php/product/view/19
+---
+2012/04/09 12:22:12 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/20
+---
+2012/04/09 12:22:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/20
+---
+2012/04/09 12:23:47 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/21
+---
+2012/04/09 12:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/21
+---
+2012/04/09 12:27:39 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:30:16 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:32:42 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:35:31 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:37:27 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:41:16 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:44:09 [warning] [application] Failed to set unsafe attribute "imagePackageFile" of "Product".
+in L:\My courses\Current Courses\Web Computing\ObuyMall\protected\modules\admin\controllers\ProductController.php (33)
+in L:\My courses\Current Courses\Web Computing\ObuyMall\index.php (13)
+2012/04/09 12:44:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/28
+---
+2012/04/09 12:44:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/28
+---
+2012/04/09 12:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/27
+---
+2012/04/09 12:44:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/26
+---
+2012/04/09 12:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/25
+---
+2012/04/09 12:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/23
+---
+2012/04/09 12:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/22
+---
+2012/04/09 12:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/21
+---
+2012/04/09 12:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/24
+---
+2012/04/09 12:46:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php:484
+Stack trace:
+#0 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CController.php(271): CController->missingAction('')
+#1 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(276): CController->run('')
+#2 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\web\CWebApplication.php(135): CWebApplication->runController('product')
+#3 L:\My courses\Current Courses\Web Computing\ObuyMall\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 L:\My courses\Current Courses\Web Computing\ObuyMall\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/product/
+HTTP_REFERER=http://obuy.localhost/index.php/product/26
+---

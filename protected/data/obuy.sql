@@ -148,6 +148,12 @@ insert into admin (clientId) values (1); -- obuyer is admin
 insert into category (name, parentCategoryId) values ('电子产品', null);
 insert into category (name, parentCategoryId) values ('图书', null);
 insert into category (name, parentCategoryId) values ('家用电器', null);
+insert into category (name, parentCategoryId) values ('个护化妆', null);
+insert into category (name, parentCategoryId) values ('儿童用户', null);
+insert into category (name, parentCategoryId) values ('运动健康', null);
+insert into category (name, parentCategoryId) values ('保健食品', null);
+insert into category (name, parentCategoryId) values ('家装建材', null);
+insert into category (name, parentCategoryId) values ('办公用品', null);
 insert into category (name, parentCategoryId) values ('电脑', 1);
 insert into category (name, parentCategoryId) values ('手机', 1);
 insert into category (name, parentCategoryId) values ('平板', 1);
@@ -155,6 +161,13 @@ insert into category (name, parentCategoryId) values ('戴尔', 4);
 insert into category (name, parentCategoryId) values ('联想', 4);
 insert into category (name, parentCategoryId) values ('华硕', 4);
 insert into category (name, parentCategoryId) values ('洗衣机', 3);
+insert into category (name, parentCategoryId) values ('冰箱', 3);
+insert into category (name, parentCategoryId) values ('电视机', 3);
+insert into category (name, parentCategoryId) values ('烘干机', 3);
+insert into category (name, parentCategoryId) values ('吸尘器', 3);
+insert into category (name, parentCategoryId) values ('加湿器', 3);
+insert into category (name, parentCategoryId) values ('消毒柜', 3);
+insert into category (name, parentCategoryId) values ('音响', 3);
 -- product fake data
 insert into product (name, price, imageFoldPath, categoryId, description, howToUse, additionalSpec, isOnSale) values('格力空调', '149.0', 'L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\1', 3, 'good', 'good', 'good', 1);
 insert into product (name, price, imageFoldPath, categoryId, description, howToUse, additionalSpec, isOnSale) values('Gree空调', '159.0', 'L:\My courses\Current Courses\Web Computing\ObuyMall\protected\data\product_image\2', 3, 'good', 'good', 'good', 1);

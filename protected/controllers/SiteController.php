@@ -30,9 +30,8 @@ class SiteController extends Controller
 		$path = Yii::getPathOfAlias('application.data.auth').'.php';
 		$this->layout = '//layouts/main_with_header';
 
+		$onSale = Product::ON_SALE;
 		// get newest products, hotest products and recommended products
-		// TODO fake data
-		$recommendedProducts = array();
 		$newestProducts = Product::model()->findAllByAttributes(array('isOnSale'=>Product::ON_SALE),
 			array(
 				'order'=>'publishTime DESC',
@@ -40,18 +39,16 @@ class SiteController extends Controller
 			)
 		);
 
-		$hotestProductsId = array();
 		$result = Yii::app()->db->createCommand(
-			"SELECT productId FROM order_item GROUP BY productId ORDER BY count(id) DESC LIMIT 8")->query();
+			"SELECT o.productId FROM order_item o, product p WHERE o.productId = p.id AND p.isOnSale = {$onSale} GROUP BY o.productId ORDER BY count(o.id) DESC LIMIT 8")->query();
 		$hotestProducts = array();
 		foreach($result as $row)
 		{
 			$hotestProducts[] = Product::model()->findByPk($row['productId']);
 		}
 
-		$recommendedProductsId = array();
 		$result = Yii::app()->db->createCommand(
-			"SELECT productId FROM evaluation GROUP BY productId ORDER BY avg(score) DESC LIMIT 8")->query();
+			"SELECT e.productId FROM evaluation e, product p WHERE e.productId = p.id AND p.isOnSale = {$onSale} GROUP BY e.productId ORDER BY avg(e.score) DESC LIMIT 8")->query();
 		$recommendedProducts = array();
 		foreach($result as $row)
 		{

@@ -67,15 +67,16 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/star-rati
 <script type="text/javascript">
 	var orderItemId;
 	var selectButton;
-	$('.order_evaluation a.evaluation').on('click', function(e){
-		orderItemId = $(this).attr('order_item_id');
-		selectButton = $(this);
-		var productName = $(this).parent().siblings('.product_name').children().text();
+
+	function evaluation_click_handler(e){
+		orderItemId = $(e.target).attr('order_item_id');
+		selectButton = $(e.target);
+		var productName = $(e.target).parent().siblings('.product_name').children().text();
 		$('#name_display').text(productName);
 		$('#evaluation_product_score input.star').rating('select', 2);
 		$('#comment_input').val('');
 		$('#order_evaluation_modal').modal('show');
-	});
+	}
 
 	$('#modal_close').on('click', function(e){
 		$('#order_evaluation_modal').modal('hide');
@@ -117,8 +118,8 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/star-rati
 </script>
 
 <script type="text/javascript">
-	$('.order_evaluation a.cancel').on('click', function(e){
-		orderItemId = $(this).attr('order_item_id');
+	function cancel_click_handler(e){
+		orderItemId = $(e.target).attr('order_item_id');
 		$.ajax({
 			url: '<?php echo Yii::app()->createUrl("order/cancel") ?>',
 			type: 'post',
@@ -133,5 +134,5 @@ Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/assets/star-rati
 				alert(status + ": " + error);
 			},
 		});
-	});
+	}
 </script>

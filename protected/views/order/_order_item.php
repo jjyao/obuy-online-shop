@@ -13,14 +13,14 @@
 
 <div class="order_evaluation">
 <?php if($data->orderRecord->status == OrderRecord::SUBMIT): ?>
-	<a class="btn btn-small btn-primary cancel" order_item_id="<?php echo $data->id ?>">
+	<a class="btn btn-small btn-primary cancel" order_item_id="<?php echo $data->id ?>" OnClick="cancel_click_handler(event);">
 		<i class="icon-remove icon-white"></i>&nbsp;&nbsp;取消&nbsp;&nbsp;
 	</a>
 <?php elseif($data->orderRecord->status == OrderRecord::PAYMENT): ?>
 		<?php if($data->isEvaluated == OrderItem::EVALUATED): ?>
 		<a class="btn disabled btn-small btn-primary"><i class="icon-ok icon-white"></i>已评价</a>
 		<?php else: ?>
-		<a class="btn btn-small btn-primary evaluation" order_item_id="<?php echo $data->id ?>">
+		<a class="btn btn-small btn-primary evaluation" order_item_id="<?php echo $data->id ?>" OnClick="evaluation_click_handler(event);">
 			<i class="icon-comment icon-white"></i>&nbsp;&nbsp;评价&nbsp;&nbsp;
 		</a>
 		<?php endif; ?>

@@ -86,8 +86,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 
 			<span class="clearfix"></span>
 		</div>
-		</div>
 		<?php endforeach; ?>
+		</div>
 	</section>
 </article>
 <?php if(Yii::app()->user->hasFlash('order_update_success')): ?>

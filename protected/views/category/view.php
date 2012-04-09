@@ -35,20 +35,32 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 		<?php
 			if(empty($category->subCategories))
 			{
-				// no child categories, so show siblings
-				$siblingCategories = Category::model()->findAll('parentCategoryId = :parentCategoryId AND id <> :id', 
-																array(
-																	':parentCategoryId'=>$category->parentCategoryId,
-																	':id'=>$category->id,
-																));
-				foreach($siblingCategories as $siblingCategory)
+				if($category->parentCategoryId == null)
 				{
-					echo $siblingCategory->getMenuRepresent();
+					// root category
+					$topLevelCategories = Category::model()->findAllByAttributes(array('parentCategoryId'=>null));
+					foreach($topLevelCategories as $category)
+					{
+						echo $category->getMenuRepresent();
+					}
+				}
+				else
+				{
+					// not root category, no child categories, so show siblings
+					$siblingCategories = Category::model()->findAll('parentCategoryId = :parentCategoryId AND id <> :id', 
+																	array(
+																		':parentCategoryId'=>$category->parentCategoryId,
+																		':id'=>$category->id,
+																	));
+					foreach($siblingCategories as $siblingCategory)
+					{
+						echo $siblingCategory->getMenuRepresent();
+					}
 				}
 			}
 			else
 			{
-				// has child categories, sho show childs
+				// has child categories, so show childs
 				$subCategories = $category->subCategories;
 				foreach($subCategories as $subCategory)
 				{
@@ -79,7 +91,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	<ul id="shop_announcement_list">
 		<?php $announcements = Announcement::model()->published()->findAll(array('order'=>'time DESC')); ?>
 		<?php foreach($announcements as $announcement): ?>
-		<li><a href="#"><?php echo $announcement->title ?></a></li>
+		<li><a href="<?php echo Yii::app()->createUrl('announcement/view', array('id'=>$announcement->id)) ?>"><?php echo $announcement->title ?></a></li>
 		<?php endforeach; ?>
 	</ul>
 	</div>
