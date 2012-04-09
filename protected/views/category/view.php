@@ -91,7 +91,7 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 	<ul id="shop_announcement_list">
 		<?php $announcements = Announcement::model()->published()->findAll(array('order'=>'time DESC')); ?>
 		<?php foreach($announcements as $announcement): ?>
-		<li><a href="<?php echo Yii::app()->createUrl('announcement/view', array('id'=>$announcement->id)) ?>"><?php echo $announcement->title ?></a></li>
+		<li><a href="<?php echo Yii::app()->createUrl('announcement/view', array('id'=>$announcement->id)) ?>" target="_blank"><?php echo $announcement->title ?></a></li>
 		<?php endforeach; ?>
 	</ul>
 	</div>
@@ -110,7 +110,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			<li class="first">
 				<div class="product_img">
 					<a href="<?php echo Yii::app()->createUrl("product/view", array('id'=>$hotestProducts[$i]->id)) ?>" target="_blank">
-						<img src="<?php  echo ($hotestProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" width="100" height="100">
+						<img src="<?php  echo ($hotestProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" 
+						title="<?php echo $hotestProducts[$i]->name ?>" width="100" height="100">
 					</a>
 				</div>
 				<div class="product_name">
@@ -127,7 +128,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			<li>
 				<div class="product_img">
 					<a href="<?php echo Yii::app()->createUrl("product/view", array('id'=>$hotestProducts[$i]->id)) ?>" target="_blank">
-						<img src="<?php  echo ($hotestProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" width="100" height="100">
+						<img src="<?php  echo ($hotestProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" 
+						title="<?php echo $hotestProducts[$i]->name ?>" width="100" height="100">
 					</a>
 				</div>
 				<div class="product_name">
@@ -155,7 +157,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			<li class="first">
 				<div class="product_img">
 					<a href="<?php echo Yii::app()->createUrl("product/view", array('id'=>$newestProducts[$i]->id)) ?>" target="_blank">
-						<img src="<?php  echo ($newestProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" width="100" height="100">
+						<img src="<?php  echo ($newestProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" 
+						title="<?php echo $newestProducts[$i]->name ?>" width="100" height="100">
 					</a>
 				</div>
 				<div class="product_name">
@@ -172,7 +175,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			<li>
 				<div class="product_img">
 					<a href="<?php echo Yii::app()->createUrl("product/view", array('id'=>$newestProducts[$i]->id)) ?>" target="_blank">
-						<img src="<?php  echo ($newestProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" width="100" height="100">
+						<img src="<?php  echo ($newestProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" 
+						title="<?php echo $newestProducts[$i]->name ?>" width="100" height="100">
 					</a>
 				</div>
 				<div class="product_name">
@@ -200,7 +204,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			<li class="first">
 				<div class="product_img">
 					<a href="<?php echo Yii::app()->createUrl("product/view", array('id'=>$recommendedProducts[$i]->id)) ?>" target="_blank">
-						<img src="<?php  echo ($recommendedProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" width="100" height="100">
+						<img src="<?php  echo ($recommendedProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" 
+						title="<?php echo $recommendedProducts[$i]->name ?>" width="100" height="100">
 					</a>
 				</div>
 				<div class="product_name">
@@ -217,7 +222,8 @@ Yii::app()->clientScript->registerLinkTag('stylesheet/less', 'text/css', Yii::ap
 			<li>
 				<div class="product_img">
 					<a href="<?php echo Yii::app()->createUrl("product/view", array('id'=>$recommendedProducts[$i]->id)) ?>" target="_blank">
-						<img src="<?php  echo ($recommendedProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" width="100" height="100">
+						<img src="<?php  echo ($recommendedProducts[$i]->getImageBaseUrl() . '/preview.jpg')?>" 
+						title="<?php echo $recommendedProducts[$i]->name ?>" width="100" height="100">
 					</a>
 				</div>
 				<div class="product_name">
