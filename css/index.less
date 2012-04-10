@@ -10,18 +10,17 @@ article
 {
 	margin: 0;
 	padding: 0;
-	border: solid #E69623;
 	float: left;
 }
 
 #category_nav_header
 {
 	font-size: 16px;
-	background: #F89406;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	font-weight: bold;
 	color: white;
 	text-align: center;
 	padding: 5px 0;
+	background: url('../images/header_bg.gif') repeat-x;
 }
 
 #product_slide
@@ -35,44 +34,49 @@ article
 {
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
-	font-weight: bold;
 	width: 170px;
+	border-left: 2px solid #2770C0;
+	border-bottom: 1px solid #2770C0;
 }
 
 #category_menu li
 {
 	position: relative;
-	background-color: #F6C739;
-	opacity: 0.9;
+	background-color: white;
+	opacity: 1;
 	z-index: 1000;
+	border-right: 2px solid #2770C0;
 }
 
 #category_menu li a
 {
 	display: block;
 	overflow: auto; /*force hasLayout in IE7 */
-	color: white;
+	color: black;
 	text-decoration: none;
 	padding: 6px;
-	border-bottom: 1px solid #F89406;
+	border-bottom: 1px solid #2770C0;
 }
 
 #category_menu li a:hover
 {
-	background-color: #F27A04;
+	color: #F27A04;
 }
 
 #category_menu li ul
 {
 	position: absolute;
-	top: 0;
+	top: -2px;
+	left: -2px;
 	visibility: hidden;
 	width: 170px;
+	border-top: 2px solid #2770C0;
+	border-left: none;
 }
 
 #category_menu a.subfolderstyle
 {
+	padding-right: 15px;
 	background: url('../images/arrow_right.gif') no-repeat 97% 50%;
 }
 
@@ -81,18 +85,20 @@ article
 	float: right;
 	margin: 0;
 	padding: 0;
-	border: solid #E69623;
+	border-left: 2px solid #2770C0;
+	border-bottom: 1px solid #2770C0;
+	border-right: 2px solid #2770C0;
 }
 
 #shop_announcement_header
 {
 	font-size: 16px;
-	background: #F89406;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	color: white;
+	font-weight: bold;
 	text-align: center;
 	padding: 5px 0;
 	width: 170px;
+	background: url('../images/header_bg.gif') repeat-x;
 }
 
 #shop_announcement_header i
@@ -120,12 +126,18 @@ article
 	background-color: #FFF;
 	opacity: 0.9;
 	padding: 5px;
-	border-bottom: 1px solid #F89406;
+	border-bottom: 1px solid #2770C0;
 }
 
 #shop_announcement ul li a
 {
 	text-decoration: none;
+}
+
+#product_slide img
+{
+	width: 680px;
+	height: 248px;
 }
 
 .product_section{

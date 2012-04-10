@@ -51,6 +51,9 @@
 							<li><a href="<?php echo Yii::app()->createUrl('site/register') ?>">注册</a></li>
 							<li><a href="<?php echo Yii::app()->createUrl('site/logout') ?>">退出</a></li>								
 						</ul>				
+					</li>
+					<li>
+						<a href="<?php echo Yii::app()->createUrl('feedback/index') ?>">留言板</a>
 					</li>					
 					<li>
 						<a href="<?php echo Yii::app()->createUrl('order/view') ?>">我的订单</a>

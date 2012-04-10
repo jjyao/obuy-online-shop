@@ -65,6 +65,12 @@
 						<a href="<?php echo Yii::app()->createUrl('admin/site/modify') ?>">基本信息</a>
 					</li>
 					<li class="nav-header">
+						公告板管理
+					</li>
+					<li>
+						<a href="<?php echo Yii::app()->createUrl('admin/feedback/index') ?>">公告列表</a>
+					</li>
+					<li class="nav-header">
 						公告管理
 					</li>
 					<li>

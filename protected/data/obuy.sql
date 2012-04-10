@@ -126,6 +126,15 @@ create table if not exists announcement(
 	isActive integer(2) not null
 );
 
+drop table if exists feedback;
+create table if not exists feedback(
+	id bigint(10) primary key auto_increment,
+	clientId bigint(10) not null,
+	content text not null,
+	time timestamp default current_timestamp,
+	foreign key (clientId) references client(id) on delete cascade
+);
+
 grant all on obuy_mall.* to 'obuyer'@'localhost' identified by 'obuyer';
 
 -- init data
